@@ -1,0 +1,158 @@
+
+.NewFishPage{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    // 捕鱼Cavans动画
+    .fishAnim{
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+    }
+    // 捕鱼内容
+    .fishBody{
+        width: 100%;
+        position: relative;
+        min-height: 800px;
+        // 切换捕鱼内容
+        .FishCont{
+            height: 800px;
+            display: none;
+            .FishGameDescription{
+                position: absolute;
+                left: 22vw;
+                color: #fff;
+                text-shadow: 1px 1px rgba(51,51,51,0.5);
+                width: 23.5vw;
+                z-index: 1;
+                font-size: 15px;
+                top: 100px;
+                h2,p,a{
+                    animation-duration: 2s;
+                    animation-fill-mode: both;
+                }
+                h2{
+                    font: 36px/60px Microsoft YaHei;
+                    letter-spacing: 3px;
+                    margin: 0;
+                    text-shadow: 1px 1px rgba(51,51,51,0.5);
+                    color: #fff;
+                    margin-bottom: 10px;
+                    animation-name: fadeInDown;
+                }
+                p{
+                    margin: 10px 0;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    text-shadow: #000 1px 1px 2px;
+                    animation-name: fadeInDown;
+                }   
+                a{
+                    display: block;
+                    font-weight: normal;
+                    padding: 10px 20px;
+                    font-size: 25px;
+                    color: #fff;
+                    border-radius: 30px;
+                    text-align: center;
+                    margin-top: 20px;
+                    text-decoration: none;
+                    text-shadow: none;
+                    animation-name: fadeInUp;
+                    background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);  
+                    &:hover{
+                        background-image: linear-gradient(to top, #ff0000 0%, #ff6b6b 100%);
+                    }    
+                }   
+                img.platlogo{
+                    width: 176px;
+                    height: 40px;
+                    max-width: 176px;
+                    margin-bottom: 20px;
+                } 
+            }
+            img.bigImg{
+                position: absolute;
+                right: 22vw;
+                top: 50px;
+                width: 26vw;
+                animation-name: fadeInLeft;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+            }
+        }  
+        // 导航捕鱼
+        .fishTab{
+            width: 100%;
+            background: rgba(255,255,255,0.2);
+            bottom: 120px;
+            position: absolute;
+            height: 120px;
+            z-index: 1;
+            overflow: hidden;
+            padding: 5px 0 ;
+            .slide-indicators{
+                height: 100%;
+            }
+            .FishBox{
+                background-color: rgba(5, 104, 143, 0.65);
+                cursor: pointer;
+                margin-right: 5px;
+                height: 110px;
+                display: inline-block;
+                &.active{
+                    background-color: #ffeb3b;
+                    span{
+                        background-color: #d66d00;
+                        color: #ff0;
+                    }
+                }
+                img{
+                    display: block;
+                    height: 70px;
+                    margin: 0 auto;
+                }
+                span{
+                    display: block;
+                    width: 100%;
+                    background-color: #003b5b;
+                    color: #fff;
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-size: 12px;      
+                }    
+            }
+            // 前进后退
+            .owl-nav{
+                position: absolute;
+                width: 0;
+                height: 0;
+                z-index: -1;
+                top: 0;
+                .owl-prev,.owl-next{
+                    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E") ;
+                    width: 27px;
+                    height: 44px;
+                    position: absolute;
+                    z-index: 99;
+                    top: 35px;
+                    cursor: pointer;
+                    span{
+                        display: none;
+                    }
+                }
+                .owl-prev{
+                    left: -50px;
+                }
+                .owl-next{
+                    right:-1050px;
+                    transform: rotate(-180deg)
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,29 @@
+.newCasinoPage{
+    background: #f2e4b1;
+    min-height: 800px;
+    .casinoWrap{
+        width: 1022px;
+        padding: 20px 0;
+        .casinoBg{
+            background: #705015;
+            padding: 10px;
+            border-radius: 6px;
+            .casino_game{
+                margin: 6px;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                float: left;
+                &:hover{
+                    border: 1px solid #fff000;
+                }
+                .bigPic{
+                    width: 320px;
+                    height: 291px;
+                }
+                .titleSpan{
+                    display: none;
+                }
+            }
+        }
+    }
+}

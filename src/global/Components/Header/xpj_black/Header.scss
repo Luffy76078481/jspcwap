@@ -1,0 +1,161 @@
+#topHead{
+    .headBg {
+        background: url(./images/headBg.jpg) no-repeat;
+        background-color: #11100e;
+        border-bottom: 1px solid #23221f;
+        .logo {
+            float: left;
+            .innerLogo {
+                display: block;
+                height: 104px;
+                width: 290px;
+                background: url(./images/logo.png) center center no-repeat;
+            }
+        }
+        .credit {
+            display: block;
+            height: 100px;
+            float: left;
+            margin-left: 112px;
+            width: 260px;
+            background: url(./images/credit.gif) 50% no-repeat;
+            background-size: 95%;
+            opacity: .9;
+        }
+        .loginForm {
+            float: right;
+            color: #fff;
+            .timeNumber{
+                padding-top: 10px;
+                margin-left: 90px;
+                span,a{
+                    float: left;
+                    font-size: 12px;   
+                    padding-right: 10px;    
+                    color: #ffffff;
+                    &.fav {
+                        color: #ffea99;
+                    }
+                }
+                i{
+                    margin-right: 5px;
+                }
+                .personal{
+                    display: block;
+                    cursor: pointer;
+                    padding: 0;
+                    &:hover{
+                        text-decoration: underline;
+                        color: #ffea00;                        
+                    }
+                }
+                .personalHide{
+                    display: none;
+                }
+            }
+            // 登陆后
+            .afterLogining {
+                border: 1px solid #64563f;
+                font-size: 14px;
+                text-align: left;
+                margin-top: 10px;
+                .item{
+                    padding: 0 2px;
+                }
+                border: 1px solid #64563f;
+                span {  color: #fff;   padding-left: 5px;}
+                a {
+                    color: #fff;
+                }
+                a:hover {  color: #ecb934;  }
+            }
+            // 登录前
+            #login-form {
+                input{
+                    color: #000;
+                }
+                // 登录按钮，忘记密码
+                .form-login-button{
+                    .form-login-btn {
+                        background: url(./images/inco_login.png) no-repeat;
+                        width: 102px;
+                        height: 25px;
+                        border: 0;
+                        &:hover {  
+                            background-position: 0px -25px;  
+                        }                      
+                    }
+                    a{
+                        color: #ffea99;
+                    }
+                }
+                // 注册按钮
+                .form-login-reg {
+                    width: 66px;
+                    height: 60px;
+                      a {
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-between;
+                          align-items: center;
+                          color: #ccc;
+                          background-color: #282723;
+                          font-size: 20px;
+                          &:visited,:hover{
+                            text-decoration: none;
+                          }
+                    }
+                }
+            }
+        }
+    }
+    // 导航条容器
+    .menu-nav {
+        padding: 3px 0;
+        height: 40px;
+    }
+    // 公告栏
+    .notice {
+        color: #ffffff;
+        background: url(./images/subnavBg.png) repeat-x;
+        border-top: 1px #5c4f3b solid;
+        border-bottom: 1px #5c4f3b solid;
+        .container {
+            padding-left: 10px;
+            .row {
+                .noticeCenter {
+                    float: left;
+                    height: 30px;
+                    overflow: hidden;
+                }
+                .noticeLeft {
+                    text-decoration: none;
+                    height: 30px;
+                    text-align: end;
+                    color: #ffea99;                
+                    .msg_tip_txt {
+                        font-size: 15px;
+                        text-align: end;
+                        box-sizing: border-box;
+                        display: block;
+                        line-height: 30px;
+                        height: 30px;
+                        font-style: normal;                 
+                        &::before {
+                            position: absolute;
+                            right: 75px;
+                            top: 4px;
+                            content: '';
+                            width: 20px;
+                            height: 20px;
+                            background: url("./images/msg_icon.png") no-repeat 0 0/100%;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

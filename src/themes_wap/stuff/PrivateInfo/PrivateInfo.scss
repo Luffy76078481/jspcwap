@@ -1,0 +1,509 @@
+.PrivateInfo {
+    .scroll-content {
+        padding: .3rem;
+
+        .item_box {
+            margin: 5% 0;
+            padding: .2rem;
+            background-color: #fff;
+            border-radius: .2rem;
+            overflow: hidden;
+            outline: 0;
+            -webkit-box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+            -moz-box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+            box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+
+            .line {
+                border-bottom: 1px solid #e6e6e6;
+                padding-bottom: .2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                &.no_bottom_border {
+                    border-bottom: none;
+                    padding-top: .2rem;
+                    padding-bottom: 0;
+                }
+
+                .title {
+                    font-size: .24rem;
+                    font-weight: 800;
+                    line-height: 27px;
+                }
+
+                .content {
+                    font-size: .28rem;
+                    color: #000;
+                    line-height: 27px;
+                    display: flex;
+                }
+
+                .edit {
+                    .icon {
+                        display: inline-block;
+                        width: .5rem;
+                        height: .5rem;
+                        border-radius: 5px;
+                        line-height: .5rem;
+                        text-align: center;
+                        margin-left: 5px;
+                        color: #fff;
+                        font-size: .32rem;
+                        box-sizing: border-box;
+                        padding: 0;
+                    }
+                }
+
+                i {
+                    padding: 5px;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: .24rem;
+                    font-style: normal;
+
+                    &.unverified {
+                        background: #f00;
+                    }
+                }
+            }
+
+            .line_change {
+                padding-top: .2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                &.withdraw {
+                    padding-top: 0;
+                }
+
+                .title {
+                    font-size: .24rem;
+                    font-weight: 800;
+                    line-height: 27px;
+                    color: #000;
+                }
+
+                .content {
+                    .icon {
+                        display: inline-block;
+                        width: .5rem;
+                        height: .5rem;
+                        border-radius: 5px;
+                        line-height: .5rem;
+                        text-align: center;
+                        margin-left: 5px;
+                        color: #fff;
+                        font-size: .32rem;
+                    }
+                }
+            }
+
+            .line_no_btm {
+                padding-top: .2rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .title {
+                    font-size: .24rem;
+                    font-weight: 800;
+                    line-height: 27px;
+                    color: #000;
+                }
+
+                .content {
+                    font-size: .24rem;
+                    line-height: 27px;
+
+                    .icon {
+                        display: inline-block;
+                        width: .5rem;
+                        height: .5rem;
+                        border-radius: 5px;
+                        line-height: .5rem;
+                        text-align: center;
+                        margin-left: 5px;
+                        color: #fff;
+                        font-size: .32rem;
+                        box-sizing: border-box;
+                    }
+                }
+
+                i {
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: .24rem;
+                    font-style: normal;
+
+                    &.unverified {
+                        background: #f00;
+                    }
+                }
+            }
+        }
+
+        #bindPhoneModal,
+        #bindEmailModal {
+            display: none;
+
+            .modal-backdrop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                opacity: 0.3;
+            }
+
+            .modal-dialog {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                height: 33vh;
+                width: 86vw;
+                background-color: #fff;
+                transform: translateY(-50%);
+
+                .modal-content {
+                    overflow: hidden;
+                    box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .modal-header {
+                        text-align: center;
+                        color: #fff;
+                        padding: 15px 0;
+                        position: relative;
+
+                        #PhoneModalClose,
+                        #EmailModalClose {
+                            opacity: .8;
+                            position: absolute;
+                            right: .2rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            width: .4rem;
+                            height: .4rem;
+                            line-height: .4rem;
+                            padding: 0;
+                            font-size: .32rem;
+                            color: #000;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    .modal-body {
+                        position: relative;
+                        flex: 1;
+
+                        .forms {
+                            .user_phone {
+                                display: flex;
+                                align-items: center;
+                                padding: .2rem 0 0 .3rem;
+
+                                .text {
+                                    width: 26%;
+                                }
+
+                                .cust_input {
+                                    width: 50%;
+                                    border: 1px solid #ccc;
+                                    outline: none;
+                                    padding-left: 5px;
+                                    height: .6rem;
+                                    color: #000;
+                                }
+                            }
+
+                            .verify_code {
+                                display: flex;
+                                align-items: center;
+                                padding: .2rem 0 0 .3rem;
+
+                                .text {
+                                    width: 26%;
+                                }
+
+                                .user_input {
+                                    flex: 1;
+
+                                    .input_code_box {
+                                        width: 68%;
+                                        border: 1px solid #ccc;
+                                        outline: none;
+                                        padding-left: 5px;
+                                        height: .6rem;
+                                        color: #000;
+                                    }
+
+                                    .get_code_btn {
+                                        color: #fff;
+                                        border: none;
+                                        margin-left: .2rem;
+                                        padding: 4px 8px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .confirm_btn {
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            margin-top: .4rem;
+
+                            .button {
+                                color: #fff;
+                                border: none;
+                                padding: .2rem .4rem;
+                                font-size: .26rem;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .editQQ,
+        .editWeChat,
+        .verify_log_pwd,
+        .editPhone,
+        .editName,
+        .editBirthday {
+            display: none;
+
+            .modal-backdrop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                opacity: 0.3;
+            }
+
+            .am-list-item {
+                padding: 0 !important;
+                margin: .4rem auto !important;
+
+                .am-list-line {
+                    padding: 0 !important;
+                }
+
+                .am-input-control {
+                    margin-left: 0 !important;
+
+                    input {
+                        width: 80%;
+                        // margin-left:10%;
+                        border: 1px solid #ccc;
+                        height: .76rem;
+                        line-height: .76rem;
+                        padding: 0 .2rem;
+                        border-radius: 10px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+
+            .modal-dialog {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 86vw;
+                background-color: #fff;
+                transform: translateY(-50%);
+
+                .modal-content {
+                    overflow: hidden;
+                    box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .modal-header {
+                        text-align: center;
+                        color: #fff;
+                        padding: 15px 0;
+                        position: relative;
+
+                        .dismiss {
+                            opacity: .8;
+                            position: absolute;
+                            right: .2rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            width: .4rem;
+                            height: .4rem;
+                            line-height: .4rem;
+                            padding: 0;
+                            font-size: .32rem;
+                            color: #000;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    .modal-body {
+                        position: relative;
+                        flex: 1;
+                        text-align: center;
+
+                        .input_qq {
+                            width: 80%;
+                            margin: .4rem auto;
+                            border: 1px solid #ccc;
+                            height: .76rem;
+                            line-height: .76rem;
+                            padding: 0 .2rem;
+                            border-radius: 10px;
+                            box-sizing: border-box;
+                        }
+
+                        .confirm_btn {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 80%;
+                            margin: 0 auto .4rem;
+
+                            .button {
+                                color: #fff;
+                                border: none;
+                                padding: .2rem .8rem;
+                                font-size: .26rem;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .editEmail {
+            display: none;
+
+            .modal-backdrop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                opacity: 0.3;
+            }
+
+            .modal-dialog {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 86vw;
+                background-color: #fff;
+                transform: translateY(-50%);
+
+                .modal-content {
+                    overflow: hidden;
+                    box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .modal-header {
+                        text-align: center;
+                        color: #fff;
+                        padding: 15px 0;
+                        position: relative;
+
+                        .dismiss {
+                            opacity: .8;
+                            position: absolute;
+                            right: .2rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: 0;
+                            width: .4rem;
+                            height: .4rem;
+                            line-height: .4rem;
+                            padding: 0;
+                            font-size: .32rem;
+                            color: #000;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    .modal-body {
+                        position: relative;
+                        flex: 1;
+                        text-align: center;
+
+                        .input_email {
+                            width: 80%;
+                            margin: .4rem auto;
+                            border: 1px solid #ccc;
+                            height: .76rem;
+                            line-height: .76rem;
+                            padding: 0 .2rem;
+                            border-radius: 10px;
+                            box-sizing: border-box;
+                        }
+
+                        .confirm_btn {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 80%;
+                            margin: 0 auto .4rem;
+
+                            .button {
+                                color: #fff;
+                                border: none;
+                                padding: .2rem .8rem;
+                                font-size: .26rem;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.input_phone,
+.input_name {
+    width: 80%;
+    margin: .4rem auto;
+    border: 1px solid #ccc;
+    height: .76rem;
+    line-height: .76rem;
+    padding: 0 .2rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.moring {
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-size: .3rem;
+}

@@ -1,0 +1,48 @@
+div[data-theme="LightBrown"]{
+    // ____________________________________ * 注册页 *  ____________________________________
+    .RegisterNewPage{
+        background: #381f05;
+        .RegisterContent{
+            background: #43280b;
+            box-shadow: 0px 0px 3px 3px #9f7c33;
+            .RegisterTitle{
+                border-bottom: 2px solid #c4a852;
+                h1,p{
+                    color: #fff;
+                }
+            }
+            // 注冊表單
+            form{
+                // 輸入框
+                .InputWrap{
+                    >div{
+                        input,select.PayPassWord{
+                            border: 1px solid #ccc;
+                            background-color: #fcfcfc;
+                            color: #222;                     
+                        }
+                        // 提示语
+                        >span{
+                            color: #deb66c;
+                        }
+                    }
+                    p{
+                        color: #fff;
+                    }
+                }
+                // 提示語
+                .checkboxWrap {
+                    .RegNotice{
+                        color: #fff
+                    }
+                }
+                // 提交
+                .ButtonWrap{
+                    button{
+                        background: #d4b659;
+                    }
+                }
+            }            
+        }
+    } 
+}

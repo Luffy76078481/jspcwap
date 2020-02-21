@@ -1,0 +1,278 @@
+
+
+.FirstPage{
+    .FirstPageWrap{
+        // 真人平台滑动部分
+        .casinoPlatform{
+            padding: 15px 0 0;
+            .CasinoItem{
+                padding-left: 30px;
+                .platform-img{
+                    width: 70px;
+                    float: left;
+                    margin-right: 10px;
+                    .platform-img-style{
+                        width: 70px;
+                        height: 60px;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        background-position: center;
+                    }
+                    .platformNumber{
+                        padding-top: 10px;
+                        i,span{
+                            color: #f7aa9d;
+                        }
+                    }                    
+                }
+                .platformIntroduction{
+                    width: 170px;
+                    float: left;
+                    h4{
+                        color: #f7aa9d;
+                        margin-top: 10px;
+                        margin-bottom: 5px
+                    }
+                    p{
+                        color: #fff;
+                    }
+                    a{
+                        background: #6b423b;
+                        color: #fff;        
+                        display: block;
+                        text-align: center;
+                        width: 85px;
+                        border-radius: 100px;
+                        line-height: 24px;
+                        transition: all .4s ease;
+                        height: 24px;
+                        &:hover{
+                            color: #ffea00
+                        }  
+                    }
+                }
+            }
+        }
+        // 内容部分
+        .indexContent{
+            // 奖池
+            .contentJackpot{
+                width: 400px;
+                padding: 0 15px;
+                float: left;
+                h3{
+                    color: #fff;
+                    margin-top: 20px;
+                }
+                ul{
+                    li{
+                        border-top: 1px dashed #b45656;  
+                        line-height: 40px;
+                        height: 40px; 
+                        >span{
+                            color: #fff;
+                        }
+                        i{
+                            background-color: #6b423b;
+                            color: #ffea00;
+                            width: 50%;
+                            text-align: center;
+                            border-radius: 100px;
+                            height: 23px;
+                            line-height: 23px;
+                            margin-top: 7px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            float: right
+                        }
+                    }
+                }
+            } 
+            // 公告，VIP,广告
+            .noticeContent{
+                width: 800px;
+                padding: 0 15px;
+                float: right;
+                .Vip{
+                    background: #6b423b;
+                    padding: 0 10px;
+                    color: #ff9c00;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-top: 10px;
+                    h4{
+                        float: left;
+                        margin: 0px;
+                        line-height: 35px;
+                        width: 15%;
+                        color: #ff9c00;
+                    }     
+                    .noticeCenter{
+                        width: 85%;
+                        float: right;
+                    }               
+                }
+                .AD{
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    height: 212px;
+                }
+            }           
+        }
+        // 内容底部
+        .contentLast{
+            margin-top: 20px;
+            h3{
+                color: #fff;
+            }  
+            // 电子
+            .content-game{
+                width: 400px;
+                padding: 0 15px;
+                float: left;  
+                .content-game-list{
+                    .prizeItem{
+                        a.imgbg{
+                            display: block;
+                            width: 100%;
+                            height: 172px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                        .img0{
+                            background-image: url(./images/game_0.jpg)
+                        }
+                        .img1{
+                            background-image: url(./images/game_1.jpg)
+                        }
+                        .img2{
+                            background-image: url(./images/game_2.jpg)
+                        }                    
+                    }
+                    .GameIntroduction{
+                        margin-top: 10px;
+                        .IntroductionLeft{
+                            width: 80%;
+                            overflow: hidden;
+                            float: left;
+                            h4{
+                                color:#ff9c00
+                            }
+                            p{
+                                color: #fff;
+                            }
+                        }     
+                        a{
+                            float: right;
+                            width: 60px;
+                            text-align: center;
+                            line-height: 30px;
+                            background-color: #e37b00;
+                            color: #fff;
+                            text-decoration: none;
+                            margin-top: 20px
+                        }                   
+                    }                      
+                }
+            }
+            // 彩票
+            .content-bingo{
+                width: 400px;
+                float: left;
+                .content-bingo-fname{
+                    background: #6b423b;
+                    padding: 5px;
+                }
+                .content-bingo-list{
+                    float: left;
+                    width: 75%;
+                    background: #2b1212;
+                    padding: 2.5%;
+                    .item{
+                        width: 245px;
+                        height: 152px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .item.bingo_0{
+                        background-image: url(./images/bingo_0.png)
+                    }
+                    .item.bingo_1{
+                        background-image: url(./images/bingo_1.png)
+                    }
+                    .item.bingo_2{
+                        background-image: url(./images/bingo_3.png)
+                    }
+                    .item.bingo_3{
+                        background-image: url(./images/bingo_2.png)
+                    }
+                }
+                .content-bingo-title{
+                    float: left;
+                    width: 25%;
+                    text-align: center;
+                    a{
+                        display: block;
+                        line-height: 43px;
+                        font-size: 18px;
+                        color: #fff;
+                        &.active{
+                            background: #2b1212;
+                        }
+                    }
+                }
+                .content-bingo-offers{
+                    border-bottom: 1px dotted #b45656;
+                    padding: 10px 0;     
+                    a{
+                        color: #fff;
+                        font-size: 16px;
+                    } 
+                    span{
+                        float: right;
+                        background: #932312;
+                        width: 85px;
+                        text-align: center;
+                        font-size: 12px;
+                        padding: 2px 5px 4px;
+                        font-style: normal;
+                    }
+                }
+            }
+            //数据
+            .content-data{
+                width: 400px;
+                padding: 0 15px;
+                float: left;
+                .hour24{
+                    width: 280px;
+                    height: 68px;
+                    background: url(./images/hous_03.png) no-repeat;
+                }
+                ul li{
+                    margin: 25px 0;
+                    font-size: 16px;
+                    div.data-list-title{
+                        width: 32%;
+                        float: left;
+                        color: #fff;
+                    }
+                    div.data-list-style{
+                        float: left;
+                        width: 60%;
+                        background: #6b423b;
+                        border-radius: 50px;
+                        overflow: hidden;
+                        font-size: 14px;
+                        span{
+                            float: left;
+                            background: #ffa200;
+                            padding: 0 5px;
+                            color: #000;
+                        }
+                    }              
+                }
+            }
+        }
+    }
+}

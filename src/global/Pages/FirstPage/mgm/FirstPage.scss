@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.mgmFirst .contentgo {
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  background: url('./images/gamebg.jpg');
+}
+.mgmFirst .bigbx {
+  display: inline-block;
+  width: 1000px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+.linkto{
+  display: inline-block;
+  width: 667px;
+  height: 300px;
+  position: absolute;
+  cursor: pointer;
+}
+.casinolink{
+  left: 0;
+  background: url("./images/itemtimg_01.jpg") no-repeat;
+  transition: .5s;
+}
+.sportlink{
+  left: 667px;
+  background: url("./images/itemtimg_02.jpg") no-repeat;
+  transition: .5s;
+}
+.bingolink{
+  left: 841px;
+  background: url("./images/itemtimg_03.jpg") no-repeat;
+  transition: .5s;
+}
+
+.about{
+  width: 100%;
+  height: 359px;
+  background: url("./images/about.png");
+  background-position: center;
+}
+
+.content5 {
+  width: 100%;
+  height: 41px;
+  text-align: center;
+  color: #635846;
+  font-size: 12px;
+  background: #43280b;
+  padding-bottom: 10px;
+  .service {
+    width: 100%;
+    border-bottom: 1px #434343 dotted;
+    ul {
+      height: 36px;
+      color: #635846;
+      font-size: 14px;
+      display: inline-block;
+      margin: 0 auto;
+      li {
+        float: left;
+        margin-right: 20px;
+        line-height: 36px;
+        color: #ffa34a;
+        a{
+          color: #ffa34a!important;
+        }
+        span {
+          font-family: "Arial", "";
+          color: #e8d060;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*
+    代理页面私有样式 —————— 原则上只放 颜色和图片引用，个别样式调整
+*/
+
+body{
+  background-color: #FFF;
+  color: #fff;
+}
+
+#agent{
+//   .tableList {
+//     color: #c83434;
+//     border: 1px solid #bbb;
+//     background: none;
+//     tr td {
+//       border-top: 1px solid #bbb;
+//       border-left: 1px solid #bbb;
+//     }
+//   }
+  // _____________________________________________头部  ——————————————————————————
+  .header_bg{
+    background: #c83434;
+    // 顶部
+    .header {
+      border-bottom: 1px solid #b02e2e;
+      .header_left{
+        background:  url(./resources/daili_logo.png) no-repeat left;
+      }
+      .header_right {
+        background: url(./resources/index_head_right.jpg) no-repeat right;
+      }
+    }  
+    // 导航
+    .menuNav{
+      border-top: 1px solid #b02e2e;
+      box-shadow: inset 0 1px 0 0 #b02e2e;
+      ul{
+        li{
+          a {
+            &.now{
+              background-color: #b02e2e;// 选中导航背景颜色
+            }
+          }
+        }
+      }
+    }
+  }
+  // _____________________________________________底部  ——————————————————————————
+  .footer {
+    background: #f6f6f6;
+    .footer_bg {
+      background: url(./resources/footer_logo.png) no-repeat;
+    }
+  }
+  .footerNav {
+    background: #ffffff;
+    .footerNavBtn{
+      a{
+        color: #222; 
+        &:hover{
+          color: #b02e2e;
+        } 
+      }
+    }
+  }
+  // _____________________________________________首页  ——————————————————————————
+  #IndexContent{
+    color: #222;
+    .content_up{
+      border-bottom: 1px solid #c1c2c3;
+    }
+    .imgLeft {
+      background: url(./resources/index_diannao_logo.png) no-repeat;
+    }
+    // 现在申请 代理登入
+    .sqBtnStyle{
+      background: #c83434;
+      color: #ffffff;
+      &:hover {
+        background: #ff0000 !important;
+      }
+    }
+  }
+  // _____________________________________________品牌介绍  ——————————————————————————
+  #BrandContent{
+    color: #222;
+    .brandBanner {
+      background: url(./resources/brandBanner.png);
+    }
+    .contentText1, 
+    .contentText2, 
+    .contentText3 {
+        border-bottom: 1px solid #c1c2c3;
+    }
+    & .icon1 {
+      background:  url(./resources/product_05.jpg) no-repeat center;
+    }
+    & .icon2 {
+      background:  url(./resources/product_07.jpg)  no-repeat center;
+    }
+    & .icon3 {
+      background:  url(./resources/product_09.jpg)  no-repeat center;
+    }
+  }
+  .productMix{
+      background: #c83434;
+      &:hover{
+          background: #ff0000;
+      }
+  }
+  // _____________________________________________合营计划  ——————————————————————————
+  #AllianceContent{
+    .moneyStepList{
+      background: transparent;
+    }
+    .fnameCenter{
+      h3,p,span{
+        color:#222;
+      }
+    }
+    // 箭头颜色
+    .moneyBorderSan {
+      border-left: 35px solid #222;
+    }
+  }
+  // _____________________________________________立即加入  ——————————————————————————
+  #Registered{
+    .register_title_img{
+      background: url("./resources/ag_reg.png")center center no-repeat;
+    }   
+    label.inptfont{
+      color: #555
+    } 
+    .reg-fnameContent {
+      border: none;
+      background: #f6f6f6;
+    }   
+    .submit_btn_input {
+      background: #c83434;
+      color: #fff;
+      border: none;
+    }
+    p.tiShi {
+      color: #c83434;
+    }
+  }
+  // _____________________________________________营销工具  ——————————————————————————
+  #ToolsContent{
+      span,h3,p,i{
+        color:#000;
+      }
+  }
+  // _____________________________________________常见问题  ——————————————————————————
+  #FaqContent {
+    .help-fousImg .img{
+      background: url(./resources/help_page_banner.jpg) center no-repeat;
+    }
+    .helpStyle{
+      h3{
+        background-color: #c83434;
+        color:#fff;
+      }
+      .helpList{
+        a,p{
+          color: #000;
+        }
+      }
+    }    
+  }
+  // _____________________________________________联系我们  ——————————————————————————
+  #ContactContent{
+    .iconGroup{
+      color: #c83434;
+    }
+    .contactHzImg{
+      span{
+        color: #222;
+      }
+      span.logoImg{
+        background:  url(./resources/suiyi.png) bottom center;
+        width: 131px;
+        height: 30px;
+      }
+    }
+    .contactFname {
+      p{
+        display: flex;
+        span{
+          align-self: center;
+        }
+      }
+    } 
+  }
+}

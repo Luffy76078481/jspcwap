@@ -1,0 +1,16 @@
+.affix-right{
+  position: fixed;
+  top: 220px;
+  right:-150px;
+  transition: all .5s;
+  .cont{
+    float:left;
+  }
+  .cols{
+    float:left;
+  }
+  &:hover{
+    right:0px;
+  }
+
+}

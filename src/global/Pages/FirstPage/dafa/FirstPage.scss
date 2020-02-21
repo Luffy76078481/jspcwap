@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+// ∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪ 公告 ∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪
+.NewNoticeList{
+  width: 100%;
+  background: #b00002;
+  font-size: 16px;
+  padding: 5px 0;
+  height: 35px;
+  a{
+    color: #ff0;
+  }
+}
+
+// ∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪ 内容 ∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪∪
+#dafa_indexContent{
+  padding-top: 15px;
+}
+.dafa_secondSlider-1,.dafa_secondSlider-2,.dafa_secondSlider-3{
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 33.3%;
+}
+.dafa_container{
+  min-width: 1300px;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 100px;
+  padding-left: 100px;
+  .dafa_index_box{
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0 .4%;
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .dafa_sport-down,.dafa_casino-down{
+      margin-top: 2.3%;
+      width: 100%;
+    }
+    .dafa_sport-up,.dafa_casino-up{
+      width: 100%;
+      position: relative;
+    }
+    .dafa_casino-up{
+      width: 100%;
+      position: relative;
+    }
+    .dafa_index_cover_btn:hover{
+      background: #ffe000;
+      color: rgba(0,0,0,.8);
+      text-decoration: none;
+    }
+    .dafa_index_cover_btn{
+      background: transparent;
+      color: #ffe000;
+      border-radius: 2px;
+      border: 2px solid #ffe000;
+      padding: 0 5px;
+      min-width: 175px;
+      width: 175px;
+      height: 52px;
+      line-height: 52px;
+      font-size: 22px ;
+      display: inline-block;
+      vertical-align: middle;
+      text-decoration: none;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-weight: bolder;
+    }
+    .box{
+      position: relative;
+      &:hover{
+        .dafa_index_cover{
+          display: block;
+        }
+      }
+      .dafa_index_title{
+        width: 100%;
+        height: 34px;
+        background-color: #af0102;
+        font-size: 23px;
+        color: #fff;
+        padding: 5px 15px;
+        font-weight: bolder;    
+      }
+      .dafa_index_text{
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0,0,0,.8);
+        font-size: 18px;
+        color: #fff;
+        padding: 10px  15px;
+        text-align: center;
+      }
+      .dafa_index_cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0,.6);
+        display: none;
+      }
+    }
+  }
+}

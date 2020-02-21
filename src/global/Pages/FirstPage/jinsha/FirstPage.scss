@@ -1,0 +1,446 @@
+.main-content{
+    position: relative;
+    div{
+        box-sizing: content-box;
+    }
+    .notice{
+        background: #010101;
+        .newNotice{
+            float: left;
+            width: 90px;
+            height: 16px;
+            line-height: 16px;
+            padding-left: 26px;
+            margin: 12px 0 0 0;
+            color: #E9D77B;
+            display: block;
+            background: url(./images/news_icon.png) no-repeat 0 50%;
+            font-size: 12px;
+        }        
+        .noticeCenter{
+            position: relative;
+            height: 38px;
+            overflow: hidden;
+            line-height: 35px;
+            width: 900px;
+            a{
+                color: #c6c6c6;
+            }
+        }
+    }
+
+    .banner_wrap{
+        //background: url(./images/slider_bg.png) 50% 0;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        .first-login-wrap{
+            box-sizing: content-box;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            z-index: 1;
+            width: 207px;
+            height: 170px;
+            padding: 20px 20px 15px;
+            background: url(./images/login_bg.png) no-repeat 0 0;
+            button{
+                border: none;
+            }
+            .custom-btn-login{
+                width: 97px;
+                height: 40px;
+                display: inline-block;
+                background-position: 0 -228px;
+                cursor: pointer;
+                background: url(./images/btn_login.png) no-repeat;
+                transition: none;
+            }
+            .link-register{
+                width: 97px;
+                height: 40px;
+                display: inline-block;
+                margin-left: 5px;
+                background: url(./images/btn_joinus.png) no-repeat;
+            }
+            .loginNameWrap{
+                width: 100%;
+                position: relative;
+                margin-bottom: 10px; 
+                a.forgetPass{
+                    position: absolute;
+                    right: 10px;
+                    top: 11px;
+                    color: #C39541;
+                    font-size: 12px;
+                }
+                img{
+                    display: inline-block;
+                    width: 80px; 
+                }
+                .toAgent{
+                    float: right;
+                    font-size: 20px;
+                    position: relative;
+                    top: -4px;
+                    font-weight: 500;
+                    background: -webkit-gradient(linear,left top,right top,from(#ffe84a),to(#ba9133));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                }
+                input{
+                    width: 100%;
+                    height: 33px;
+                    line-height: 33px;
+                    background: transparent;
+                    border-radius: 3px;
+                    border: 1px solid #323232;
+                    box-sizing: border-box;
+                    color: #787878;
+                    text-indent: 5px;
+                }
+            }
+            &.success-login{
+                width: 280px;
+                background: none;
+                .success-login-box{
+                    background: linear-gradient(to bottom,#141516, rgba(34, 39, 47, 0.63));
+                    padding-bottom: 15px;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                    .signin-success-form{
+                        background: linear-gradient(to bottom,#141516, rgba(34, 39, 47, 0.63));
+                        margin: 15px 15px 0px 15px;
+                        background: rgba(38, 39, 40, 0.83);
+                        padding-top: 10px;
+                        span,a{
+                            font-size: 13px; 
+                        }
+                        ul.topUl{
+                            li{
+                                margin-left: 10px;
+                                margin-bottom: 15px;
+                                float: left;
+                                span{                           
+                                    color: #e4e4e4;
+                                }
+                                a{
+                                    color: #f1bd21;
+                                }
+                            }
+                        }
+                        ul.bUl{
+                            li{
+                                line-height: 100%;
+                                float: left;
+                                padding: 0px 8px;
+                                border-right: 1px solid #fff;
+                                margin-bottom: 15px;
+                                &:nth-of-type(3),&:last-child{
+                                    border-right: 1px solid transparent;;
+                                }
+                                span{                           
+                                    color: #f1bd21;
+                                }
+                                a{
+                                    color: #e4e4e4;
+                                }
+                            }
+                        }
+                        .loginOut{
+                            position: static;
+                            width: 100%;
+                            display: block;
+                            padding: 20px 0px;
+                            margin: 0px;
+                            text-align: center;
+                            background: url(./images/sl-btn.png);
+                            text-indent: -1000rem;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            margin-top: 20px;                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .FirstContents{
+        .first-top-btns{
+            width: 1000px;
+            height: 75px;
+            margin: 0 auto;
+            box-sizing: content-box;
+            padding-top: 18px;
+            a{
+                float: left;
+                width: 184px;
+                height: 58px;
+                &.top-save-btn{
+                    background: url(./images/btn_howtodeposit.png) no-repeat 50% 0;
+                }
+                &.top-take-btn{
+                    background: url(./images/btn_howtowithdrawals.png) no-repeat 50% 0;
+                }
+                &.top-download-btn{
+                    background: url(./images/btn_download.png) no-repeat 50% 0;
+                }
+                &.top-guide-btn{
+                    background: url(./images/btn_guide.png) no-repeat 50% 0;
+                }
+            }
+            .top-btn-line{
+                float: left;
+                width: 1px;
+                height: 50px;
+                margin-left: 38px;
+                margin-right: 48px;
+                background-color: #282828;
+            }
+        }
+        .two_style_bg{
+            background: url(./images/container_img01.jpg) 50% 0;
+            padding-bottom: 155px;
+            .first-casino-wrap{
+                width: 1016px;
+                margin: 0 auto;
+                .casino-text-wrap {
+                    height: 150px;
+                    box-sizing: content-box;
+                    padding: 150px 8px 0;
+                    .casino-left-text {
+                        float: left;
+                        width: 270px;
+                    }
+                    .casino-right-text {
+                        float: right;
+                        width: 270px;
+                    }
+                    .casino-title {
+                        margin-bottom: 14px;
+                        font-size: 18px;
+                        color: #CFBD71;
+                    }
+                    .casino-content {
+                        line-height: 20px;
+                        color: #969696;
+                    }
+                }
+            }
+        }
+        .gameTOgame{
+            padding-bottom: 15px;
+            margin-top: -136px;
+            .first-casino-wrap{
+                width: 1016px;
+                margin: 0 auto;
+                .casino-game-link{
+                    float: left;
+                    width: 156px;
+                    margin-left: 58px;
+                    padding-top: 18px;
+                    box-sizing: content-box;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    .casino-game-pic {
+                        float: left;
+                        width: 64px;
+                        height: 64px;
+                        background-image: url(images/container_img02.png);
+                        &.game-duobao{
+                            background-position: 0 0;
+                        }
+                        &.game-candyparty{
+                            background-position: 0 -64px;
+                        }
+                        &.game-cockfighting{
+                            background-position: 0 -128px;
+                        }
+                        &.game-breakaway{
+                            background-position: 0 -192px;
+                        }
+                        &.casino-reeldems{
+                            background-position: 0 100%;
+                        }
+                    }
+                    .casino-game-right {
+                        float: left;
+                        margin-left: 20px;
+                    }
+                    .casino-game-title {
+                        width: 72px;
+                        margin-bottom: 15px;
+                        color: #C7C7C7;
+                        font-size: 14px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    .play-link {
+                        padding-right: 16px;
+                        color: #E9D77B;
+                        text-decoration: none;
+                        background: url(./images/arrow01.png) no-repeat 100% 50%;
+                    }
+                }
+            }
+        }
+
+        .first-game-title{
+            width: 1016px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto;
+            color: #66451F;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .first-game-wrap{
+            width: 1000px;
+            height: 322px;
+            padding-top: 30px;
+            margin: 0 auto;
+            box-sizing: content-box;
+            .ele-firstgame{
+                a.js-ele-firstgame-fade{
+                    width: 220px;
+                    height: 290px;
+                    float: left;
+                    position: relative;
+                    overflow: hidden;
+                    margin-right: 40px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.BBIN{
+                        background: url(./images/ele-firstgame-1-bg.png);
+                    }
+                    &.AG{
+                        background: url(./images/ele-firstgame-2-bg.png);
+                    }
+                    &.OG{
+                        background: url(./images/ele-firstgame-3-bg.png);
+                    }
+                    &.AB{
+                        background: url(./images/ele-firstgame-4-bg.png);
+                    }
+                    &:hover{
+                        background-position: 0 -290px;
+                    }
+                }
+            }
+        }
+        .first-bottom-bg{
+            position: relative;
+            background-color: #212121;
+            .first-bottom-btn {
+                position: relative;
+                z-index: 1;
+                width: 1016px;
+                height: 294px;
+                margin: 0 auto;
+                padding-top: 30px;
+                box-sizing: content-box;
+                a{
+                    float: left;
+                    width: 310px;
+                    height: 264px;
+                    margin-right: 40px;
+                    background-repeat: no-repeat;
+                    background-position: 50% 0;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.bottom-game-sport{
+                        background-image: url(./images/btn_sport.png);
+                    }
+                    &.bottom-game-lottery{
+                        background-image: url(./images/btn_lottery.png);
+                    }
+                    &.bottom-join-agent{
+                        background-image: url(./images/btn_affiltation.png);
+                    }
+                    &:hover{
+                        background-position: 0 -265px;
+                    }
+                }
+            }
+            .first-bottom-line {
+                position: absolute;
+                top: 230px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #282828;
+            }
+        }
+
+        .first-qrcode-bg{
+            height: 381px;
+            border-bottom: 1px solid #282828;
+            background: url(./images/container_img03.png) no-repeat 50% 50% #1A1A1A;
+            .first-qrcode-wrap {
+                position: relative;
+                width: 584px;
+                margin: 0 auto;
+                padding-top: 154px;
+                padding-left: 432px;
+                box-sizing: content-box;
+                .first-qrcode-text {
+                    width: 360px;
+                    color: #949494;
+                    line-height: 24px;
+                    font-size: 12px;
+                }
+                .first-mobile-link {
+                    float: left;
+                    width: 109px;
+                    height: 29px;
+                    margin-top: 26px;
+                    margin-left: 288px;
+                    background: url(./images/btn_mobile.png) no-repeat 0 0;
+                }
+                .first-qrcode {
+                    position: absolute;
+                    top: 125px;
+                    right: 43px;
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+        }
+        .first-about-bg{
+            background-color: #1A1A1A;
+            .first-about-wrap {
+                width: 1016px;
+                height: 174px;
+                margin: 0 auto;
+                padding-top: 30px;
+                background: url(./images/container_img04.png) no-repeat 655px 30px;
+                .first-about-title{
+                    width: 600px;
+                    height: 18px;
+                    font-size: 18px;
+                    color: #E9D77B;
+                    .about-sub-title {
+                        margin-left: 20px;
+                        color: #636363;
+                    }
+                }
+                .first-about-content {
+                    width: 600px;
+                    margin-top: 18px;
+                    line-height: 22px;
+                    color: #969696;
+                    font-size: 12px;
+                }     
+            }       
+        }
+    }
+}

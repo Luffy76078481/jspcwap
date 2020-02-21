@@ -1,0 +1,77 @@
+
+/*
+    XPJ导航
+*/
+
+.MainNavigation{
+    position: relative;
+    // 1级导航
+    ul.mainNav{
+        li.mainMenu{
+            float: left;
+            width: 100px;
+            text-align: center;
+            position: relative;
+            a{
+                display: block;
+                color: #fff;
+                height: 36px;
+                font-size: 16px;
+                line-height: 36px;
+                &.active{
+                    color: #fff000;
+                }
+            }
+            &.hot::after{
+                content: "";
+                width: 21px;
+                height: 12px;
+                position: absolute;
+                top: -2px;
+                right: -5px;
+                background-size: 100%;
+                background-image: url(../images/hot.gif);
+                background-repeat: no-repeat;
+            }
+            &:hover ul.secondNav{
+                display: block;
+            }
+        }
+    }
+    // 2级导航
+    ul.secondNav{
+        z-index: 9;
+        left: 0;
+        padding-bottom: 5px;
+        height: auto;
+        display: none;
+        position: absolute;
+        outline: none;
+        top: 100%;
+        border: 2px solid #f7aa9d;
+        background: #43280b;
+        width: 105px;
+        transition: all .5s;
+        li{
+            font-size: 16px;
+            text-align: center;
+            font-size: 14px;
+            padding-top: 5px;
+            line-height: 24px;
+            color: #f7aa9d;
+            cursor: pointer;
+            &:hover{
+                color:#fff000;
+            }
+            &.hot::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -10px;
+                background: url(../images/hot2.gif) no-repeat;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

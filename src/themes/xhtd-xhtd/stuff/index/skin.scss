@@ -1,0 +1,466 @@
+@charset "utf-8";
+@import "variables";
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #6c4524  ;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #6c4524  ;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #6c4524  ;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #6c4524  ;
+}
+
+button {
+    outline: none !important;
+}
+
+body {
+    font-family: $font-family;
+    background: black;
+    font-size: $font-size;
+    color: $text-color-normal;
+}
+
+.form-login-input {
+    input ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: map-get($base, header-input-placeholder) !important;
+    }
+    
+    input ::-moz-placeholder { /* Firefox 19+ */
+        color: map-get($base, header-input-placeholder) !important;
+    }
+    
+    input :-ms-input-placeholder { /* IE 10+ */
+        color: map-get($base, header-input-placeholder) !important;
+    }
+    
+    input :-moz-placeholder { /* Firefox 18- */
+        color: map-get($base, header-input-placeholder) !important;
+    }
+}
+
+// ====================================================>  私有样式
+
+
+
+
+
+
+//__________header________________
+
+
+
+
+//____________跑馬燈 + 跳出公告_________________
+
+
+
+
+//___________________sweet彈出窗_____________________
+
+// .sweet-alert {
+//     background-color: #F2E4B1;
+//     border: 1px solid $border-color-deep;
+//     box-shadow: 0 0 10px $text-color-normal inset;
+// }
+
+// .sweet-alert h2 {
+//     color: map-get($base, sweet_title_color);
+// }
+
+// .sweet-alert p {
+//     color: map-get($base, sweet_color);
+// }
+
+// .sweet-alert button {
+//     background-color: $text-color-deep !important;
+//     font-weight: bold;
+//     color: $bg-color-dark;
+// }
+
+
+//___________________系統訊息彈出窗_____________________
+
+
+// .popupArea {
+//     border: solid 1px $border-color;
+//     background-color: map-get($base, footer-bgcolor2);
+//     box-shadow: 4px 3px 0px map-get($base, SystemMessage_box_shadow);
+//     color: white;
+// }
+
+// .popupTitle {
+//     font-size: 18px;
+// }
+
+
+//___________________會員登入彈出窗_____________________
+
+
+
+
+//__________footer________________
+
+
+
+
+//__________sport________________
+
+//------------sport2-------------
+
+//__________casino________________
+
+#casino2 {
+    background: #F2E4B1;
+    
+    .games {
+        display: none;
+    }
+    
+    .ad {
+        display: none;
+    }
+    
+    .container {
+        width: 1000px;
+        padding: 30px 0 50px 0;
+        
+        .casino-Content {
+            padding: 0;
+            
+            .casino-platform-list {
+                text-align: center;
+                width: 1020px;
+                padding: 10px 10px;
+                background: #705015;
+                
+                div.color-main {
+                    .c-items {
+                        margin: 6px !important;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.cansino-nav {
+    li {
+        background-color: map-get($base, casino_nav_bgcolor1);
+        
+        a {
+            color: $text-color-normal
+        }
+        
+        .cansino-start-game {
+            background: map-get($base, casino_nav_img) no-repeat;
+        }
+    }
+    
+    .cansino-nav-active {
+        background-color: #343535;
+    }
+}
+
+#casino2 .casino-platform-list div.color-main {
+    .casino-platform-list-img {
+        width: 320px;
+        height: 291px;
+        background-size: cover;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        
+        h3 {
+            display: none
+        }
+    }
+    
+    .casino-platform-list-img:hover {
+        border: 1px solid #E5C255;
+    }
+    
+    .casino-platform-list-link {
+        a {
+            display: none;
+        }
+        
+        a:hover {
+            background-position: 0px -50px;
+        }
+    }
+}
+
+
+//__________gamesPage________________
+
+#game {
+    width: 100%;
+    height: 355px;
+    background: map-get($base, game_upbg) top center no-repeat;
+    
+    .game-jackpot-num {
+        span {
+            color: $text-color-normal;
+        }
+    }
+    
+    .game-header-focus {
+        background: map-get($base, game_upboxbg) no-repeat;
+    }
+    
+    .game-header-focus-right {
+        li {
+            p {
+                color: $text-color-normal;
+            }
+            
+            div {
+                color: $text-color-hightline;
+                
+                i {
+                    background: map-get($base, game_money_icon) no-repeat;
+                    background-position: -6px -3px;
+                }
+            }
+        }
+    }
+}
+
+.broadcast-bg {
+    background: map-get($base, slider_img) top center no-repeat;
+}
+
+
+//__________gamelistpanel___遊戲版塊_____________
+
+.Games-content {
+    .broadcast {
+        display: none;
+    }
+}
+
+
+.game-list-content {
+    height: auto;
+    padding: 30px 0;
+    background: #F2E4B1;
+    
+    .platform_list2 {
+        width: auto;
+        font-weight: 600;
+        margin: 4px 10px;
+        line-height: 44px;
+        font-size: 22px;
+        color: #787878;
+    }
+}
+
+#Gamebg, #PTbg, #MGbg {
+    .container {
+        padding-top: 20px;
+        width: 1076px;
+    }
+}
+
+.game-start-btn {
+    content: url("resources/game/vgeahv.png")
+}
+
+//   左側遊戲分類   game-list-left-nav
+.game-list-left-nav {
+    background-color: #fafafa;
+    
+    .checkJackpot {
+        color: #333;
+    }
+    
+    .checkJackpot:hover label {
+        color: $text-color-dark;
+    }
+    
+    ul {
+        li {
+            a {
+                color: #333;
+            }
+            
+            span {
+                color: #333;
+            }
+        }
+        
+        .active {
+            a {
+                color: $text-color-dark !important;
+            }
+            
+            span {
+                color: $text-color-dark;
+            }
+        }
+        
+        li:hover a {
+            color: $text-color-dark;
+        }
+    }
+    
+    .searchbar {
+        input {
+            color: #000;
+            background-color: #fff;
+            
+            &::-webkit-input-placeholder {
+                color: #000
+            }
+            
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: white;
+            }
+            
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: white;
+            }
+            
+            &:-moz-placeholder { /* Firefox 18- */
+                color: white;
+            }
+            
+            &:focus {
+                border: solid 1px #000;
+            }
+            
+        }
+        
+        i {
+            color: 000;
+        }
+    }
+}
+
+.game-list-content2 .searchbartext {
+    border: solid 1px #000
+}
+
+.game-list-right-content {
+    #GamesGridPopupMask {
+        opacity: 0.6;
+        background: map-get($base, gamelistpanel_Loading_hoverMask);
+    }
+    
+    ul {
+        a {
+            span {
+                background: $bg-color-deep;
+                color: white;
+            }
+        }
+        
+        .game-fuceng {
+            background: map-get($base, gamelistpanel_games_hoverMask);
+        }
+    }
+    
+}
+
+.gamesPic {
+    background: url("resources/mgbox.png") no-repeat;
+}
+
+.game-list-fname {
+    width: 1050px;
+    margin: 0px auto;
+}
+
+
+.game-list-right-content {
+    width: 883px !important;
+    
+    li {
+        a {
+            span {
+                line-height: 42px;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.game-list-right-box {
+    display: none;
+}
+
+#game-page {
+    li {
+        a {
+            background: map-get($base, gamelistpanel_game_pageIcon_bg_color) !important;
+            color: $text-color-normal !important;
+            border: 1px solid map-get($base, gamelistpanel_game_pageIcon_border_color) !important;
+        }
+    }
+}
+
+
+#Gamebg {
+    .banner {
+        display: none;
+    }
+}
+
+
+.game-jackpot-num2 span {
+    background-color: #8c511c !important;
+}
+
+.list2_onchoose {
+    border-bottom-color: #b2742a !important;
+    color: #000 !important;
+}
+
+.game-list-left-nav li.active {
+    color: #FFD45B !important;
+    background: #FFD45B;
+    
+}
+
+.games_box {
+    .gamesPic {
+        width: 259px !important;
+    }
+    
+}
+
+
+//__________bingo________________
+
+
+
+
+//__________ptGame________________
+
+
+
+//__________mgGame________________
+
+
+//__________agGame________________
+
+
+
+//__________promotions________________
+
+
+//__________memberPage________________
+
+
+
+
+

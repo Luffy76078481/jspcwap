@@ -1,0 +1,83 @@
+@import "../../style/variables.scss";
+
+.footerBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    // box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.8);
+    will-change: scroll-position;
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .navTabs {
+        height: 1rem;
+        text-align: center;
+        background: $theme-color;
+
+        .am-flexbox-item {
+            height: 100%;
+
+            [class^="icon-"]:before,
+            [class*=" icon-"]:before {
+                text-align: center;
+                font-size: .36rem;
+            }
+
+            a {
+                color: #fff;
+                position: relative;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &.active {
+                    color: #ffff00;
+                }
+
+                .icon {
+                    display: block;
+                    height: 60%;
+                    padding: 10%;
+                    box-sizing: border-box;
+                }
+
+                .nav_txt {
+                    height: 40%;
+                }
+            }
+        }
+    }
+}
+
+/*
+
+                .icon_service {
+                    display: block;
+                    margin: 0 auto 5px;
+                    height: .36rem;
+                }
+    
+                .am-badge {
+                    position: absolute;
+                    top: 0;
+                    right: 50%;
+                    margin-right: -25px;
+    
+                    .am-badge-text {
+                        background-color: $theme-color;
+                    }
+                }
+*/

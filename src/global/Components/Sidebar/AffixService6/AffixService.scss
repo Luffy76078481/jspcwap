@@ -1,0 +1,39 @@
+.affix-online-server-l{
+  position: fixed;
+  left: 10px;
+  top: 20%;
+  z-index: 999;
+  .hd{
+    background: url("./resource/service-logo3.png") 0 0/100% 100% no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    width: 132px;
+    height: 134px;
+  }
+  .bd{
+    border-radius: 5px;
+    border: none;
+    margin-top: -1px;
+    .togame{
+      width: 132px;
+      height: 43px;
+      background: url(./resource/2_02.png) 0 0/100% 100% no-repeat;  
+    }
+    .togame2{
+      width: 132px;
+      height: 55px;
+      background: url(./resource/3_03.png) 0 0/100% 100% no-repeat;
+    }
+    .toAG{
+      width: 132px;
+      height: 146px;
+      background: url(./resource/2_03.png) 0 0/100% 100% no-repeat;
+    }
+  }
+  .newclose{
+    background: url(./resource/newclose.png) 0 0/100% 100% no-repeat;
+    width: 132px;
+    height: 30px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.gdhFooter {
+    background: url("./images/footer_bg-x.png") center top repeat-x;
+    width: 100%;
+    .top {
+        width: 100%;
+        height: 50px;
+        background: #24140D;
+        
+        .center {
+            width: 1000px;
+            margin: auto;
+            height: 50px;
+            
+            .links {
+                width: 800px;
+                height: 50px;
+                text-align: left;
+                line-height: 22px;
+                float: left;
+                padding-top: 15px;
+                
+                a {
+                    color: #8F6137;
+                    font-size: 12px;
+                    margin-left: 5px;
+                    padding: 0 1rem;
+                    
+                    &:hover {
+                        color: #AB0411;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            .copyRight {
+                width: 200px;
+                float: right;
+                color: #8F6137;
+                text-align: right;
+                padding-top: 15px;
+            }
+        }
+    }
+    
+    #footerimg {
+        width: 100%;
+        height: 217px;
+        
+        .content {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            height: 217px;
+            
+            .fc {
+                text-align: left;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 50px;
+                width: 350px;
+            }
+            
+            .info {
+                padding-top: 60px;
+                width: 330px;
+                color: #C7934B;
+                font-size: 20px;
+                
+                .servers {
+                    cursor: pointer;
+                }
+                
+                div {
+                    margin-bottom: 10px;
+                }
+            }
+            
+            .partner {
+                margin-top: 50px;
+                padding-top: 30px;
+                width: 343px;
+                height: 138px;
+                background: url("./images/f_01.png") center center no-repeat;
+                
+                ul {
+                    li {
+                        float: left;
+                        vertical-align: middle;
+                        margin-left: 25px;
+                    }
+                    
+                    li:nth-child(1) {
+                        padding-top: 55px;
+                        width: 67px;
+                        height: 26px;
+                        background: url("./images/bbinlogo.png") center center no-repeat;
+                    }
+                    
+                    li:nth-child(2) {
+                        width: 184px;
+                        height: 47px;
+                        background: url("./images/footer_img02.png") center center no-repeat;
+                    }
+                    
+                    li:nth-child(3) {
+                        width: 286px;
+                        height: 35px;
+                        background: url("./images/footer_img03.png") center center no-repeat;
+                    }
+                }
+            }
+            
+            .about {
+                padding-top: 62px;
+                width: 400px;
+                height: 138px;
+                line-height: 60px;
+                
+                .pic {
+                    width: 328px;
+                    content: url("./images/footer_img05.png");
+                }
+            }
+            
+        }
+    }
+}

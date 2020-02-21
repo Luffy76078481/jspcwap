@@ -1,0 +1,199 @@
+#footer {
+  font-size: 12px;
+
+  .bottom-top{
+    background: #6f4419;
+    height: 68px;
+    .bottom-topdiv {
+      position: relative;
+    }
+    .bottomBg {
+      position: absolute;
+      bottom: -68px;
+      left: 0;
+    }
+  }
+  .bottom-div{
+    padding-top: 25px;
+    height: 342px;
+    background-size: contain;
+    background: url(./images/bottom-bg.png) repeat-x;
+    &:after{
+      content: '';
+      display: block;
+      clear:both;
+    }
+    .bottom-about li, .bottom-member li {
+      list-style-type: disc;
+      font-size: 12px;
+      color: #4E390A;
+      height: 21px;
+      line-height:24px;
+      margin-top: 10px;
+    }
+    a{
+      color:#fff;
+    }
+    .icon-service, .icon-QQ, .icon-wx, .icon-wb, .icon-hy, .icon-tel, .icon-addr {
+      background: url('./images/icon.png') no-repeat;
+      display: inline-block;
+      margin-right: 5px;
+      width: 31px;
+      height: 31px;
+      vertical-align: middle;
+    }
+    .icon-service {
+      background-position: -148px -97px;
+    }
+
+    .icon-QQ {
+      background-position: -148px -129px;
+    }
+
+    .icon-wx {
+      background-position: -148px -161px;
+    }
+
+    .icon-wb {
+      background-position: -148px -192px;
+    }
+
+    .icon-hy {
+      background-position: -149px -225px;
+    }
+
+    .icon-tel {
+      width: 16px;
+      height: 17px;
+      background-position: -182px -95px;
+      vertical-align: sub;
+    }
+
+    .icon-addr {
+      width: 13px;
+      height: 16px;
+      background-position: -184px -112px;
+      vertical-align: sub;
+    }
+    .bottom-about,.bottom-member {
+      margin-top: 30px;
+      color: #EEAB1F;
+      width: 165px;
+      margin-left: 10px;
+      height: 288px;
+      font-size: 13px;
+      display: inline-block;
+      background: url(./images/member-border.png) no-repeat right center;
+    }
+    .bottom-member {
+      margin-left: 100px;
+    }
+    .bottom-contact {
+      margin-top: 30px;
+      color: #EEAB1F;
+      width: 85px;
+      margin-left: 70px;
+      height: 288px;
+      font-size: 13px;
+      display: inline-block;
+
+      li {
+        font-size: 12px;
+        color: #4E390A;
+        width: 180px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 20px;
+        position: relative;
+        a{
+          color:#fff;
+        }
+      }
+    }
+    .bottom-card-div{
+      width: 300px;
+      height: 250px;
+      background: #C4AF92;
+      display: inline-block;
+      margin-left: 50px;
+
+      .bottom-card-web-div {
+        color: #441F02;
+        font-size: 14px;
+        display: inline-block;
+        margin: 10px 10px 0 10px;
+        width: 280px;
+        height: 70px;
+        border-bottom: 1px #896B4F solid;
+        span {
+          height: 30px;
+          background: #ffffff;
+          display: inline-block;
+          width: 260px;
+          margin: 10px 0px;
+          color: #441F02;
+          line-height: 30px;
+          text-indent: 10px;
+        }
+      }
+      .bottom-card-pad-div {
+        font-size: 13px;
+        display: inline-block;
+        margin: 0 10px;
+        width: 280px;
+        height: 100px;
+        border-bottom: 1px #896B4F solid;
+        border-top: 1px #DED1C1 solid;
+        padding-top: 10px;
+        .bottom-card-pad-ewm {
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          float: left;
+        }
+        .bottom-card-pad-msg {
+          width: 100px;
+          height: 80px;
+          display: inline-block;
+          float: left;
+          vertical-align: top;
+          color: #441F02;
+          margin: 0 10px;
+          text-align: center;
+          .bottom-card-pad-msg-bold {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+        }
+        .bottom-card-pad-pad {
+          width: 80px;
+          height: 80px;
+          float: left;
+          display: inline-block;
+        }
+      }
+      .bottom-card-tel-div {
+        color: #441F02;
+        font-size: 14px;
+        display: inline-block;
+        margin: -5px 10px 35px 10px;
+        width: 280px;
+        height:40px;
+        line-height: 25px;
+        border-top: 1px #DED1C1 solid;
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    height:66px;
+    background:rgb(86,45,24);
+    color: #ffffff;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

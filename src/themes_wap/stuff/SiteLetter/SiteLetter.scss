@@ -1,0 +1,173 @@
+@import "../../style/variables.scss";
+
+.SiteLetter {
+
+    div,
+    a,
+    p,
+    span {
+        user-select: none;
+    }
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    .am-accordion .am-accordion-item .am-accordion-header {
+        height: .8rem;
+        line-height: .8rem;
+        padding-right: .6rem;
+    }
+
+    .am-accordion .am-accordion-item .am-accordion-header i {
+        right: .25rem;
+        top: .25rem;
+        width: .3rem;
+        height: .3rem;
+    }
+
+    .am-navbar {
+        border: 0;
+        background: transparent;
+    }
+
+    .scroll-content {
+        margin-bottom: 1.1rem;
+        margin-top: 1rem;
+        border-top: none;
+
+        .myListView {
+            position: absolute !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .am-list-view-scrollview-content {
+                position: initial !important;
+
+                .am-list-body {
+                    .list-view-section-body {
+                        .messageAnnounce {
+                            min-height: 0;
+
+                            .am-list-content {
+                                padding: 0;
+                            }
+                        }
+
+                        .listItem {
+                            width: 100%;
+
+                            .promoImg {
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                min-height: .4rem;
+                                margin-bottom: .2rem;
+                            }
+
+                            small.time {
+                                float: right;
+                                color: #888;
+                            }
+
+                            .am-list-line {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .am-list-content {
+                                    flex: 1;
+                                    font-size: .28rem;
+                                    padding-top: .4rem;
+                                    padding-bottom: .4rem;
+                                }
+
+                                .am-list-extra {
+                                    flex-basis: 20%;
+                                    font-size: .24rem;
+                                    padding-top: .4rem;
+                                    padding-bottom: .4rem;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .Badge {
+                                margin-right: .2rem;
+                                font-size: .24rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .title {
+        font-size: .28rem;
+        font-weight: 900 !important;
+    }
+
+    .am-list-item.messageAnnounce.am-list-item-middle {
+        padding: 0;
+    }
+
+    .am-list-line {
+        padding: 0 !important;
+    }
+
+    .am-accordion.my-accordion {
+        &:before {
+            background: #FFF;
+        }
+    }
+}
+
+.am-accordion-content-box {
+    white-space: normal;
+}
+
+.messageAnnounce {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    .BadgeRight {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .BadgeLight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.am-accordion-content-box {
+    margin: 8px 15px;
+
+    &:after {
+        background: #fff !important;
+    }
+}
+
+.AnnounceHeader {
+    font-weight: 600;
+    color: rgba(0, 0, 0, .7);
+
+    .newIcon {
+        display: inline-block;
+        margin-right: 3px;
+    }
+}
+
+.am-accordion-content.am-accordion-content-active {
+    background: #f8F8f8 !important;
+}

@@ -1,0 +1,112 @@
+
+/*
+    
+    XHTD-2级导航
+
+*/
+
+.MainNavigation{
+    position: relative;
+    .navContainer{
+        background-size: 100% 100%;
+        background-repeat:no-repeat;
+        background-image: url(./images/hd-nav-box.png);
+        width: 1260px;
+        margin: -1px auto 0;
+        position: relative;
+        height: 34px;
+        >ul{
+            >li{
+                float: left;
+                width: 126px;
+                text-align: center;
+                position: relative;
+                &.hot::after{
+                    position: absolute;
+                    content: "";
+                    top: -8px;
+                    right: 0;
+                    width: 21px;
+                    height: 12px;
+                    background: url(./images/hot.gif) no-repeat 0 0
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #2b1704;
+                    line-height: 34px;
+                    display: block;
+                    text-shadow: 0 1px 1px #e2d2a1;
+                    background: url(./images/hd-nav.png) no-repeat;
+                    text-indent: -10px;
+                    &.active{
+                        color: #f6ce3c;
+                        text-shadow: 0 1px 1px #450001;
+                        background: url(./images/hd-nav-hover.png) no-repeat;
+                    }
+                    i{
+                        width: 25px;
+                        height: 15px;
+                        display: inline-block;
+                        position: relative;
+                        vertical-align: text-bottom;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        margin-right: 2px;
+                        -webkit-font-smoothing: antialiased;
+                    }
+                }
+            }  
+        }
+    }
+    // 二级导航
+    .SecondNav{
+        position: absolute;
+        top: 34px;
+        width: 100%;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+        z-index: 888;
+        nav{
+            height: 200px;
+            background: rgba(69,41,12,.85);
+            overflow: hidden;
+            display: none;
+            .secondContainer{
+                width: 1260px;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                ul{
+                    display: inline-block; 
+                    height: 200px;
+                    li{
+                        float: left;
+                        position: relative;
+                        margin: 0 5px;
+                        width: 90px;
+                        height: 100%;
+                        &.hot::after{
+                            position: absolute;
+                            content: "";
+                            top: 50px;
+                            right: 0;
+                            width: 21px;
+                            height: 12px;
+                            background: url(./images/hot.gif) no-repeat 0 0   
+                        }
+                        div{
+                            height: inherit;
+                            width: inherit;
+                            cursor: pointer;
+                            background-position: center;
+                            font-weight: 700;
+                            display: block;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

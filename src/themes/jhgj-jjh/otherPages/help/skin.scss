@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+body, html {
+  font-family: Microsoft YaHei;
+  background-color: #2a1412;
+  color: #fff;
+}
+// _____________________________________________________私有样式
+a{
+  color: #fff;
+  text-decoration:none;
+  font-weight: bold;
+  &:hover{
+    color: #fff000
+  }
+}
+
+
+#helpPage{
+  background: #2a1412;
+  .header_left{
+    background: url(resources/logo2.png) 0 0 no-repeat;
+  }
+  .header_right{
+    background: url(resources/help.png)  no-repeat right;
+  }
+  .title_img{
+    background: #851d14;
+  }
+  .main_content{
+    background-color: #331a18;
+      // 导航
+    .menu{
+      border-bottom: 1px solid #976161;
+      ul.navigation{
+        li{
+          ul{
+            li{
+              &:last-child {
+                border-bottom: none;
+              }
+              a{
+                background: #471a17;
+                &:hover{
+                  background: #823832;
+                }
+              }
+            }
+          }  
+        }       
+      }
+    }
+  }
+}
+
+#about,
+#commonQ,
+#deposit,
+#withdrawal,
+#myAccount,
+#sport,
+#liveCasino,
+#phoneBetting,
+#yibanrule,
+#rule,
+#PtRule,
+#responsibility,
+#terms,
+#contact,
+#payout,
+#howPlay,
+#payInfo
+{
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+// ___________________________________ 内容
+.contents{
+  .title2 {
+    background: #823832;   
+  } 
+  .ReturnTopBtn,.ReturnTop{
+    color: #cf918c;
+  } 
+}
+
+// ___________________________________ 娱乐城
+.tab-TFinfo {
+  color: #fff;
+  border: 1px solid #fff;
+  tr{
+    border-top: 1px solid #fff;
+    td{
+      border-left: 1px solid #fff;
+    }
+  }
+  .tab-tr-red {
+    background: transparent;
+  }
+}
+
+// ___________________________________ 底部
+.foot{
+  background: #15100a;
+}
+.footer-bg{
+  background: url(resources/footer.jpg) no-repeat center;
+}
+// ___________________________________ 联系我们
+#contact{
+  .contact-text{
+    background: #594b3a;
+  }
+  .line {
+    border-bottom: 1px solid #64563f;
+  }  
+  .contact-btn{
+    background: #ffea99;
+  }
+}
+
+
+
+
+

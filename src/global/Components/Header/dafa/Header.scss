@@ -1,0 +1,397 @@
+.password-mask-icon{
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    line-height: 14px;
+    vertical-align: middle;
+    background-image: url(./images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -400px -500px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    cursor: pointer;
+}
+// 公告弹窗
+#noticeModal{
+    .noti_time{
+        color: #a62e00;
+        float: right;
+        margin-right: 10px;
+        
+    }
+    .modal-dialog{
+        transform: translate(0, 100%);
+        width: 800px;
+    }
+    .modal-content{
+        border-radius:6px;
+        overflow: hidden;
+        .modal-header{
+            background:#af0000;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+        .modal-body{
+            color:#4e4e4e;
+            padding:20px 15px;
+            text-align: center;
+        }
+    }
+}
+// 头部
+#topHead{
+    position: relative;
+    background: #af0000;
+    .headBg{
+        height: auto;
+        .headFname{
+            margin: 0 100px;
+            height: 109px;
+            min-width: 1180px;
+        }
+        .logo {
+            float: left;
+            .innerLogo {
+                display: block;
+                width: 331px;
+                margin-top: 3px;
+                background: url(./images/logo.png) 50% no-repeat;
+                height: 100px;
+            }
+        }
+        // 头部右侧
+        .rightHead{
+            .top-option{
+                text-align: right;
+                i{
+                    width: 37px;
+                    cursor: pointer;
+                    text-align: center;
+                    top: -8px;
+                    font-size: 16px;
+                    color: #fff;
+                }
+                .language-switcher{
+                    display: inline-block;
+                    background: url('./images/language-switcher.png');
+                    width:57px;
+                    height:34px;
+                    cursor:pointer;
+                }
+            }     
+            // 登录表单
+            .loginForm {
+                float: right;
+                width: auto;
+                #login-form{
+                    color: #fff;
+                    padding-top: 5px;
+                    .errorMessage{
+                        font-size: 12px;
+                        position: absolute;
+                        left: -45px;
+                        top: 44px;
+                        &::before{
+                            margin-right: 5px;
+                            width: 18px;
+                            height: 18px;
+                            background-image: url(./images/sprite.png);
+                            background-position: -360px -320px;
+                            content: "";
+                            display: inline-block;
+                            vertical-align: -5px;
+                        }
+                    }
+                    .formLogin{
+                        width: auto;
+                        float: left;
+                        .loginInput{
+                            width: 140px;
+                            position: relative;
+                            display: inline-block;
+                            margin-right: 10px;
+                            input{
+                                background-color: #fff;
+                                color: #373737;
+                                width: 100%;
+                                margin-bottom: 5px;
+                                vertical-align: middle;
+                                height: 28px;
+                                float: left;
+                                border: 0;
+                                padding: 3px 5px;
+                                font-size: 12px;
+                            }
+                            .password-mask-icon.password-unmasked {
+                                background-position: -360px -500px;
+                            }
+
+                        }
+                    }
+                    .login_button{
+                        width: auto;
+                        padding-right: 0;
+                        float: left;
+                        button[type="submit"]{
+                            display: inline-block;
+                            background: #e4e4e4;
+                            margin-right: 10px;
+                            width: 90px;
+                            height: 27px;
+                            line-height: 27px;
+                            color: #373737;
+                            font-size: 14px;
+                            padding: 0;
+                            border: 1px solid #eaeaea;
+                        }
+                        a.reg{
+                            display: inline-block;
+                            text-align: center;
+                            color: #373737;
+                            background: #ffe000;
+                            margin-top: 0;
+                            width: 91px;
+                            height: 27px;
+                            line-height: 27px;
+                            font-size: 14px;
+                            border: 1px solid #ffe000;    
+                        }
+                        .forget{
+                            color: #fff;
+                            font-size: 12px;
+                            display: inline-block;
+                            padding: 0;
+                            margin-top: 12px;
+                            width: 91px;
+                            margin-right: 10px;
+                        }
+                        .fav{
+                            color: #fff;
+                            font-size: 12px;
+                            display: inline-block;
+                            padding: 0;
+                            margin-top: 12px;
+                            width: 91px;
+                        }
+                    }
+                }   
+            }
+        }
+    }   
+}
+
+
+
+// ⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒ 登录后 ⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒⌒
+
+// 登录后
+.afterlogin{
+    // 出纳，头像
+    .player-options{
+        display: inline-block;
+        margin-left: 15px;
+    }
+    // 基本信息，余额
+    .player-balance{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 30px;
+        position: relative;
+        text-align: right;
+        &,a,span{
+            color: #fff;
+        }
+        &:hover{
+            #balance-tooltip{
+            // display: block;
+            }
+        }
+        .playerInfo{
+            width: 40px;
+            height: 27px;
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            margin-right: 8px;
+            margin-top: -30px;
+            background-image:url(./images/sprite.png); 
+            &.playerLevel_1{
+                background-position: -360px -520px;
+            }
+        }
+        i{
+            margin-left: 10px;
+            margin-right: -20px;
+            cursor: pointer;
+        }
+    }
+    // 余额开关
+    .balance-checkbox{
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: -27px;
+        display: inline-block;
+        width: 20px;
+        height: 10px;
+        border-radius: 5px;
+        background: #640000;
+        &.unchecked {
+            span{
+                left: 8px;
+                background: #979797;
+            }
+        }
+        span{
+            position: absolute;
+            top: 0;
+            left: 1px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            content: "";
+            background: #ffe000;
+            border-radius: 50%;
+            transition: left .05s linear;
+        }
+    }
+    // 余额
+    .account-balance{
+        margin-top: 5px;
+        font-size: 12px;
+        text-align: right;
+        #balance-tooltip {
+            display: none;
+            position: absolute;
+            top: 44px;
+            right: 0;
+            min-width: 100px;
+            z-index: 9999;
+            text-align: left;
+            ul{
+                padding: 5px 10px;
+                background: #900000;
+                list-style: none;
+                margin: 0;   
+                li{
+                    white-space: normal;
+                    display: block;
+                    width: auto;
+                    height: auto;
+                    margin: 0;   
+                    .balance-details{
+                        font-size: 14px;
+                        display: table;
+                        width: 330px;
+                        margin: 0;
+                        padding: 5px 0;
+                        height: auto;
+                        position: relative;
+                        .balance-label{
+                            display: table-cell;
+                            width: 130px;
+                        }
+                        .balance-balance{
+                            display: table-cell;
+                            width: 180px;
+                            text-align: right;
+                            white-space: nowrap;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+    // 出纳柜台
+    .cashier-tooltip{
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        .cashier-label{
+            position: static;
+            color: #af0000;
+            padding: 0 10px;
+            background: #ffe000;
+            border-radius: 3px;
+            line-height: 34px;
+            text-transform: uppercase;
+            font-weight: 600;
+            height: 34px;
+            display: block;
+        }
+        &:hover{
+            .tooltip-content{
+                display: block;
+            }
+        }
+    }
+    // 个人
+    .myaccount-tooltip{
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;        
+        .icon-myaccount{
+            display: block;
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+            background: url(./images/icon-myaccount.png) 0 0 no-repeat;
+        } 
+        &:hover{
+            .tooltip-content{
+                display: block;
+            }
+        }       
+    }
+    // 下拉
+    .tooltip-content{
+        display: none;
+        position: absolute;
+        top: 44px;
+        right: 0;
+        min-width: 100px;
+        z-index: 9999;
+        &::before{
+            content: "";
+            display: block;
+            height: 12px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            margin-top: -10px;
+        }
+        ul{
+            &::before{
+                display: block;
+                width: 0;
+                height: 0;
+                border-right: 6px solid transparent;
+                border-bottom: 6px solid #900000;
+                border-left: 6px solid transparent;
+                position: absolute;
+                top: -6px;
+                right: 11px;
+                content: "";  
+            }
+            li{
+                position: relative;
+                vertical-align: top;
+                background-color: #900000;
+                cursor: pointer;   
+                &:hover{
+                    background-color: #af0000;
+                }
+                a{
+                    display: block;
+                    height: 30px;
+                    padding: 0 10px;
+                    color: #fff;
+                    line-height: 29px;
+                }
+            }
+        }
+    }    
+} 

@@ -1,0 +1,149 @@
+
+@import "./animate.css";
+@import "./alignment.css";
+@import "./theme.scss";
+
+//_______________________________________________________________公共样式
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.am-list-body{
+  position: static;
+}
+body {
+  font-family: "Arial", "sans-serif", "Microsoft YaHei";
+  min-width: 1360px;
+  overflow-y: auto!important;
+  padding: 0!important;
+}
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+img{ border: none }
+a{text-decoration: none}
+a,input{outline:none;}
+
+// 去掉[Type为Number的]箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+button{
+  outline: none!important
+}
+.sweet-alert .sa-icon.sa-success::before,
+.sa-icon.sa-success.animate::after,
+.sweet-alert .sa-icon.sa-success .sa-fix{
+  background: transparent;
+}
+#globe-show{
+  display: none;
+}
+
+.modal-open .modal{
+  overflow-y: hidden;
+}
+
+//  _________________________________________表单
+.form-login-reg{
+  width: 115px;
+  height: 46px;
+  background-position: -100px 0px;
+  float: right;
+}
+.form-login-button a {
+  color: #ff9c00;
+  padding: 8px 0px;
+  display: block;
+}
+.form-reg-btn {
+  float: right;
+}
+.form-login-btn {
+  width: 100px;
+  height: 25px;
+}
+.form-reg-btn:hover {
+  background-position: -100px -46px;
+}
+.form-login-input {
+  width: 203px;
+  float: left;
+}
+.form-login-button {
+  width: 140px;
+  float: left;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+.form-login-btn:hover {
+  background-position: 0px -25px;
+}
+.form-login-input input {
+  width: 100%;
+  margin-bottom: 5px;
+  height: 28px;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+.globe-popbox{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  z-index: 2007;
+}
+
+.globe-popbox-popbox{
+  width: 320px;
+  height: 160px;
+  background: #fff;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2008;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.globe-popbox-popbox p{
+  text-align: center;
+  font-weight: bold;
+}
+.globe-popbox-popbox p:nth-child(1){
+  color: black;
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+.globe-popbox-popbox p:nth-child(2){
+  color: red;
+  border-top: 1px solid #dbdbdf;
+  font-size: 20px;
+}
+
+
+
+.spec-jiantou{
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none ;
+      margin: 0;
+  }
+}
+
+.sweet-alert h2{
+  margin: 0px 0 25px 0;
+}
+

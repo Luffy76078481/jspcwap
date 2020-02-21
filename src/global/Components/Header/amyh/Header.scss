@@ -1,0 +1,521 @@
+.headerCon{
+    background:#fff;
+    position: relative;
+    .head_top{
+        background-color: #000000;
+        height: 26px;
+        width: 100%;
+        color: #fff;
+        line-height: 26px;
+        font-size:12px;
+        .left{
+            float:left;
+            .min_logo{
+                background: url('./images/icon.png') no-repeat;
+                width: 25px;
+                height: 18px;
+                display: inline-block;
+                vertical-align: sub;
+            }
+            .color-fco{
+                color: #ffcc00;
+                font-weight:bold;
+            }
+        }
+        .right{
+            float:right;
+            .userInfo{
+                b{
+                    color: #ffcc00;
+                }
+                a{
+                    padding:0;
+                    cursor:pointer;
+                }
+            }
+            div{
+                display: inline-block;
+            }
+            .Language {
+                width: 75px;
+                display: inline-block;
+                height: 26px;
+                text-align: right;
+                .chinese{
+                    background: url('./images/icon.png') no-repeat;
+                    width: 16px;
+                    height: 11px;
+                    display: inline-block;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                    background-position: -554px -11px;
+                }
+            }
+            .homeimg{
+                background: url('./images/icon.png') no-repeat -41px 0px;
+                width: 11px;
+                height: 13px;
+                display: inline-block;
+                margin-right: 3px;
+                position: relative;
+                top: 2px;
+            }
+            a{
+                color:#fff;
+                line-height: 26px;
+                cursor: pointer;
+                margin-left:10px;
+                display: inline-block;
+                padding:0 8px;
+                &.topLogin{
+                    margin-right:10px;
+                    width: 50px;
+                    height: 26px;
+                    text-align: center;
+                    background-color: #4e4e4e;
+                }
+            }
+        }
+    }
+}
+#header{
+    background: url(./images/headbg.png) repeat;
+    .header-container{
+        width:1000px;
+        margin:0 auto;
+        position: relative;
+    }
+    .head_bd{
+        height: 97px;
+        position: relative;
+        .slogan{
+            position: absolute;
+            top: 20px;
+            left: 200px;
+        }
+        .logo{
+            cursor:pointer;
+            .innerLogo{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 99;
+                width: 166px;
+                height: 155px;
+                display: block;
+                background: url('./images/logo.jpg') 0 0 no-repeat;
+                background-size:contain;
+            }
+        }
+        .tips {
+            width: 240px;
+            height: 33px;
+            position: absolute;
+            right: 0;
+            top: 15px;
+            line-height: 33px;
+            text-align: center;
+            background-color: #70655d;
+            a{color:#fff;}
+        }
+    }
+    .headerNav{
+        position: relative;
+        background: url('./images/navbg.png') repeat-x;
+        height: 43px;
+        z-index: 80;
+        .navigation-inner{
+            margin: 0 auto;
+            width: 1000px;
+            padding-left: 180px;
+            position: relative;
+            .secondNav{
+                position: absolute;
+                top: 43px;
+                left: 0px;
+                width: 1401px;
+                text-align: center;
+                .botTitle{
+
+                }
+                .navItem{
+                    left: 166px;
+                    width: 819px;
+                    margin: 0;
+                    background: rgba(255,255,255,.9);
+                    position: absolute;
+                    top: 0px;
+                    border-left: 1px solid #d6991c;
+                    border-right: 1px solid #d6991c;
+                    border-bottom: 1px solid #d6991c;
+                    z-index: 999;
+                    .botTitle{
+                        display: block;
+                        height: 35px;
+                        line-height: 40px;
+                        background:#d6991c;
+                        color: #ffffff;
+                        text-align: center;
+                        clear: both;
+                    }
+                    ul{
+                        padding:10px 0 0 0;
+                        li{
+                            float: left;
+                            width: 90px;
+                            height: 75px;
+                            padding: 0px 0px;
+                            border-right: 1px solid #dadada;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                            animation-name: e;
+                            transition: transform .3s;
+                            transform: translateY(0);
+                            &.li-0{
+                                animation-duration: .5s
+                            }
+                            &.li-1{
+                                animation-duration: .6s
+                            }
+                            &.li-2{
+                                animation-duration: .7s
+                            }
+                            &.li-3{
+                                animation-duration: .9s
+                            }
+                            &.li-4{
+                                animation-duration: 1s
+                            }
+                            &.li-5{
+                                animation-duration: 1.1s
+                            }
+                            &.li-6{
+                                animation-duration: 1.2s
+                            }
+                            &.li-7{
+                                animation-duration: 1.3s
+                            }
+                            &.li-8{
+                                animation-duration: 1.4s
+                            }
+                            &:hover{
+                                transform: translateY(-3px);
+                                background-color: #bc892975;
+                                .itemName{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    .itemIcon{
+                        right: 0px;
+                        top:0;
+                        background: url(./images/dc_hot.gif) no-repeat;
+                        position: absolute;
+                        z-index: 2;
+                        width: 21px;
+                        height: 12px;
+                        background-size: 100%;
+                    }
+                }
+                .hasChild{
+                    display: inline-block;
+                    border-radius:5px;
+                    width:700px;
+                    height: 150px;
+                    position: relative;
+                    margin:15px auto;
+                    animation-name: e;
+                    transition: transform .3s;
+                    animation-duration: .5s;
+                    transform: translateY(0);
+                    background-color: rgb(243, 243, 243);
+                    &:after{
+                        content:'';
+                        display: block;
+                        clear: both;
+                    }
+                    .line{
+                        width: 4px;
+                        display: inline-block;
+                        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+                        float: left;
+                        height: 100%;
+                    }
+                    .first{
+                        width: 151px;
+                        background-color: #fff;
+                        display: inline-block;
+                        height: 100%;
+                        border-radius: 15px 0 0 15px;
+                        float: left;
+                        .animate{
+                            transition: transform .3s;
+                            transform: translateY(0);
+                            .itemImg{
+                                height:65px;
+                            }
+                            &:hover{
+                                transform: translateY(-9px);
+                                .itemBtn{
+                                    a{
+                                        color: #95201f !important;
+                                        background-color: #c83434;
+                                        &:before {
+                                            transform: scaleY(1);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    .rightCon{
+                        float:left;
+                        padding-left:20px;
+                        position: relative;
+                        .top{
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            display: block;
+                            padding: 0px 10px;
+                            border-radius: 0 0 3px 3px;
+                            background: #9339f5;
+                            color: #fff;
+                            font-size: 12px;
+                            margin-left: -75px;
+                            width: 150px;
+                        }
+                        ul{
+                            width:auto;
+                            li{
+                                background:none;
+                                margin:30px 0 0 0px;
+                                border-radius:0;
+                                .itemImg{
+                                    height:75px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+                .itemName{
+                    padding-top: 10px;
+                    padding-bottom: 8px;
+                    color: #686868;
+                    font-size:13px;
+                }
+                .itemImg{
+                    width:89px;
+                    height:40px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                    background-size:auto 100%;
+                    //老虎机的
+                    &.AG{
+                        background-image:url('./images/nav2img/ag.png');
+                    }
+                    &.BBIN{
+                        background-image:url('./images/nav2img/cp_BBIN.png');
+                    }
+                    &.MG2,&.MG{
+                        background-image:url('./images/nav2img/game_MG2.png');
+                    }
+                    &.PT{
+                        background-image:url('./images/nav2img/game_PT.png');
+                    }
+                    &.CQ{
+                        background-image:url('./images/nav2img/game_CQ.png');
+                    }
+                    &.HB{
+                        background-image:url('./images/nav2img/game_HB.png');
+                    }
+                    &.QT{
+                        background-image:url('./images/nav2img/game_QT.png');
+                    }
+                    &.VT{
+                        background-image:url('./images/nav2img/oGame_MG2.png');
+                    }
+                    //体育的
+                    &.SB{
+                        background-image:url('./images/nav2img/SB.png');
+                    }
+                    &.N188{
+                        background-image:url('./images/nav2img/N188.png');
+                    }
+                    &.TB{
+                        background-image:url('./images/nav2img/TB.png');
+                    }
+                    //真人其中有一部分和电子游戏的class相同 就不写了
+                    &.TGP{
+                        background-image:url('./images/nav2img/TGP.png');
+                    }
+                    &.OG{
+                        background-image:url('./images/nav2img/og.png');
+                    }
+                    &.AB{
+                        background-image:url('./images/nav2img/xpj.png');
+                    }
+                    &.eBET{
+                        background-image:url('./images/nav2img/xpj.png');
+                    }
+                    //彩票
+                    &.bingo_CG{
+                        background-image:url('./images/nav2img/cqssc.png');
+                    }
+                    &.bingo_BBIN{
+                        background-image:url('./images/nav2img/hklhc.png');
+                    }
+                    &.bingo_KG{
+                        background-image:url('./images/nav2img/kgcp.png');
+                    }
+                    //捕鱼
+                    &.ag_buyu{
+                        background-image:url('./images/nav2img/by_AG.png');
+                    }
+                    &.ag_buyuBBin{
+                        background-image:url('./images/nav2img/by_BBIN2.png');
+                    }
+                    &.ag_buyuDaren{
+                        background-image:url('./images/nav2img/by_BBIN.png');
+                    }
+                    &.ag_shenhai{
+                        background-image:url('./images/nav2img/by_PT.png');
+                    }
+                    //开元棋牌
+                    &.ky{
+                        background-image:url('./images/nav2img/qp_ky.png');
+                    }
+                    &.tm{
+                        background-image:url('./images/nav2img/qp_tm.png');
+                    }
+                    &.ky_niu{
+                        background-image:url('./images/nav2img/kyicon-1.png');
+                    }
+                    &.ky_za{
+                        background-image:url('./images/nav2img/kyicon-2.png');
+                    }
+                    &.ky_28{
+                        background-image:url('./images/nav2img/kyicon-3.png');
+                    }
+                    //优惠
+                    &.promotion_0{
+                        background-image:url('./images/nav2img/icon_all.png');
+                    }
+                    &.promotion_1{
+                        background-image:url('./images/nav2img/icon_event.png');
+                    }
+                    &.promotion_2{
+                        background-image:url('./images/nav2img/icon_new_user.png');
+                    }
+                    &.promotion_3{
+                        background-image:url('./images/nav2img/icon_new_user.png');
+                    }
+                    &.promotion_4{
+                        background-image:url('./images/nav2img/icon_sport.png');
+                    }
+                    &.promotion_5{
+                        background-image:url('./images/nav2img/icon_poker.png');
+                    }
+                    &.promotion_6{
+                        background-image:url('./images/nav2img/icon_slot.png');
+                    }
+                    &.promotion_7{
+                        background-image:url('./images/nav2img/icon_casino.png');
+                    }
+                }
+                .itemBtn{
+                    margin-top:5px;
+                    width: 86%;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    a{
+                        background-color: #c83434;
+                        color: #fff!important;
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 100%;
+                        transform: perspective(1px) translateZ(0);
+                        position: relative;
+                        outline: none;
+                        transition-property: color;
+                        transition-duration: .3s;
+                        font-size: 13px;
+                        padding: 3px 0;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background: #ffb43e;
+                            color: #95201f!important;
+                            transform: scaleY(0);
+                            transition-property: transform;
+                            transition-duration: .3s;
+                            transition-timing-function: ease-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes e {
+        0% {
+            transform-origin: 0 0;
+            transform: translateY(-20px)
+        }
+
+        to {
+            transform-origin: 0 0;
+            transform: translateY(0)
+        }
+    }
+}
+.newsDiv{
+    width:1000px;
+    position: absolute;
+    left:50%;
+    margin-left:-500px;
+    background:#fff;
+    padding: 3px 0px 8px 0px;
+    z-index:3;
+    .newsImg{
+        background: url('./images/icon.png') no-repeat;
+        display: inline-block;
+        margin-left:10px;
+    }
+    .newsImg{
+        display: inline-block;
+        line-height: 30px;
+        background-position: -118px 0px;
+        width: 24px;
+        height: 24px;
+        margin-right: 3px;
+        margin-top: 12px;
+    }
+    .more{
+        color: #666633;
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+    .marquee{
+        width: 880px;
+        font-size: 12px;
+        color: #686868;
+        float: left;
+        margin-top: 15px;
+        a{
+            color:#000;
+        }
+    }
+}

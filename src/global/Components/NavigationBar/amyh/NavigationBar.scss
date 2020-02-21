@@ -1,0 +1,33 @@
+.navMenu{
+  ul.main-menu{
+    li.mainTitle{
+      display: inline-block;
+      float: left;
+      &.hot{
+        a::after{
+          content: "";
+          width: 23px;
+          height: 20px;
+          background: url("../images/hot.gif") 50% no-repeat;
+          position: absolute;
+          right: -10px;
+        }
+      }
+      div{
+        height: 43px;
+        a{
+          color: #fff;
+          padding: 0 12px;
+          display: inline-block;
+          line-height: 43px;
+          font-size: 14px;
+          position: relative;
+          &.acitve{
+            background: #bc8929;
+            color: #ff0;
+          }          
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.SharePage {
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .wrapper {
+        padding: .3rem;
+        font-size: .26rem;
+
+        .copy_link_box {
+            border-radius: 5px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: #d4d2d2 0 0 10px 1px;
+            margin-bottom: 15px;
+            font-size: .3rem;
+
+            .text_tip {
+                font-weight: 800;
+            }
+
+            .url_code {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .link_url {
+                    width: 88%;
+                    text-align: left;
+                    margin-top: 5px;
+                    line-height: 20px;
+                    border: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .icon {
+                    width: .5rem;
+                    height: .5rem;
+                    background-color: red;
+                    border-radius: 5px;
+                    text-align: center;
+                    line-height: 27px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .recmmended_num {
+            border-radius: 5px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: #d4d2d2 0 0 10px 1px;
+            margin-bottom: 15px;
+            font-size: .3rem;
+            font-weight: 800;
+        }
+
+        .qr_code_box {
+            border-radius: 5px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: #d4d2d2 0 0 10px 1px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+}

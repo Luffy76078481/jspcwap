@@ -1,0 +1,68 @@
+.hijack-alert{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.452);
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  .hijack-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 240px;
+    border-radius: 10px;
+    border: 1px solid #bb9860;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+    color: #888;
+    &>p{
+      font-size: 16px;
+      text-align: center;
+      padding: 20px;
+    }
+    .close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    ul{
+      li{
+        margin: 25px 0;
+        span{
+          width: 92px;
+          display: inline-block;
+          text-align: center
+        }
+        input{
+          color: black;
+          padding-left: 5px;
+        }
+        button{
+          width: 111px;
+          border: none;
+          padding: 5px 0;
+          border-radius: 10px;
+          margin: 0 8px;
+        }
+        div{
+          position: absolute;
+          color: red;
+          font-size: 15px;
+          left: 165px;
+        }
+        .hijack-ywz{
+          top: 114px;
+        }
+        .hijack-qkm{
+          top: 165px;
+        }
+      }
+    }
+  }
+}

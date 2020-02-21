@@ -1,0 +1,25 @@
+body{
+  margin:0;
+  padding:0;
+  background:#7b9fc3;
+  color:#fff;
+}
+#loading{
+  height:90px;
+  font-size:18px;
+  margin:0 auto;
+  position:absolute;
+  top:50%;
+  margin-top:-50px;
+  text-align: center;
+  left:50%;
+  margin-left:-60px;
+  .loadingIcon{
+    background:url('./images/loading_wellbet.gif') 0 0 no-repeat;
+    width:125px;
+    height:25px;
+    display: block;
+    margin:0 auto;
+    margin-bottom:20px;
+  }
+}

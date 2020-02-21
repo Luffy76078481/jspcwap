@@ -1,0 +1,36 @@
+
+.set_withdraw_pwd {
+    .am-list-item {
+        line-height: 1.2rem;
+        padding-left: 0 !important;
+        
+        .am-list-line {
+            justify-content: flex-start;
+            padding-right: 0;
+
+            .am-input-label {
+                width: 2rem;
+                font-size: .28rem;
+                color: #333;
+                padding-left: .2rem;
+            }
+            .am-input-control {
+                padding-right: .2rem;
+                box-sizing: border-box;
+                width: 4rem;
+                flex: none;
+                height: .6rem;
+                line-height: .6rem;
+                input {
+                    letter-spacing: .4rem;
+                    padding: .1rem 0 .1rem .2rem;
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                }
+            }
+            .am-input-extra {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1153506_d7ppokbi6pn.css" />
+
+    <!-- ios -->
+ 
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="images/favicon.ico" />
+    <link href="./desicon.ico" rel="icon" type="image/x-icon" />
+    <title></title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicon.ico">
+    <!--<script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>-->
+    <!--<script>-->
+    <!--if ('addEventListener' in document) {-->
+    <!--document.addEventListener('DOMContentLoaded', function() {-->
+    <!--FastClick.attach(document.body);-->
+    <!--}, false);-->
+    <!--}-->
+    <!--if(!window.Promise) {-->
+    <!--document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');-->
+    <!--}-->
+    <!--</script>-->
+</head>
+
+<body>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .super {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: black;
+        }
+
+        .close {
+            width: .7rem;
+            height: .8rem;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1000000;
+        }
+
+        .zm-guanbi {
+            font-size: .7rem;
+            color: #bb9860;
+        }
+
+        .loadingBox {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            top: 30%;
+        }
+
+        .loadingBox-p {
+            margin: 10px auto 0;
+            text-align: center;
+            font-size: 18px;
+
+        }
+
+        .loadingBox-p::after {
+            display: block;
+            margin: 10px auto 0;
+            text-align: center;
+            font-size: 18px;
+            content: "Loading.";
+            animation: load 2s infinite;
+        }
+
+        @keyframes load {
+            20% {
+                content: "Loading..";
+            }
+
+            40% {
+                content: "Loading...";
+            }
+
+            60% {
+                content: "Loading....";
+            }
+
+            80% {
+                content: "Loading.....";
+            }
+
+            100% {
+                content: "Loading......";
+            }
+        }
+
+        #fuckmeme {
+            z-index: 1000;
+            position: absolute;
+        }
+    </style>
+    <div class="super" id="fuckmeme1" style="display: none">
+        <div class="close" id="close33"><span class="icon zm zm-guanbi"></span></div>
+        <div class="loadingBox">
+            <p class="loadingBox-p">
+
+            </p>
+        </div>
+        <iframe id="fuckmeme" src="" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+    <div id="root">
+        <div class="loadingBox">
+            <p class="loadingBox-p">
+
+            </p>
+        </div>
+    </div>
+    <script>
+        // //游戏ifream窗口的一系列骚操作  QT碰碰宝石
+        // var appOpenX = document.getElementById('close33');
+        // appOpenX.addEventListener('click', function (e) {
+        //     document.getElementById("fuckmeme1").style.display = "none";
+        //     document.getElementById("fuckmeme").src = ""
+        // }, false);
+        // appOpenX.addEventListener('touchmove', function (e) {
+        //     var movex = e.touches[0].pageX - 11;
+        //     var movey = e.touches[0].pageY - 11;
+
+        //     var Cwidth = document.getElementById("close33").clientWidth;
+        //     var maxX = document.body.clientWidth - Cwidth;
+        //     var maxY = document.body.clientHeight - Cwidth;
+
+        //     if (movex > maxX) {
+        //         movex = maxX
+        //     } else if (movex < 0) {
+        //         movex = 0
+        //     }
+
+        //     if (movey > maxY) {
+        //         movey = maxY
+        //     } else if (movey < 0) {
+        //         movey = 0
+        //     }
+
+        //     appOpenX.style.top = movey + 'px';
+        //     appOpenX.style.left = movex + 'px';
+
+        // }, false);
+
+
+
+        //如果是app端的话windowopen的打开方式
+        if (window.plus) {
+            plusReady();
+        } else {
+            // 所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。
+            document.addEventListener("plusready", plusReady, false);
+        }
+
+        function plusReady() {
+            // 解决打包app后无法调用物理返回键
+            var plus = window.plus;
+            var __currentVersion;
+            var webview = plus.webview.currentWebview();
+            plus.key.addEventListener('backbutton', function () {
+                // webview.canBack(function (e) {
+                //     if (e.canBack) {
+                //         webview.back();
+                //     } else {
+                //         // webview.close(); //hide,quit
+                //         //plus.runtime.quit();
+                //     }
+                // })
+                window.wapHistoryType.go(-1);
+            }, false);
+            // 获取本地应用资源版本号
+            plus.runtime.getProperty(plus.runtime.appid, function (inf) {
+                __currentVersion = inf.version;
+                // checkUpdate();
+            });
+        }
+        (function () {
+            function resizeBaseFontSize() {
+                var rootHtml = document.documentElement,
+                    deviceWidth = rootHtml.clientWidth;
+                rootHtml.style.fontSize = deviceWidth / 7.5 + "px";
+                window.fontSize = deviceWidth / 7.5;
+            }
+            resizeBaseFontSize();
+            window.addEventListener("resize", resizeBaseFontSize, false);
+            window.addEventListener("orientationchange", resizeBaseFontSize, false);
+        })();
+        //格式化日期
+        Date.prototype.format = function (fmt) { //author: meizz
+            var o = {
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds(), //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds() //毫秒
+            };
+            if (/(y+)/.test(fmt))
+                fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt))
+                    fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[
+                        k]).length)));
+            return fmt;
+        }
+        String.prototype.replaceAll = function (search, replacement) {
+            var target = this;
+            return target.replace(new RegExp(search, 'gm'), replacement);
+        };
+
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+        window.channel = getUrlParam("channel") || "";
+        if (window.channel && window.sessionStorage) {
+            sessionStorage.setItem("channel", window.channel);
+        }
+        var referer = getUrlParam("referer") || "";
+        if (referer && window.localStorage) {
+            window.localStorage.setItem("referer", referer);
+        }
+        try {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.ios = true;
+            } else {
+                window.ios = false;
+            }
+        } catch (err) { }
+    </script>
+</body>
+
+</html>

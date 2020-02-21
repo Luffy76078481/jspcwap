@@ -1,0 +1,257 @@
+  /*
+      主题
+  */
+
+// 主题色
+
+$Green:#14805e;
+$Black:#1a1915;
+$BlackButton:#393732;
+$Brown:#53302c;
+$Yellow:#a9923d;
+$Orange:#d3991c;
+$Red:#af0000;
+
+// 黑色
+div[data-theme="Black"]{
+    // 首页优惠，公告走马灯弹窗
+    .popBox_title{
+        background-color: $Black;
+    }   
+    // 登录弹窗，棋牌加入房间弹窗
+    .modal-header{
+        background-color: $BlackButton;
+    }
+    .modal-body{
+        input,select{
+            border: 1px solid $Black;
+        }
+        button{
+            background-color: $BlackButton;
+        }
+        a.intoGameButton{
+            background-color: $BlackButton;  
+        }
+    }
+    // 自制日历
+    .fucktime-box{
+        .timeHead{
+            background-color: $Black;
+        }
+        .calendarButtons{
+            button{
+                background: $Black;
+                background-color: $Black;
+            }
+        }
+        .fucktime-dateactive{
+            background-color: $Black;
+        }
+        button.nowYear span{
+            color:$Black;
+        }
+    }
+}
+// 绿色
+div[data-theme="Green"]{
+    .popBox_title{
+        background-color: $Green;
+    }      
+    .modal-header{
+        background-color: $Green;
+    }
+    .modal-body{
+        input,select{
+            border: 1px solid $Green;
+        }
+        button{
+            background-color: $Green;
+        }
+        a.intoGameButton{
+            background-color: $Green;  
+        }
+    }
+    .fucktime-box{
+        .timeHead{
+            background-color: $Green;
+        }
+        .calendarButtons{
+            button{
+                background: $Green;
+                background-color: $Green;
+            }
+        }
+        .fucktime-dateactive{
+            background-color: $Green;
+        }
+        button.nowYear span{
+            color:$Green;
+        }
+    }
+}
+// 黄色
+div[data-theme="Yellow"]{
+    .popBox_title{
+        background-color: $Yellow;
+    }    
+    .modal-header{
+        background-color: $Yellow;
+    }
+    .modal-body{
+        input,select{
+            border: 1px solid $Yellow;
+        }
+        button{
+            background-color: $Yellow;
+        }
+        a.intoGameButton{
+            background-color: $Yellow;  
+        }
+    }   
+    .fucktime-box{
+        .timeHead{
+            background-color: $Yellow;
+        }
+        .calendarButtons{
+            button{
+                background: $Yellow;
+                background-color: $Yellow;
+            }
+        }
+        .fucktime-dateactive{
+            background-color: $Yellow;
+        }
+        button.nowYear span{
+            color:$Yellow;
+        }
+    }
+}
+// 棕色主題
+div[data-theme="Brown"],div[data-theme="DarkBrown"],div[data-theme="LightBrown"]{
+    .popBox_title{
+        background-color: $Brown;
+    }     
+    .modal-header{
+        background-color: $Brown;
+    }
+    .modal-body{
+        input,select{
+            border: 1px solid $Brown;
+        }
+        button{
+            background-color: $Brown;
+        }
+        a.intoGameButton{
+            background-color: $Brown;  
+        }
+    } 
+    .fucktime-box{
+        .timeHead{
+            background-color: $Brown;
+        }
+        .calendarButtons{
+            button{
+                background: $Brown;
+                background-color: $Brown;
+            }
+        }
+        .fucktime-dateactive{
+            background-color: $Brown;
+        }
+        button.nowYear span{
+            color:$Brown;
+        }
+    }
+    // 优惠导航
+    .promoTypesContainer{
+        background: -webkit-gradient(linear, left top, left bottom, from(#251503), to(#4c2f0e));
+        .active a{
+            border-bottom: 2px solid #f7e17e;
+        }
+    }
+    .promotionsListView{
+        a,span,p,table,td,tr,th,em,i{
+            color: #fff;
+        }
+    }
+}
+// 橘色
+div[data-theme="Orange"]{
+    // 首页优惠，公告走马灯弹窗
+    .popBox_title{
+        background-color: $Orange;
+    }   
+    // 登录弹窗，棋牌加入房间弹窗
+    .modal-header{
+        background-color: $Orange;
+    }
+    .modal-body{
+        input,select{
+            border: 1px solid $Orange;
+        }
+        button{
+            background-color: $Orange;
+        }
+        a.intoGameButton{
+            background-color: $Orange;  
+        }
+    }
+    // 自制日历
+    .fucktime-box{
+        .timeHead{
+            background-color: $Orange;
+        }
+        .calendarButtons{
+            button{
+                background: $Orange;
+                background-color: $Orange;
+            }
+        }
+        .fucktime-dateactive{
+            background-color: $Orange;
+        }
+        button.nowYear span{
+            color:$Orange;
+        }
+    }
+}
+// 宏色
+div[data-theme="Red"]{
+    // 首页优惠，公告走马灯弹窗
+    .popBox_title{
+        background-color: $Red;
+    }   
+    // 登录弹窗，棋牌加入房间弹窗
+    .modal-header{
+        background-color: $Red;
+    }
+    .modal-body{
+        input,select{
+            border: 1px solid $Red;
+        }
+        button{
+            background-color: $Red;
+        }
+        a.intoGameButton{
+            background-color: $Red;  
+        }
+    }
+    // 自制日历
+    .fucktime-box{
+        .timeHead{
+            background-color: $Red;
+        }
+        .calendarButtons{
+            button{
+                background: $Red;
+                background-color: $Red;
+            }
+        }
+        .fucktime-dateactive{
+            background-color: $Red;
+        }
+        button.nowYear span{
+            color:$Red;
+        }
+    }
+}

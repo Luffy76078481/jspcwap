@@ -1,0 +1,144 @@
+
+// 样式重构-头部
+#topHead {
+    position: relative;
+    // 头部背景
+    .headBg{
+        height: 150px;
+        background:url(./images/headbg.jpg) center top repeat-y;
+        .HeaderWrap{
+            width: 1260px;
+            height: 115px;
+            .logo{
+                display: block;
+                width: 345px;
+                position: absolute;
+                left: 0;
+                top: 12px;
+                height: 99px;
+                background: url(./images/s_tl.1.png) no-repeat;
+                background-size: contain;
+            }
+            .credit{
+                display:block;
+                height: 56px;
+                position: absolute;
+                width: 206px;
+                background: url(./images/slogan.png) center center no-repeat;
+                left: 394px;
+                top: 28px;
+            }
+            // 登录
+            .loginForm {
+                float: right;
+                color: #fff;
+                margin-right: 15px;
+                .timeNumber{
+                    position: relative;
+                    a.mobile_betting{
+                        color: #ff0000;
+                    }
+                    .item{
+                        padding: 0 2px;
+                    }
+                    .time_box{
+                        display: block;
+                        b{
+                            font-weight:400;
+                        }
+                    } 
+                    i{
+                        margin-right: 2px;
+                    }
+                    a,span{
+                        color: #785a38;
+                        padding-right: 5px;
+                        font-size: 14px; 
+                    }
+                }
+                .infoContent{
+                    margin-top: 5px;
+                    font-size: 15px;
+                    text-align: left;
+                    a,span{
+                        color: #000;
+                    }
+                    .infoWrap{
+                        display:inline-block
+                    }
+                    .memberItem a{
+                        margin-left: 5px;
+                        &.charge {
+                            opacity: .4;
+                            -webkit-animation: hide 1s infinite;
+                            -o-animation: hide 1s infinite;
+                            animation: hide 1s infinite;
+                        }
+                    }
+                }
+                #login-form{
+                    margin-top: 10px;
+                    .form-login-input{
+                        position: relative;
+                        width: 200px;
+                        line-height: 24px;
+                        padding-left: 7px;
+                        input{
+                            padding: 0 0 0 26px;
+                            color: white;
+                            border: 1px solid #946a1a;
+                            width: 196px;
+                            height: 28px;
+                            &.account-input{
+                                background: #946a1a url(./images/icon01.png) no-repeat 3px;        
+                            }
+                        }
+                        input[type="password"]{
+                            background: #946a1a url(./images/icon04.png) no-repeat 3px;       
+                        }
+                        a.forget{
+                            position: absolute;
+                            right: 0px;
+                            bottom: 7px;
+                            background: transparent;
+                            color: #fbecb0;
+                        }
+                    }
+                    .form-login-button{
+                        width: 102px;
+                        margin-top: 35px;
+                        .form-login-btn{
+                            background: url(./images/inco_login.png) no-repeat;
+                            width: 102px;
+                            height: 25px;
+                            border: 0;
+                        }
+                        .form-login-btn:hover {
+                            background-position: 0px -25px;
+                        }
+                        a {
+                            color: gray;
+                            text-decoration: underline;
+                            
+                        }
+                    }
+                    .form-login-reg{
+                        padding-top: 8px;
+                        margin-top: 30px;
+                        .form-reg-btn{
+                            width: 84px;
+                            height: 24px;
+                            background-position: -102px 0px;
+                            background-image: url(./images/inco_login_xhtd.png);
+                            background-repeat: no-repeat;
+                            &:hover{
+                                background-position: -102px -26px; 
+                            }
+                        }
+                    }
+                }
+            }        
+        }
+    }
+}
+

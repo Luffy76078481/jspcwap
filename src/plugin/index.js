@@ -1,0 +1,10 @@
+require("babel-polyfill");
+require("whatwg-fetch");
+require("./libs/jquery-ui/1.12.1/");
+require("./libs/jquery.wrapper");
+require("./libs/font-awesome/css/font-awesome.min.css");
+require("./libs/bootstrap/3.3.5/");
+require("./libs/owl.carousel/");
+require("./libs/sweetalert/1.1.3/");
+require("./utils/main");
+require("./libs/superSlide")

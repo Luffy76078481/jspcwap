@@ -1,0 +1,124 @@
+.pageContainer {
+    .scroll-content {
+
+        div,
+        a,
+        p,
+        span {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -khtml-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        // padding: .3rem 0 0 0;
+        margin-bottom: 0;
+    }
+
+    .am-list-body {
+        .am-list-item {
+            .am-list-line {
+                display: flex;
+                border-bottom: 1px solid rgba(216, 211, 211, 0.5) !important;
+                .am-input-label.am-input-label-5 {
+                    display: flex;
+                    align-items: center;
+                    width:2rem;
+                    span{
+                        width: 1rem;
+                        text-align: left;
+                        font-size: .3rem;
+                    }
+                    .icon-key::before {
+                        width: 37%;
+                    }
+                    i {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+.set_withdraw_pwd .am-list-item {
+    padding-left: .2rem !important;
+    line-height: none;
+    .am-list-line {
+        border-bottom: 0 !important;
+    .am-input-label.am-input-label-5 {
+        padding: 0 !important;
+    }
+}
+}
+
+    .register {
+
+        .checkPay,
+        .show_rules {
+            font-size: .25rem;
+        }
+
+        .checkPay {
+            .am-list-line {
+                border-bottom: 0 !important;
+            }
+        }
+    }
+
+    .am-list-item .am-list-line .am-list-content {
+        //我已届满合法博彩年龄,且同意各项开户条约
+        font-size: .26rem;
+    }
+
+
+
+    .am-list-item img {
+        width: 1.5rem;
+        height: .8rem;
+    }
+
+    .am-list-item {
+        padding-left: .3rem;
+        min-height: .9rem;
+
+        .am-list-line {
+            padding-right: .3rem;
+
+            .am-list-content {
+                padding-top: 0.12rem;
+                padding-bottom: 0.12rem;
+
+                .am-list-thumb {
+                    width: .4rem;
+                    height: .4rem;
+                    margin-right: .3rem;
+
+                    .am-checkbox {
+                        height: .9rem;
+
+                        .am-checkbox-inner {
+                            left: .3rem !important;
+                            top: .25rem !important;
+                            width: .42rem;
+                            height: .42rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .am-checkbox-inner:after {
+        position: absolute;
+        top: 0.05rem;
+        right: 0.11rem;
+        width: 0.1rem;
+        height: 0.2rem;
+    }
+
+    .am-checkbox.am-checkbox-checked .am-checkbox-inner {
+        border-color: #0f7556;
+        background: #0f7556;
+    }
+}

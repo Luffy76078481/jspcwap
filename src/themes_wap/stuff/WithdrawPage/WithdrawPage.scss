@@ -1,0 +1,281 @@
+@import "../../style/variables.scss";
+
+.WithdrawPage {
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .wrap {
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        box-sizing: border-box;
+        padding: .25rem .2rem;
+        margin: .2rem;
+        border-radius: .2rem;
+        box-shadow: 0 0 9px 0 rgba(145, 145, 145, 0.62);
+        background-color: #fff;
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content:center; 
+            align-items: center;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                box-shadow: inset -1px 0px 0 rgba(255, 255, 250, 0.3),
+                    inset -2px 0px 0 rgba(0, 0, 0, 0.1);
+            }
+
+            button {
+                line-height: .45rem;
+                font-size: .25rem;
+                border: 0;
+                color: #fff;
+                border-radius: 5px;
+                width: 1.5rem;
+            }
+        }
+    }
+
+    .am-list-item {
+        padding-left: .2rem !important;
+    }
+
+    .am-list-content {
+        width: 1rem !important;
+    }
+
+    .noPaddingLeft .am-list-item.am-input-item {
+        padding-left: 0 !important;
+    }
+
+    .am-list-item.am-input-item {
+        height: .7rem !important;
+    }
+
+    .am-input-label,
+    .am-list-content,
+    .am-list-extra,
+    .am-input-control {
+        font-size: .25rem !important;
+    }
+
+    .am-input-label {
+        width: 1.2rem !important;
+    }
+
+    .am-list-line .am-list-line:after {
+        height: 0 !important;
+    }
+
+    .am-list-item .am-list-line .am-list-extra {
+        // flex-basis: 20%;    
+    }
+
+    .am-list-item.am-input-focus .am-input-clear {
+        width: .3rem;
+        height: .3rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .accounts {
+        .am-list-content {
+            width: 1.2rem !important;
+            line-height: .5rem;
+            flex: none;
+            margin-right: 5px;
+        }
+
+        .am-list-item .am-list-line .am-list-extra {
+            flex-basis: 70%;
+            text-align: left;
+            margin-left: .1rem;
+        }
+
+        .am-list-arrow-vertical {
+            width: .3rem;
+            height: .3rem;
+        }
+    }
+
+    .noPaddingLeft,
+    .accounts {
+        border-bottom: solid 1px #ddd !important;
+    }
+
+    .tips {
+        padding: .15rem .18rem 0;
+        font-size: .225rem;
+        color: $theme-color;
+        line-height: .4rem;
+        display: block;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .btn {
+        background: $theme-color;
+        margin-top: .4rem;
+    }
+
+    .addAmount {
+        a {
+            display: inline-block;
+            padding: 3px 10px;
+            font-size: .25rem;
+            background: $theme-color;
+            color: #fff;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .amount_tip_box {
+        color: #555;
+        text-align: center;
+        height: .5rem;
+        line-height: .5rem;
+        background-color: rgba($theme-color, .4);
+    }
+}
+
+.am-modal-button-group-v.am-modal-button-group-normal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.sendPhone {
+
+    span {
+        font-size: .25rem;
+        color: #af0000;
+    }
+
+    .item {
+        text-align: left;
+        margin: .2rem 0;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        input {
+            padding: 0 5px;
+            border: 1px solid #ccc;
+            width: 90%;
+            height: 28px;
+            line-height: 28px;
+            font-size: .25rem;
+            float: left;
+
+            &.code {
+                width: 50%;
+                border-right: 0;
+            }
+        }
+
+        .getCode {
+            padding: 1px 0;
+            width: calc(45% - 5px);
+            text-align: center;
+            float: left;
+            height: 28px;
+            line-height: 28px;
+            font-size: .25rem;
+            color: #fff;
+            background: #cf0000;
+
+            &.disabled {
+                background: #cecece;
+                cursor: default;
+            }
+        }
+    }
+}
+
+//资金管理
+.profile {
+    padding: .2rem;
+
+    .finance-logo {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .userLevel {
+        font-size: .25rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .username {
+        font-size: .4rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .userCash {
+        color: #fff;
+        padding: .2rem .5rem 0rem;
+
+        i {
+            font-size: .6rem;
+            float: left;
+        }
+
+        .itemR {
+            float: left;
+            margin-left: 8px;
+
+            span {
+                display: block;
+                font-size: .3rem;
+                font-weight: bold;
+                margin-bottom: 2px;
+
+                em {
+                    font-size: .2rem;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
+
+            .title {
+                font-weight: normal;
+                font-size: .2rem;
+            }
+        }
+
+    }
+}

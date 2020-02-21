@@ -1,0 +1,277 @@
+@import "../../plugin/libs/font-awesome/css/font-awesome.css";
+@import "./variables.scss";
+@import "./iconfont.css";
+@import "./themes.scss";
+@import "./animate.scss";
+@import "./antd.scss";
+
+/*
+        移动端公共样式：
+        谨慎修改！谨慎修改！谨慎修改！谨慎修改！谨慎修改！谨慎修改！
+        否则：
+
+        "       
+            一档  
+            橡胶手枪、橡胶散弹、橡胶火箭、橡胶火箭炮、橡胶拏、橡胶子弹、橡胶机关枪、橡胶大风车、橡胶攻城炮、
+            橡胶鞭，橡胶锤，橡胶矛枪、橡胶战斧、橡胶印章、橡胶回旋弹、橡胶盾牌、橡胶网、橡胶勾拳。                      
+        "。                           
+        " 
+            二挡 
+            橡胶Jet手枪、橡胶Jet火箭炮、橡胶Jet鞭、橡胶Jet子弹、橡胶Jet双枪、橡胶Jet机关枪、橡胶Jet火箭、    
+            橡胶Jet替罪羊、橡胶Jet印章、橡胶鹰步枪、橡胶Jet回旋弹、橡胶Jet攻城炮                             
+        "。
+        " 
+            三档
+            橡胶巨人手枪、橡胶巨人战斧、橡胶巨人鞭、橡胶巨人火箭炮、橡胶巨人印章、橡胶巨人回旋弹、橡胶巨人气球、
+            橡胶巨人雷斧、橡胶象枪、橡胶象枪乱打、橡胶灰熊铳、橡胶雷神象枪                              
+        "。
+        "
+            四挡 
+            弹力人状态、橡胶猿王枪、橡胶犀牛榴弹炮、橡胶大蛇拳、橡胶狮子火箭炮、橡胶大猿王枪橡胶猿王群鸦炮、
+            坦克人状态、橡胶加农炮球、
+            蛇人状态、橡胶Jet大蛇炮、橡胶黑曼巴、橡胶眼镜王蛇。
+        "
+*/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-size: .225rem;
+    color: #888;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: .225rem;
+    color: #888;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: .225rem;
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-size: .225rem;
+    color: #888;
+}
+
+body {
+    font-family: "microsoft yahei";
+    background: $bg-color; // 通用白色
+}
+
+body,
+span,
+a,
+input,
+p,
+textarea {
+    font-size: .25rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+[class^="icon-"],
+[class*=" icon-"],
+.icon {
+    font-size: .4rem;
+    display: inline-block;
+}
+
+.profile {
+    background: map-get($image, nav-bg) 0 0 no-repeat;
+    background-size: cover;
+
+    .finance-logo {
+        background: map-get($image, login_logo) no-repeat center;
+        background-size: 80%;
+    }
+}
+
+.wrapper {
+    // 特定容器，配合Bscroll
+    overflow: hidden;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+
+    .content {
+        height: auto;
+    }
+}
+
+.dataLoading {
+    //玩命加载中
+    text-align: center;
+    line-height: 2rem;
+    color: #888;
+    width: 100%;
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.loginBt {
+    //注册，登录，忘记密码等
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .35rem .5rem;
+
+    a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        color: #555;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.registerBtn {
+    // 注册按钮，注册页，代理注册页
+    background: $theme-color;
+    border-radius: 10px;
+}
+
+.myListView {
+    // 容器，ListView-UI组件特定CLASS名
+    height: 100%;
+}
+
+.scroll-content {
+    // 滑动容器
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+    background: $bg-color;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
+    height: auto;
+}
+
+//按钮
+.btn {
+    height: .75rem;
+    font-size: .25rem;
+    font-weight: 800;
+    color: #fff;
+    background-color: $theme-color;
+    margin: .1rem auto;
+    width: 80%;
+    text-align: center;
+    line-height: .75rem;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: .2rem;
+    cursor: pointer;
+
+    &:disabled,
+    &.disabled {
+        background-color: $theme-color-disabled
+    }
+}
+
+// 公告，
+.AnnounceTime {
+    float: right;
+    margin-right: 10px;
+    font-size: .24rem;
+}
+
+// 圈圈
+.circle-wrap {
+    margin: .25rem .2rem;
+    padding: 0rem .2rem;
+    border-radius: .2rem;
+    overflow: hidden;
+    outline: 0;
+    -webkit-box-shadow: 0 0 9px 0 rgba(145, 145, 145, 0.62);
+    -moz-box-shadow: 0 0 9px 0 rgba(145, 145, 145, 0.62);
+    box-shadow: 0 0 9px 0 rgba(145, 145, 145, 0.62);
+}
+
+// 公告喇叭
+.am-icon {
+    width: .4rem;
+    height: .4rem;
+}
+
+// antd弹窗按钮加个上边线
+.am-modal-footer {
+    border: 1px solid #ccc !important;
+    height: .8rem;
+}
+
+// 提示弹框
+.am-modal-button-group-v .am-modal-button {
+    width: 100%;
+    position: static;
+}
+
+.am-modal-button-group-v.am-modal-button-group-normal {
+    height: 100%;
+}
+
+//客服弹窗
+.am-modal-wrap {
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    & .am-modal-content {
+        // padding: 0;
+    
+    & .am-modal-header {
+        padding-top: 20px;
+    }
+    & .am-modal-footer {
+
+        & .am-modal-button-group-h {
+
+            & a {
+                height: .83rem;
+                line-height: .83rem;
+            }
+        }
+    }
+}
+}

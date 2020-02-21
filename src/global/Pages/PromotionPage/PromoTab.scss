@@ -1,0 +1,45 @@
+@import "./promoTheme.scss";
+.promoTypesContainer{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px auto 0;
+    // 默认样式，如果需要改动到 Src Style theme.scss 主题中修改
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#4c4c4c));
+    position: relative;
+    margin-bottom: 30px;
+    .promotion-tab-item{
+        flex: 1;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        a{
+            display: block;
+            height: 100%;
+            color: #fff;
+        }
+    }
+    .active{
+        a{
+            // 默认样式，如果需要改动到 Src Style theme.scss 主题中修改
+            border-bottom: 2px solid #757575;
+        }
+    }
+    #PromotionTab-wrap{
+        overflow: hidden;
+        position: relative;
+        .ant-tabs-bar{
+            margin-bottom: 0;
+            border-bottom-color: transparent
+        }
+        .ant-tabs-tab,.ant-tabs-tab-prev,.ant-tabs-tab-next{
+            color: #fff;
+        }
+        .ant-tabs-tab-active{
+            color: #fffd00;
+        }
+        .ant-tabs-ink-bar{background-color: transparent}
+    }
+
+}

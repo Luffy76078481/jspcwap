@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/*
+    代理页面私有样式 —————— 原则上只放 颜色和图片引用，个别样式调整
+*/
+
+body{
+  background-color: #45290c;
+  color: #fff;
+}
+
+#agent{
+  .borderHeng {
+    border-top: 1px solid #5f3730;
+    border-bottom: 1px solid #351914;
+  }
+  .tableList {
+    color: #feca54;
+    border: 1px solid #a05e5b;
+    background: #281400;
+    tr td {
+      border-top: 1px solid #a05e5b;
+      border-left: 1px solid #a05e5b;
+    }
+  }
+  // _____________________________________________头部  ——————————————————————————
+  .header_bg{
+    // 顶部
+    .header {
+      border-bottom: 1px solid #5f3730;
+      .header_left{
+        background:  url(./resources/index_logo.png) no-repeat left;
+      }
+      .header_right {
+        background: url(./resources/index_head_right.jpg) no-repeat right;
+      }
+    }  
+    // 导航
+    .menuNav{
+      border-top: 1px solid #351914;
+      box-shadow: inset 0 1px 0 0 #351914;
+      ul{
+        li{
+          a {
+            &.now{
+              background-color: #351914;// 选中导航背景颜色
+            }
+          }
+        }
+      }
+    }
+  }
+  // _____________________________________________底部  ——————————————————————————
+  .footer {
+    background: #180e0c;
+    .footer_bg {
+      background: url(./resources/footer_logo.png) no-repeat;
+    }
+  }
+  .footerNav {
+    background: #291714;
+    .footerNavBtn{
+      a{
+        color: #fff; 
+        &:hover{
+          color: #fff000
+        } 
+      }
+    }
+  }
+  // _____________________________________________首页  ——————————————————————————
+  #IndexContent{
+    color: #fff;
+    .content_up{
+      border-bottom: 1px solid #351914;
+    }
+    .imgLeft {
+      background: url(./resources/indexPageShow.jpg) no-repeat;
+    }
+    // 现在申请 代理登入
+    .sqBtnStyle{
+      background: #f2d369;
+      color: #222;
+      &:hover {
+        background: #eea61b;
+      }
+    }
+  }
+  // _____________________________________________品牌介绍  ——————————————————————————
+  #BrandContent{
+    color: #fff;
+    .contentText1, 
+    .contentText2, 
+    .contentText3 {
+        border-bottom: 1px solid #351914;
+    }
+    & .icon1 {
+      background:  url(./resources/product_05.jpg) no-repeat center;
+    }
+    & .icon2 {
+      background:  url(./resources/product_07.jpg)  no-repeat center;
+    }
+    & .icon3 {
+      background:  url(./resources/product_09.jpg)  no-repeat center;
+    }
+  }
+  // _____________________________________________合营计划  ——————————————————————————
+  #AllianceContent{
+    .moneyStepList{
+      background: #8d3e32;
+    }
+    .fnameCenter{
+      h3,p,span{
+        color:#fff;
+      }
+    }
+    // 箭头颜色
+    .moneyBorderSan {
+      border-left: 35px solid #a05e5b;
+    }
+  }
+  // _____________________________________________立即加入  ——————————————————————————
+  #Registered{
+    label.inptfont{
+      color: #ffd200
+    } 
+    .reg-fnameContent {
+      border: none;
+      background: rgba(0,0,0,.7);
+    }   
+    .submit_btn_input {
+      background: #f2d369;
+      color: #fff;
+      border: none;
+    }
+    p.tiShi {
+      color: #ffd200;
+    }
+  }
+  // _____________________________________________营销工具  ——————————————————————————
+  #ToolsContent{
+      span,h3,p,i{
+        color:#fff;
+      }
+  }
+  // _____________________________________________常见问题  ——————————————————————————
+  #FaqContent {
+    .help-fousImg .img{
+      background: url(./resources/help_page_banner.jpg) center no-repeat;
+    }
+    .helpStyle{
+      h3{
+        background-color: #f2d369;
+        color:#222;
+      }
+      .helpList{
+        padding: 0 20px;
+        background-color: #381f05;
+        a,p{
+          color: #fff;
+        }
+        a{
+          border-top: 1px solid #291908;
+          border-bottom: 1px solid #452c11;
+        }
+      }
+    }    
+  }
+  // _____________________________________________联系我们  ——————————————————————————
+  #ContactContent{
+    .iconGroup{
+      color: #FED65C;
+    }
+    .contactHzImg{
+      span{
+        color: #fff;
+      }
+      span.logoImg{
+        background:  url(./resources/index_logo.png) no-repeat center center / 100%;
+        width: 151px;
+        height: 60px;
+      }
+    } 
+  }
+}

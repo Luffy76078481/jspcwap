@@ -1,0 +1,34 @@
+
+.promotions{
+    // 默认样式，如果需要改动到 Src Style theme.scss 主题中修改
+    background: #272727;
+    overflow: hidden;
+    min-height: 600px;
+    .promotionContainer {
+        width: 960px;
+        margin: 20px auto;
+        ul.promotionsContent{
+            li{
+                width: 100%;
+                margin: 0 auto 5px;
+                overflow: hidden;
+                line-height: 26px;
+                position: relative;
+            }
+            div.promotionsListImg{
+                width: 900px;
+                height: 146px;
+                cursor: pointer;
+                margin: auto;
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: contain;
+            }
+            div.promotionsListView{
+                margin-top: 0.5%;
+                width: 100%;
+                transition: all .5s ease, max-height .2s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+// Vns
+
+.newCasinoPage{
+    padding: 300px 0 50px 0;
+    background: url("../../images/casino/casino_title.png") no-repeat center 50px;
+    .casinoWrap{
+        width: 1120px;
+        .casinoBg{
+            background-image: url(../../images/casino/page_bg-y.png);
+            background-size:contain;
+            position: relative; 
+            padding: 20px;
+            &::before{
+                background: url(../../images/casino/page_bg-top.png) no-repeat 0 0 / cover;
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 13px;
+                left: 0;
+                top: 0;
+                background-size: cover;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 13px;
+                background: url(../../images/casino/page_bg-bottom.png) no-repeat 0 0 / cover;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-size: cover;              
+            }
+        }
+        .casino_game{
+            width: 308px;
+            float: left;
+            margin: 0 25px 10px;
+            div.bigPic{
+                height: 300px;
+            }   
+            a.minPic{
+                display: block;
+                border: 2px solid #edc580;
+                height: 50px;
+            }      
+            &:hover a.minPic{
+                border: 2px solid #fcda7c;  
+            }
+        }
+    }
+}

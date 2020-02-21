@@ -1,0 +1,560 @@
+li .game-fuceng a {
+  width: 80%;
+  margin-top: 40%;
+  border-radius: 4px 4px 0px 0px;
+  background: url("images/pt_ljstart.png") 0 0/100% 100% no-repeat;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+.game-list-fname {
+  width: 945px;
+  margin: 0 auto;
+}
+.game-list-content {
+  background: #000;
+
+  
+  .game-list-outbox {
+      margin: 0 auto;
+      position: relative;
+      
+      .platform_list {
+          width: 110px;
+      }
+  }
+}
+
+.game-list-left-nav {
+  float: left;
+  width: 155px;
+  padding-top: 20px;
+}
+
+.game-list-left-nav li {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.game-list-left-nav li a {
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
+}
+
+.game-list-left-nav li a span {
+  float: right;
+}
+
+.game-list-right-content {
+  float: left;
+  position: relative;
+  min-height: 560px;
+}
+
+#GamesGridPopupMask {
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #000;
+  position: absolute;
+}
+
+#GamesGridPopupMask .GamePopupMask {
+
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -18px 0px 0px -18px;
+}
+
+.gameItem {
+  display: block;
+
+}
+
+.gameItem b {
+  top: 44px !important;
+}
+
+.game-list-right-content li .a {
+  display: block;
+  width: 100%;
+}
+
+.game-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-list-bgbox {
+  width: 100%;
+  background-size: cover;
+}
+
+.searchbartext:focus {
+  border: none;
+  outline: none;
+}
+
+.searchbar {
+  position: relative;
+  line-height: 40px;
+  text-align: center;
+}
+
+.searchbartext {
+  display: inline-block;
+  width: 85%;
+  height: 30px;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, .9);
+  border: none;
+  padding-left: 15px;
+
+}
+
+.hand {
+  vertical-align: middle;
+  position: relative;
+  right: 0;
+  display: inline-block;
+  width: 7%;
+  text-align: center;
+  color: #fdfa6f;
+  /*height: 100%;*/
+  height: 50px;
+  cursor: pointer;
+}
+
+.searchBtn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 15px;
+}
+
+.game-list-inbox {
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  /*width: 700px;*/
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+  text-align: center;
+}
+
+.game-list-right-content li {
+
+  float: left;
+  text-align: center;
+  margin: 10px 11px 5px 11px;
+  position: relative;
+}
+
+.game-list-right-content li .a {
+
+  color: #fff;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.game-list-right-content li .a span {
+  display: block;
+  width: 100%;
+
+
+  border-radius:0px!important;
+
+}
+
+.game-list-content li .game-fuceng img {
+  width: 100%;
+  top:14%;
+  left: 0;
+  position: absolute;
+}
+
+.game-list-right-content li .a img {
+  width: 100%;
+  border-radius: 19px;
+  overflow: hidden;
+}
+
+#game-page {
+  margin: 0px 30px;
+}
+
+
+.listboxhid {
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-top: -2px;
+  height: 80px;
+}
+
+.listboxshow {
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  width: 200%;
+  margin: 0 auto;
+  position: relative;
+  height: 130px;
+  vertical-align: middle;
+  animation: .5s;
+  left: 0;
+}
+
+
+
+.platform_list {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0px 0px;
+  width: 110px;
+}
+
+.platform_list:hover .platform_list_onchoose {
+  display: block;
+}
+
+.platform_list_onchoose_bg {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+.onchoosing {
+  display: block;
+}
+
+.gamesPic {
+  width: 129px;
+  height: auto !important;
+}
+
+.gameItem img.gameImg {
+  height: 129px;
+}
+
+.jackPot {
+  width: 100%;
+  height: 25px;
+  background: url("images/imgbg_07.png");
+  color: rgb(255, 255, 146);
+  ;
+  position: absolute;
+  background-size: cover;
+  top: -16px;
+  left: 0;
+  z-index: 55561;
+  text-align: center;
+}
+
+.checkJackpot {
+  width: 128px;
+  height: 28px;
+}
+
+
+
+.checkJackpot input[type=checkbox] {
+  background-color: rgba(0, 0, 0, .9);
+}
+
+.checkJackpot input {
+  margin-left: 5px;
+}
+
+.checkJackpot:hover label {
+  color: #ffea00;
+}
+
+
+.game-list-content li .game-fuceng {
+  background: linear-gradient(186deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.2)100%);
+  background: -ms-linear-gradient(186deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.2)100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.game-list-content li:hover .game-fuceng {
+  display: block;
+}
+
+.game-list-right-content li .a span {
+  display: block;
+  width: 100%;
+  background: #14805e;
+  line-height: 35px;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.game-list-mid-box {
+  width: 763px;
+  float: right;
+  margin-bottom: 23px;
+}
+
+.pager_box {
+  padding-left: 160px;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+
+.pager_box div {
+  display: inline;
+  margin-right: 5px;
+}
+
+#game-page .pager_box div>a,
+#game-page .pager_box div>span {
+  background: #FFF;
+  color: #000;
+  border: 1px solid #FFF;
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 15px;
+}
+.game-list-bgbox {
+
+
+
+    
+  .platform_list_QT {
+      background: url(./images/all.png) no-repeat 0 -328px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -410px;
+      }
+  }
+  
+  .platform_list_AG {
+      background: url(./images/all.png) no-repeat 0 -7px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -92px;
+      }
+  }
+  
+  .platform_list_BBIN {
+      background: url(./images/all.png) no-repeat 0 -168px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -250px;
+      }
+  }
+  
+  .platform_list_HB {
+      background: url(./images/all.png) no-repeat 0 -810px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -892px;
+      }
+  }
+  
+  .platform_list_OPUS2 {
+      background: url(./images/all.png) no-repeat 0 -968px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -1050px;
+      }
+  }
+  
+  .platform_list_YOPLAY {
+      background: url(./images/all.png) no-repeat 0 -1127px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -1209px;
+      }
+  }
+  
+  .platform_list_PT {
+      background: url(./images/all.png) no-repeat 0 -491px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -574px;
+      }
+  }
+  
+  .platform_list_MG2 {
+      background: url(./images/all.png) no-repeat 0 -649px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -730px;
+      }
+  }
+  
+  .platform_list_CQ {
+      background: url(./images/all.png) no-repeat 0  -1278px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -1348px;
+      }
+  }
+  
+  .platform_list_OPUS {
+      background: url(./images/all.png) no-repeat 0 -968px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -1050px;
+      }
+  }
+  
+  .platform_list_JDB {
+      background: url(./images/all.png) no-repeat 0 -1584px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -1655px;
+      }
+  }
+  .platform_list_PPG{
+      background: url(./images/all.png) no-repeat 0 -1905px;
+      &:hover {
+          background: url(./images/all.png) no-repeat 0 -1970px;
+      }
+  }
+  .platform_list_VT{
+    background: url(./images/all.png) no-repeat 0 -2048px;
+    &:hover {
+        background: url(./images/all.png) no-repeat 0 -2126px;
+    }
+}
+  .platform_list_MJ {
+    background: url(./images/all.png) no-repeat 0 -1752px;
+    &:hover {
+        background: url(./images/all.png) no-repeat 0 -1827px;
+    }  
+  }
+
+  .platform_list_BG {
+    background: url(./images/all.png) no-repeat 0 -2229px;
+    &:hover {
+        background: url(./images/all.png) no-repeat 0 -2304px;
+    }  
+  }
+
+  .platform_list_MJ_onchoose{
+      background: url(./images/all.png) no-repeat 0 -1827px;
+  }
+  .platform_list_QT_onchoose {
+      background: url(./images/all.png) no-repeat 0 -410px;
+  }
+  
+  .platform_list_AG_onchoose {
+      background: url(./images/all.png) no-repeat 0 -92px;
+  }
+  
+  .platform_list_BBIN_onchoose {
+      background: url(./images/all.png) no-repeat 0 -250px;
+  }
+  
+  .platform_list_HB_onchoose {
+      background: url(./images/all.png) no-repeat 0 -892px;
+  }
+  
+  .platform_list_OPUS2_onchoose {
+      background: url(./images/all.png) no-repeat 0 -1050px;
+  }
+  
+  .platform_list_OPUS_onchoose {
+      background: url(./images/all.png) no-repeat 0 -1050px;
+  }
+  
+  .platform_list_YOPLAY_onchoose {
+      background: url(./images/all.png) no-repeat 0 -1209px;
+  }
+  
+  .platform_list_PT_onchoose {
+      background: url(./images/all.png) no-repeat 0 -574px;
+  }
+  
+  .platform_list_MG2_onchoose {
+      background: url(./images/all.png) no-repeat 0 -730px;
+  }
+  
+  .platform_list_CQ_onchoose {
+      background: url(./images/all.png) no-repeat 0 -1348px;
+  }
+
+  .platform_list_JDB_onchoose {
+      background: url(./images/all.png) no-repeat 0 -1655px;
+  }
+
+  .platform_list_PPG_onchoose {
+    background: url(./images/all.png) no-repeat 0 -1970px;
+  }
+
+  .platform_list_BG_onchoose {
+    background: url(./images/all.png) no-repeat 0 -2304px;
+  }
+}
+
+
+
+
+.game-list-left-nav {
+  .checkJackpot {
+      color: #fff;
+      margin-left: 20px;
+  }
+  
+  ul {
+      li {
+          a {
+              color: #fff;
+          }
+          
+          span {
+              color: #fff;
+          }
+      }
+      
+      .active {
+          a {
+            color: #ffea00;
+          }
+          
+          span {
+            color: #ffea00;
+          }
+      }
+      
+      li:hover a {
+        color: #ffea00;
+      }
+  }
+  
+  .searchbar {
+      input {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      
+      i {
+        color: #fff;
+      }
+  }
+}
+
+
+#game-page {
+
+    
+  .active {
+      a {
+          background: #bbb!important ;
+      }
+  }
+  
+}
+

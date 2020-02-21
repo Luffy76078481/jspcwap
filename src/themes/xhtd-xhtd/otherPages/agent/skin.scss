@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+body{
+  color: #fff;
+}
+.agent2{
+  .huang {
+    color: #ffa800;
+  }
+  .tit{
+    margin-top: 15px;
+    color: #ffc428;
+    margin-bottom: 15px;
+  }
+  p.info {
+    margin-left: 15px;
+    color: gold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .title{
+    width: 800px ;
+    height: 53px ;
+    background: url("resources/title.jpg") center no-repeat / 100% 100%;
+    margin-left: 0;
+    position: relative;
+  }
+  .title:before{
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .center{
+    padding: 0 20px 0 40px;
+    margin-left: 0;
+  }
+  .main .content {
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  .cont{
+    margin-top: 10px;
+    letter-spacing: 1px;
+    span.yy {
+      color: #fff000;
+    }
+    .txt{
+      .service {
+        color: gold;
+        margin: 0 10px;
+      } 
+    }   
+  }
+}
+#agent{
+  background: #fbf1cc;
+  // 顶部————————————————————————————————
+  .header_bg{
+    background: url("resources/headBg.jpg") ;
+    // 头部
+    .header {
+      height: 123px;
+      .logo_img{
+        position: relative;
+        width: 1200px;
+        &::after{
+          width: 600px;
+          height: 103px;
+          content: '';
+          position: absolute;
+          right: 0;
+          background: url("resources/headright.png") no-repeat center;
+        }
+        .header_left {
+          width: 400px;
+          background: url(resources/logo2.png) center center no-repeat;
+          height: 122px;
+        }
+      }
+    }
+    // 导航
+    .menuBtn ul {
+      margin-left: 300px;
+      li a{
+        color: black;
+        &.now {
+          background-color: #ce0000;
+          color: #ffb;
+        }
+      }
+    }
+  }
+  // 底部————————————————————————————
+  .b-footer{
+    background: #705015;
+    .footer_bg {
+      width: 1000px;
+      height: 119px;
+      background: url("resources/footer_bg.jpg") center no-repeat;
+    }
+    .footerNav {
+      margin-top: 10px;
+    }    
+  }
+
+  // 内容
+  .main{
+    height: auto;
+    width: 1080px;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+    box-sizing: content-box;
+    min-height: 700px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #705015;
+    .banner{
+      height: 142px  ;
+      background: url("resources/agent_banner2.jpg") center no-repeat
+    }
+    // 左边
+    .leftBar{
+      position: relative;
+      margin-top: 100px;
+      display: inline-block;
+      vertical-align: top;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 231px;
+        height: 92px;
+        top: -92px;
+        background: url("resources/left_top.jpg") no-repeat;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        width: 231px;
+        height: 264px;
+        bottom: -264px;
+        background: url("resources/left_bottom.jpg") no-repeat;
+      }
+      .sideNav{
+        ul{
+          li{
+            a{
+              width: 231px ;
+              height: 45px ;
+              display: block
+            }
+          }
+          .sportnav{  background: url("resources/left_bg_1.jpg") no-repeat center top; }
+          .bingonav{  background: url("resources/left_bg_2.jpg") no-repeat center top; }
+          .casinonav{  background: url("resources/left_bg_3.jpg") no-repeat center top;}
+          .gamesnav{  background: url("resources/left_bg_4.jpg") no-repeat center top; }
+          .sportnav:hover{  background: url("resources/left_bg_1.jpg") no-repeat center bottom; }
+          .bingonav:hover{  background: url("resources/left_bg_2.jpg") no-repeat center bottom; }
+          .casinonav:hover{  background: url("resources/left_bg_3.jpg") no-repeat center bottom;}
+          .gamesnav:hover{  background: url("resources/left_bg_4.jpg") no-repeat center bottom; }
+        }
+      }
+    }
+    // 右边
+    .rightContent {
+      width: 800px;
+      margin: 0 0 0 30px;
+      background: #a6851c;
+      display: inline-block;
+      padding: 0 0 20px 0;
+      // 内容————————————————————————————————————————————————————
+      // 合作伙伴
+      #AllianceContent{
+        .title{
+          &::before{
+            content: '合作伙伴';
+          }
+        }
+        .center{
+          // 内容导航
+          .menuBar{
+            ul{
+              width: 100%;
+              margin-top: 35px;
+              margin-bottom: 20px;
+              border-bottom: 2px solid #faf419;
+              li{   
+                display: inline-block;
+                text-align: center;
+                a{
+                  display: block;
+                  width: 87px;
+                  height: 35px;
+                  line-height: 35px;
+                  color: #fff;
+                  &.now,&:hover{
+                    color: #000;
+                    background: #faf419;
+                  }      
+                }
+              }
+            }
+          }
+          // 内容信息
+          .cont{
+            .tableList{
+              color: #11100e;
+              font-size: 14px;
+              background: #F6F6F6;
+              tr:nth-child(odd){
+                background: #E9E9E9;
+              }
+              td {
+                border: 1px #999 solid;
+              }
+            }
+          }
+        }
+      }
+      //----------------關於我們-------------------
+      #AboutUs{
+        .title:before{
+          content: '关于我们';
+        }
+      }
+      //----------------連絡我們-------------------
+      #ContactUs{
+        .title:before{
+          content: '联络我们';
+        }
+        .cont .items {
+          font-size: 20px;
+          line-height: 40px;
+        }
+      }
+      //----------------如何存款-------------------
+      #Deposit {
+        .title:before{
+          content: '如何存款';
+        }
+      }
+      //----------------如何取款-------------------
+      #Wthdrawal {
+        .title:before{
+          content: '如何取款';
+        }
+      }
+      //----------------常見問題-------------------
+      #Faq {
+        .title:before{
+          content: '常见问题';
+        }
+        .cont{
+          .txt{
+            h4 {
+              font-size: 14px;
+              cursor: pointer;
+            }
+            span{
+              line-height: 25px;
+              display: none;
+              margin: 5px 0;
+            }
+          }
+        }
+      }
+      //----------------責任博彩-------------------
+      #BetRule {
+        .title:before{
+          content: '责任博彩';
+        }
+      }
+    }
+  }
+}
+
+
+

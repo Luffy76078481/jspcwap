@@ -1,0 +1,31 @@
+// 私有样式
+
+::-webkit-input-placeholder {color:#777;}
+::-moz-placeholder {color:#777;}
+:-ms-input-placeholder {color:#777;}
+:-moz-placeholder {color:#777;}
+
+// 慎用*important
+#root{
+    // ____________________________________ * 彩票頁 *  ____________________________________
+    #bingo{
+        #AnimationContainer,#BannerItemInnerContainer{
+            display: none;
+        }
+        .banner,.bingo-fname{
+            background: none;
+        }
+    }
+    // ____________________________________ * 體育頁 *  ____________________________________
+    .newSportPage{
+        background: url(./newImages/title_sport.png) no-repeat center 10px;
+        padding-top: 250px;
+    }
+    // ____________________________________ * 優惠活動 *  ____________________________________
+    .promotions{
+        background: url(./newImages/pro_title.png) no-repeat center top;
+        padding-top: 200px;
+    }
+}   
+
+

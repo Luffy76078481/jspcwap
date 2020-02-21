@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$font-family:"microsoft yahei";
+$bg-color:#fff;
+
+//色系
+$theme-color:#A9493A;                                          
+$theme-color-disabled:#dcdcdc;                                     
+$theme-myPage:linear-gradient(to right, #6b2f25 0%, #c1503e 100%);   //我的页面会员信息部分背景色
+
+//图片
+$image:(
+        logo:url('../images/logo.png'),
+        nav-bg:url('../images/nav-bg.png'),
+        login_logo:url('../images/login_logo.png'),
+        bg-login:url('../images/bg-login.png'),
+        promo_bg:url('../images/promo_bg.png'),
+        lotto_img:url('../images/lotto_img.png'),
+        wechat_img:url('../images/weixinzhifu.png'),
+        statement_img :url('../images/wapico.png')
+);
+
+
+
+
+
+
+

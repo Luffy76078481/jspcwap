@@ -1,0 +1,277 @@
+
+/*
+    update by 19/7/6
+*/
+
+$white:#fff;
+header.Header{
+    position: relative;
+    background: #14805E;
+    border-bottom: 1px solid #046F50;
+    // 头部顶部
+    .headTop{
+        height: 75px;
+        .container{
+            width: 980px;
+            display: flex;
+            justify-content: space-between;
+        }        
+    }
+    // logo
+    a.headFname{
+        width: 120px;
+        background: url(./images/logo.png) center no-repeat;
+        background-size: contain;
+    }
+    // 导航容器
+    .menu-nav{
+        width: 60%;
+        margin-top: 25px;
+        overflow: hidden;
+        color: $white;
+    }
+    // 登录框
+    .loginForm{
+        padding-top: 15px;
+        color: $white;
+        a{
+            cursor: pointer;
+        }
+        form{
+            padding-top: 5px;
+            overflow: hidden;
+            //账户密码
+            .loginInput{
+                input{
+                    float: left;
+                    width: 100px;
+                    height: 25px;
+                    line-height: 25px;
+                    margin: 0px 5px 0px 0px;
+                    padding: 0px 5px 0px 5px;
+                    border: 1px solid #0E5942;
+                    background-color: #10694D;
+                    color: #60A692;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    box-shadow: 0px 1px 0px #288B6C;
+                }
+                input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+                    color: #60A692;
+                } 
+                input:-moz-placeholder, textarea:-moz-placeholder { 
+                    color: #60A692;
+                } 
+                input::-moz-placeholder, textarea::-moz-placeholder { 
+                    color: #60A692;
+                } 
+                input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+                    color: #60A692;
+                } 
+                button{
+                    display: block;
+                    width: 40px;
+                    font-size: 12px;
+                    height: 25px;
+                    background-color: #fad910;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+            // 忘记密码
+            .forgetItem{
+                padding-top: 8px;
+                overflow: hidden; 
+                a{
+                    font-size: 12px;
+                }
+                .form-reg{
+                    float: left;
+                    color: #FFDF1B;
+                }
+                .forget{
+                    float: right;
+                    color: #80BFAC;
+                }
+            }
+        }
+        // 登陆后
+        &.afterLogin{
+            div.afterLoginWrap{
+                min-width: 280px;
+                height: 48px;
+                background-color: #10694d;
+                color: #80bfac;
+                border: 1px solid #0e5942;
+                border-radius: 2px;
+                font-size: 12px;
+                box-shadow: 0 1px 0 #1b8f6c;
+                a{
+                    color: #ffdf1b;
+                }
+                // 头部
+                .Topline{
+                    height: 24px;
+                    border-bottom: 1px solid #0e5942;
+                    line-height: 24px;
+                    display: flex;
+                    .user{
+                        padding-left: 10px;
+                        width: 140px;
+                        a.out{
+                            margin-left: 10px;
+                        }
+                    }
+                    .account{
+                        a.ac{
+                            border-left: 1px solid #0e5942;
+                            float: left;
+                            padding-left: 10px;
+                        }
+                        a.message{
+                            float: left;
+                            width: 22px;
+                            height: 14px;
+                            margin: 6px 5px 0 5px;
+                            background-position: 0 0;
+                            background-repeat: no-repeat;
+                            background-image: url(./images/Message.gif)
+                        }
+                    }
+                }
+                // 底部
+                .BottomLine{
+                    height: 24px;
+                    line-height: 24px;                
+                    .amount{
+                        border-right: 1px solid #0e5c44;
+                        color: #fff;
+                        font-family: verdana;
+                        white-space: nowrap;
+                        float: left;
+                        width: 140px;
+                        padding-left: 10px;
+
+                    }
+                    .transfer{
+                        float: left;
+                        padding-left: 10px;
+                        a{
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 头部底部
+    .headBottom{
+        height: 30px;
+        border-top: 1px solid #228767;
+        background-color: #14805e;
+        font-size: 12px;
+        line-height: 30px;
+        .container{
+            width: 1120px;
+            .noticeText{
+                color: #7fbfac;
+                float: left;
+            }
+            >div{
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            div.timeZone{
+                width: 200px;
+                color: #7fbfac;
+            }
+            div.notice{
+                width: 580px;
+                overflow: hidden;
+            }
+            div.otherLink{
+                width: auto;
+                position: relative;
+                >a{
+                    position: relative;
+                    border-left: 1px solid #228767;
+                    border-right: 1px solid #046f50;
+                    width: 90px;
+                    display: inline-block;
+                    color: #fff;
+                    text-align: left;
+                    padding-left: 5px;
+                    &:hover{
+                        color:#ffdf1b
+                    }
+                    &:hover i.helpLinks{
+                        background-position: 0 -7px;
+                    }
+                    &:hover i.ChatText{
+                        background-position: 4px -12px;
+                    }
+                    i.ChatText{
+                        background-position: 4px 0;
+                        height: 12px;
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin-right: 2px;
+                        padding-left: 20px;
+                        background-image: url(./images/Chat-Icon.png);
+                        background-repeat: no-repeat;
+                    }
+                    i.helpLinks{
+                        position: absolute;
+                        top: 11px;
+                        right: 10px;
+                        height: 6px;
+                        width: 9px;
+                        background-image: url(./images/Drop-Down-Arrow.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+                // 帮助中心下拉
+                #service{
+                    position: absolute;
+                    background: #bbb;
+                    border-radius: 6px;
+                    right: 0;
+                    top: 100%;
+                    z-index: 10;    
+                    &::before{
+                        width: 0;
+                        height: 0;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid #bbb;
+                        border-left: 8px solid transparent;
+                        position: absolute;
+                        top: -6px;
+                        right: 20px;
+                        z-index: 1;
+                        content: "";
+                        display: inline-block
+                    }
+                    li{
+                        line-height: 28px;
+                        height: 28px;
+                        padding: 0 10px;
+                        background: none;
+                        border-top: 1px solid #c8c8c8;
+                        border-bottom: 1px solid #a4a4a4;
+                        text-align: center;
+                        border-radius: 6px;
+                        &:hover{
+                            background: #c8c8c8;
+                        }
+                        a{
+                            color: #333;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

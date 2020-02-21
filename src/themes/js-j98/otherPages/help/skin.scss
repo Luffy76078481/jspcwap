@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body, html {
+  font-family: Microsoft YaHei;
+  background-color: #1a1915;
+  color: #fff;
+}
+// _____________________________________________________私有样式
+a{
+  color: #fff;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+
+#helpPage{
+  background: #1a1915;
+  .header_left{
+    background: url(resources/logo1.png) 0 0 no-repeat;
+  }
+  .header_right{
+    background: url(resources/help.png)  no-repeat right;
+  }
+  .title_img{
+    background: #342c1f;
+    color: #ffb800;
+  }
+  .main_content{
+    background-color: #11100e;
+      // 导航
+    .menu{
+      border-bottom: 1px solid #64563f;
+      ul.navigation{
+        li{
+          a{
+            color: #ffea99;
+          }  
+          ul{
+            color: #000;
+            li{
+              &:last-child {
+                border-bottom: none;
+              }
+              a{
+                background: #1a1915;
+                color: #fff;
+                &:hover{
+                  background: #525050;
+                  color: #ffea00;
+                }
+              }
+            }
+          }  
+        }       
+      }
+    }
+  }
+}
+
+#about,
+#commonQ,
+#deposit,
+#withdrawal,
+#myAccount,
+#sport,
+#liveCasino,
+#phoneBetting,
+#yibanrule,
+#rule,
+#PtRule,
+#responsibility,
+#terms,
+#contact,
+#payout,
+#howPlay,
+#payInfo
+{
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+// ___________________________________ 内容
+.contents{
+  h3{
+    color: #fff;
+  }
+  .helpContent{
+    color: #fff;
+    a:hover{
+      color: #fff000;
+    }
+  }  
+  .title2 {
+    color: #ffb800;
+    background: #594b3a;   
+  } 
+  .ReturnTopBtn,.ReturnTop{
+    color: #bca683;
+  } 
+}
+
+// ___________________________________ 娱乐城
+.tab-TFinfo {
+  color: #fff;
+  border: 1px solid #fff;
+  tr{
+    border-top: 1px solid #fff;
+    td{
+      border-left: 1px solid #fff;
+    }
+  }
+  .tab-tr-red {
+    background: transparent;
+  }
+}
+
+// ___________________________________ 底部
+.foot{
+  background: #15100a;
+}
+.footer-bg{
+  background: url(resources/footer.png) no-repeat center;
+  height: 127px;
+}
+// ___________________________________ 联系我们
+#contact{
+  .contact-text{
+    background: #594b3a;
+  }
+  .line {
+    border-bottom: 1px solid #64563f;
+  }  
+  .contact-btn{
+    background: #ffea99;
+  }
+}
+
+
+
+
+

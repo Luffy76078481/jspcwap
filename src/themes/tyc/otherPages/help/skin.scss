@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+body, html {
+  font-family: Microsoft YaHei;
+  background-color: #FFF;
+}
+// 私有样式
+a{
+  color: #000;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+
+#helpPage{
+  background: #c83434;
+  .header_left{
+    background: url(resources/bangzhuzx.png) 0 0 no-repeat;
+    background-position: 25px 35px;
+  }
+  .header_right{
+    background: url(resources/help.png)  no-repeat right;
+  }
+  .title_img{
+    background: #FFF;
+    color: #000;
+  }
+  .menu{
+    border-bottom: 1px solid #b02e2e;
+    background: #c83434;
+    ul.navigation{
+      li{
+        a{
+          color: #FFF;
+        }  
+        ul{
+          color: #000;
+          li{
+            border-bottom: 1px solid #b02e2e;
+            &:last-child {
+              border-bottom: none;
+            }
+            a{
+              background: #c83434;
+              &:hover{
+                background: #b02e2e;
+                color: #ffea00;   
+              }
+            }
+          }
+        } 
+        &.active{
+          text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+          background-color: #b02e2e;
+          a{
+            color: #ffdf1b;
+          }
+        }   
+      }       
+    }
+  }
+}
+
+#about,
+#commonQ,
+#deposit,
+#withdrawal,
+#myAccount,
+#sport,
+#liveCasino,
+#phoneBetting,
+#yibanrule,
+#rule,
+#PtRule,
+#responsibility,
+#terms,
+#contact,
+#payout,
+#howPlay,
+#payInfo
+{
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+// ___________________________________ 内容
+.contents{
+  h3{
+    color: #c83434;
+  }
+  .helpContent{
+    color: #585d5b;
+    a:hover{
+      color: #823832;
+    }
+  }  
+  .title2 {
+    color: #c83434;
+    .ReturnTop {
+      color: #cf918c;
+    }    
+  } 
+  .ReturnTopBtn{
+    color: #cf918c;
+  } 
+}
+
+// ___________________________________ 娱乐城
+.tab-TFinfo {
+  color: #000;
+  border: 1px solid #b02e2e;
+  tr{
+    border-top: 1px solid #b02e2e;
+    td{
+      border-left: 1px solid #b02e2e;
+    }
+  }
+  .tab-tr-red {
+    background: transparent;
+  }
+}
+
+// ___________________________________ 底部
+.foot{
+  background: #f6f6f6;
+}
+.footer-bg{
+  background: url(resources/footer.jpg) no-repeat center;
+  height: 127px;
+}
+
+
+

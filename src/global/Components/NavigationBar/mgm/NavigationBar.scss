@@ -1,0 +1,101 @@
+
+
+/*
+        导航共有样式 ________________________________
+*/
+
+
+.MainNavigation{
+    position: relative;
+    .navContainer{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    // 一级导航
+    .mainNav{
+        display: flex;
+        >li.mainMenu{
+            text-align: center;
+            float: left;
+            flex: 1;
+            position: relative;
+            height:73px;
+            line-height:60px;
+            &:hover a{
+                color: #ff0000
+            }
+            &.hot::after{
+                content: "";
+                width: 23px;
+                height: 20px;
+                background: url("./images/hot.gif") 50% no-repeat;
+                position: absolute;
+                right: 3px;
+                top: 5px;
+            }
+            a{
+                display: inline-block;
+                height: 100%;
+                width: 86px;
+                color:#643b1d;
+                font-size: 14px;
+                &.active{
+                    background: url(./images/navhover.png) no-repeat center 0
+                }
+            }
+            // 图片ICON
+            i.navIcon{
+                width: 41px;
+                height: 25px;
+                top: 10px;
+                background-repeat: no-repeat;
+                display: block;
+                position: relative;
+                margin: auto;
+            }
+        }
+    }
+    // 二级导航
+    .SecondNav{
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 99%;
+        z-index: 99;
+        transition: all .3s;
+        background: rgba(69,41,12,.85);
+        animation: toggle .5s ease both;
+        overflow: hidden;
+        ul{
+            text-align: center;
+            li{
+                cursor: pointer;
+                width: 80px;
+                height: 150px;
+                margin: 0 5px;
+                float: left;
+                position: relative;
+                &.hot::after{
+                    content: "";
+                    width: 23px;
+                    height: 20px;
+                    background: url("./images/hot.gif") 50% no-repeat;
+                    position: absolute;
+                    right: -15px;
+                    top: 20px;
+                }
+                div{
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 80px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+
+

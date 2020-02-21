@@ -1,0 +1,71 @@
+.NewGamesPage{
+    height: 1000px;
+    .gameHead{
+        margin: auto;
+        width: 1000px;
+        height: 188px;
+        background: url(../images/games/head.gif) 0 0/100% 100%  no-repeat;
+        position: relative;
+        &>p{
+            text-align: right;
+            font-size: 50px;
+            position: absolute;
+            right: 76px;
+            top: 73px;
+            letter-spacing: 21px;
+            font-weight: bold;
+            background-image: -webkit-linear-gradient(bottom,red,#fd8403,yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .gameBody{
+        margin: auto;
+        width: 1071px;
+        height: 844px;
+        background:  url(../images/games/box.png) -28px -31px/104% 100% no-repeat;
+        position: relative;
+        .leftTabs{
+          &>.ant-tabs-left{/////靠你了啊sir
+              height: 300px;
+              position: absolute;
+              left: 74px;
+              top: 63px;
+          }
+        }
+
+        .rigthTopTabs{
+            position: absolute;
+            top: 93px;
+            left: 240px;
+            text-align: center;
+            width: 728px;
+            &>li{
+                color: white;
+                display: inline-block;
+                padding: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .rightContent{
+            position: absolute;
+            top: 155px;
+            left: 240px;
+            text-align: center;
+            width: 728px;
+            height: 450px;
+            li{
+                display: inline-block;
+
+            }
+        }
+
+        .rigthBottom{
+            position: absolute;
+            top: 677px;
+            left: 346px;
+        }
+    }
+}

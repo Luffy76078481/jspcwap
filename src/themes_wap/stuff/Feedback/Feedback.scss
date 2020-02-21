@@ -1,0 +1,17 @@
+.feedbackPage .scroll-content {
+    // 缩进
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    padding: 0 .1rem;
+}

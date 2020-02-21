@@ -1,0 +1,225 @@
+#casino {
+    background: #000;
+    // TOP
+    .fnameCenter {
+        width: 990px;
+        margin: 0 auto;
+        .contentHeadNav {
+            padding-left: 90px; 
+            .xchgNavStyle {
+                width: 263px;
+                height: 105px;
+                background: url("../../images/casino/newCasino2_03.jpg") no-repeat;
+                background-position: 0px 0px;
+                float: left;
+            }          
+            a:hover {
+                background-position: 0px -105px;
+            }        
+            .lpNavStyle {
+                width: 134px;
+                height: 105px;
+                background: url("../../images/casino/newCasino2_04.jpg") no-repeat;
+                background-position: 0px 0px;
+                float: left;
+            }
+            
+            .cpNavStyle {
+                width: 141px;
+                height: 105px;
+                background: url("../../images/casino/newCasino2_05.jpg") no-repeat;
+                background-position: 0px 0px;
+                float: left;
+            }        
+            .dzNavStyle {
+                width: 141px;
+                height: 105px;
+                background: url("../../images/casino/newCasino2_06.jpg") no-repeat;
+                background-position: 0px 0px;
+                float: left;
+            }       
+            .tyNavStyle {
+                width: 141px;
+                height: 105px;
+                background: url("../../images/casino/newCasino2_07.jpg") no-repeat;
+                background-position: 0px 0px;
+                float: left;
+            }
+        }
+    }
+    // MID 
+    .listWrap {
+        background: #252525;
+        height: 78px;
+        width: 100%;
+        padding: 0 27%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;      
+        .subNavWrap {
+            color: #FFF;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 15%;
+            .subCtrl {
+                width: 42px;
+                height: 78px;
+                float: left;
+                margin-right: 20px;
+                text-align: center;
+                transition: all .4s;
+                cursor: pointer;
+                color: #FFF;
+                &.active {
+                    border-bottom: 5px solid #ffdf1b;
+                    color: #ffdf1b;     
+                    .website {
+                        background-position: 2px 3px;
+                    }       
+                    .download {
+                        background-position: -116px 4px;
+                    }   
+                    .liveg {
+                        background-position: -235px 4px;
+                    }
+                }      
+                &:hover {
+                    border-bottom: 5px solid #ffdf1b;
+                    color: #ffdf1b;            
+                    .website {
+                        background-position: 2px 2px;
+                    }         
+                    .download {
+                        background-position: -116px 4px;
+                    }               
+                    .liveg {
+                        background-position: -235px 4px;
+                    }
+                }
+                i {
+                    margin: 10px auto;
+                    width: 34px;
+                    height: 29px;
+                    display: block;
+                    background: url("../../images/casino/newCasino1_03.png") no-repeat;  
+                    &.website {
+                        background-position: 2px -26px;
+                        &:hover {
+                            background-position: 2px 3px;
+                        }
+                    }              
+                    &.download {
+                        background-position: -116px -25px;
+                        &:hover {
+                            background-position: -116px 3px;
+                        }
+                    }         
+                    &.liveg {
+                        background-position: -235px -26px;
+                        &:hover {
+                            background-position: -235px 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .showUrl {
+            color: #fff;
+            width: 390px;
+            .textDes {
+                font-size: 12px;
+                font-family: 'Arial','Helvetica','sans-serif';
+                display: block;
+                text-align: center;
+            }
+            .textUrl {
+                background: #1b1b1b;
+                height: 43px;
+                border-radius: 8px;
+                margin-top: 5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                span {
+                    font-size: 24px;
+                    color: #ffdf1b;
+                    flex: 1;
+                    text-align: center;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    margin-left: 20px;
+                }
+                i {
+                    background: url("../../images/casino/mobile_icon.jpg") no-repeat 0 0/100%;
+                    width: 62px;
+                    height: 32px;
+                    margin: 0 10px 0 12px;
+                }
+            }
+        }  
+    }
+    // BOM
+    .newsList {
+        clear: both;
+        float: left;
+        width: 100%;
+        background: #0c0c0c;
+        .casino-Content {
+            padding: 20px;
+            text-align: center;
+        }   
+        .casino-platform-list {
+            width: 1050px;
+            margin: 20px auto 0 auto;
+            div.casinoGame {
+                margin: 20px 0px;
+
+                .c-items {
+                    margin-bottom: 30px;
+                }
+                .hengBg {
+                    margin-top: 15px;
+                    background: url("../../images/casino/inco-h_03.jpg") center no-repeat;
+                    height: 2px;
+                    display: block;
+                }
+                .casino-platform-list-img {
+                    width: 271px;
+                    height: 230px;
+                    h3 {
+                        text-align: center;
+                        margin: 0px;
+                        padding-top: 305px;
+                    }
+                }
+                .casino-platform-list-link {
+                    width: 166px;
+                    margin: 0 auto;
+                    height: 40px;
+                }
+                .casino-platform-list-link a.togame {
+                    background: #343434;
+                    border-radius: 4px;
+                    text-align: center;
+                    color: #727272;
+                    height: 26px;
+                    line-height: 26px;
+                    margin: 10px auto 0px auto;
+                    float: left;
+                    width: 100%;
+                    &:hover {
+                        color: #FFF;
+                    }
+                }
+                .casino-platform-list-link a.gameHref{
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }             
+    }  
+}

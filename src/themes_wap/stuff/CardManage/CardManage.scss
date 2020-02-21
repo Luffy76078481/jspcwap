@@ -1,0 +1,130 @@
+.CardManage {
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .am-list-item .am-list-line .am-list-content,
+    .am-list-item .am-input-label.am-input-label-5 {
+        width: 1.25rem;
+    }
+
+    .scroll-content {
+        padding: .1rem
+    }
+
+    .circle-wrap {
+        >div {
+            padding-left: .2rem;
+
+            .am-list-item-middle {
+                padding: 0;
+            }
+        }
+    }
+
+    .am-list-item.am-list-item-middle .am-list-line {
+        border-bottom: solid 1px rgba(221, 221, 221, .3) !important;
+    }
+
+    .am-list-item .am-list-line .am-list-arrow {
+        width: .3rem;
+        height: .3rem;
+    }
+
+    .noCard {
+        text-align: center;
+        color: #888;
+        font-size: .25rem;
+        line-height: 2rem;
+    }
+
+    .cardsList {
+        padding: 0 .3rem;
+    }
+
+    .card {
+        margin-bottom: .2rem;
+        box-shadow: 0 0 0.2rem 0.01rem #ccc;
+        overflow: hidden;
+        border-radius: .1rem !important;
+    }
+
+    .am-card.card::before {
+        border: 0 !important;
+    }
+
+                     .modal-body {
+                         position: relative;
+                         flex: 1;
+
+                         .forms {
+                                
+                                margin: .25rem .2rem;
+                                padding: .2rem;
+                                border-radius: .2rem;
+                                overflow: hidden;
+                                outline: 0;
+                                 box-shadow: 0 0 9px 0 rgba(145, 145, 145, 0.62);
+                             .user_phone {
+                                 display: flex;
+                                 align-items: center;
+                                 padding: .2rem 0 0 .2rem;
+
+                                 .text {
+                                     width: 26%;
+                                 }
+
+                                 .cust_input {
+                                     width: 50%;
+                                     border: 1px solid #ccc;
+                                     outline: none;
+                                     padding-left: 5px;
+                                     height: .6rem;
+                                     color: #000;
+                                     background: transparent;
+                                 }
+                             }
+
+                             .verify_code {
+                                 display: flex;
+                                 align-items: center;
+                                 padding: .2rem 0 0 .2rem;
+
+                                 .text {
+                                     width: 26%;
+                                 }
+
+                                 .user_input {
+                                     flex: 1;
+
+                                     .input_code_box {
+                                         width: 68%;
+                                         border: 1px solid #ccc;
+                                         outline: none;
+                                         padding-left: 5px;
+                                         height: .6rem;
+                                         color: #000;
+                                     }
+
+                                     .get_code_btn {
+                                         color: #fff;
+                                         border: none;
+                                         margin-left: .2rem;
+                                         padding: 4px 8px;
+                                         border-radius: 5px;
+                                     }
+                                 }
+                             }
+                         }
+
+                     }
+}

@@ -1,0 +1,47 @@
+div[data-theme="Yellow"]{
+    .RegisterNewPage{
+        background: #f9ebb6;
+        .RegisterContent{
+            background: #946a1a;
+            box-shadow: 0px 0px 3px 3px #c1a44c;
+            .RegisterTitle{
+                border-bottom: 2px solid #c4a852;
+                h1,p{
+                    color: #fff;
+                }
+            }
+            // 注冊表單
+            form{
+                // 輸入框
+                .InputWrap{
+                    >div{
+                        input,select.PayPassWord{
+                            border: 1px solid #fbc704;
+                            background-color: #fcfcfc;
+                            color: #222;                     
+                        }
+                        // 提示语
+                        >span{
+                            color: #deb66c;
+                        }
+                    }
+                    p{
+                        color: #fff;
+                    }
+                }
+                // 提示語
+                .checkboxWrap {
+                    .RegNotice{
+                        color: #fff
+                    }
+                }
+                // 提交
+                .ButtonWrap{
+                    button{
+                        background: #c4a852;
+                    }
+                }
+            }            
+        }
+    } 
+}

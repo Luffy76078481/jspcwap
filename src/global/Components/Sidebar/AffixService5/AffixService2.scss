@@ -1,0 +1,158 @@
+.onlineServer-left{
+  position: fixed;
+  left: 10px;
+  top: 20%;
+  z-index: 999;
+  .hd{
+    background: url("./images/l1.png") bottom center no-repeat;
+    width: 150px;
+    height: 160px;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .bd{
+    border: none;
+    border-radius: 5px;
+    margin-top: -5px;
+    .block {
+        width: 150px ;
+        height: 76px;
+        text-align: center;
+        a {
+            display: block;
+            height: 70px;
+            width: 150px;
+            margin-top: -6px;
+        }
+    }
+    .block.promotion-btn{
+      padding-top: 10px;
+      background: url("./images/l2.png") center center no-repeat;
+    }
+    .block.register-btn {
+        background: url("./images/l3.png") center center no-repeat ;
+        margin-top: -5px;
+    }
+    .weiChat {
+        background: url("./images/l4.png") 50% no-repeat;
+        height: 158px;
+        margin-top: -5px;
+    }
+  }
+  // 关闭按钮
+  .ft{
+    margin: -4px;
+    height: 20px;
+    line-height: 20px;
+    background: none;
+    text-align: center;
+    span{
+      display:inline-block;
+      margin: 0;
+      padding: 0;
+      line-height: 20px;
+      text-align: center;
+      vertical-align: top;
+    }
+    span.left-span{
+      border-top-color: #8E0A0C;
+      border-right-color: #8E0A0C;
+      height: 0;
+      width: 0;
+      border: 10px solid transparent;
+      font-size: 0;
+    }
+    span.right-span {
+      border-left-color: #8E0A0C;
+      border-top-color: #8E0A0C;
+      height: 0;
+      width: 0;
+      border: 10px solid transparent;
+      font-size: 0;
+    }
+    span.center {
+      background: #8E0A0C;
+      color: #fff000;
+      font-size: 12px;
+      cursor: pointer;
+      width: 36px;
+      height: 20px;
+    }      
+  }
+}
+  
+  
+  .onlineServer-left-body {
+        position: fixed;
+        left: 10px;
+        top: 20%;
+        width: 150px;
+        height: 466px;
+        z-index: 999;
+        background:url('./images/letduilian.png');
+      .hd {
+        width: 100%;
+        height: 160px;
+      }
+
+      .bd {
+            .block {
+              width: 100%;
+              height: 76px;
+              text-align: center;
+
+              a {
+                display: block;
+                height: 70px;
+                width: 150px;
+              }
+            }
+          .weiChat {
+            width: 100%;
+            height: 135px;
+          }
+      }
+
+      .ft {
+           height: 20px;
+           line-height: 20px;
+           background: none;
+           text-align: center;
+
+           span {
+             display: inline-block;
+             height: 20px;
+             margin: 0;
+             padding: 0;
+             line-height: 20px;
+             width: 36px;
+             text-align: center;
+             vertical-align: top;
+
+             &.center {
+               font-size: 12px;
+               cursor: pointer;
+               background: #8E0A0C;
+               color: #fff000;
+             }
+
+             &.left-span {
+               height: 0;
+               width: 0;
+               border: 10px solid transparent;
+               border-top-color: #8E0A0C;
+               border-right-color: #8E0A0C;
+               font-size: 0;
+             }
+
+             &.right-span {
+               height: 0;
+               width: 0;
+               border: 10px solid transparent;
+               border-left-color: #8E0A0C;
+               border-top-color: #8E0A0C;
+               font-size: 0;
+             }
+           }
+      }
+  }

@@ -1,0 +1,1 @@
+export const config ={"webSiteTag":"","gameTag":"bee","apiPath":"/api/v0/","spec":"bet365-bee","appName":"bet365","title":"bet365","theme":"Green","agentLoginUrl":"https://ag.b76.com.cn","email":"xp9677@gmail.com","prdImgUrl":"","api":"https://bb776.com/"}

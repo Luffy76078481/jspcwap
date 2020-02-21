@@ -1,0 +1,358 @@
+
+
+#game {
+    width: 100%;
+    min-width: 990px;
+    background-color: #000000;
+    
+    .divSubHeaderContainer {
+        margin: 0 auto;
+        width: 990px;
+    }
+    .navigation {
+        ul {
+            background-color: #000000;
+            height: 50px;
+            left: 50%;
+            list-style-type: none;
+            position: relative;
+            float: left;
+            
+            li {
+                cursor: pointer;
+                float: left;
+                height: 30px;
+                left: -50%;
+                margin: 10px 25px;
+                position: relative;
+                
+                a {
+                    border: 2px solid #000000;
+                    color: #D2FFFD;
+                    text-decoration: none;
+                    padding: 5px;
+                    text-align: center;
+                    font-family: futura, verdana;
+                    
+                    &:hover {
+                        border: 2px solid #187F7C;
+                        border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -o-border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        text-decoration: none;
+                        color: #33FFFF;
+                        
+                    }
+                }
+            }
+            
+            li.active {
+                a {
+                    border: 2px solid #187F7C;
+                    color: #D2FFFD;
+                    border-radius: 7px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.game-jackpot-num {
+    margin: 81px auto 65px auto;
+    font-size: 32px;
+    letter-spacing: 8px;
+    width: 245px;
+    text-align: right;
+}
+
+.game-header-focus {
+
+    height: 222px;
+}
+
+.broadcast {
+    height: 45px;
+    width: 100%;
+}
+
+.broadcast-content {
+    line-height: 45px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+
+
+
+.broadcast-content a {
+    color: #f7aa9d;
+    text-decoration: none;
+}
+
+.game-header-focus-right p {
+    margin: 0px;
+    float: left;
+    line-height: 26px;
+    width: 90px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.game-header-focus-right {
+    width: 280px;
+    float: left;
+    padding-top: 70px;
+}
+
+.game-header-focus-right ul li {
+    margin-bottom: 5px;
+}
+
+.game-header-focus-right .game-header-focus-right-jackpot {
+    background: #000;
+    color: #ffe700;
+    padding: 3px 5px;
+    float: left;
+    border-radius: 4px;
+}
+
+.game-header-focus-right .game-header-focus-right-jackpot i {
+    background: url("images/jackpot-inco.png") no-repeat;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-position: -6px -3px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.game-header-focus-left {
+    padding-left: 91px;
+    padding-top: 5px;
+    width: 740px;
+    float: left;
+}
+.game-promotions {
+    width: 605px;
+    height: 195px;
+}
+.game-promotions .owl-controls .owl-dots {
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+    right: 10px;
+}
+.game-promotions .owl-controls .owl-dots .owl-dot.active span, .game-promotions .owl-controls .owl-dots .owl-dot:hover span {
+    background: #d5be4d;
+}
+.game-promotions .owl-controls .owl-dots .owl-dot span {
+    border-radius: inherit;
+}
+.game-jackpot-item {
+    padding: 0px 10px;
+    color: #fff;
+}
+.mgJpg{
+    display: block;
+    width: 605px;
+    height: 197px;
+    background: url("./images/pt.jpg")
+}
+.ptJpg{
+    display: block;
+    width: 605px;
+    height: 197px;
+    background: url("./images/LiveHiLo_v2_710x225.jpg")
+}
+.game-jackpot-item a {
+    color: #fff;
+}
+
+.game-jackpot-item a b {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.game-jackpot h2 {
+    text-align: center;
+    color: #cda654;
+}
+
+#banner{
+    width: 990px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    .bannerRightDiv0 {
+        position: absolute;
+        left: 710px;
+        top: 100px;
+    }
+    #SubHeaderRightInco0 {
+        background-image: url("./images/Roulette_140x250.jpg");
+        position: relative;
+        display: block;
+        height: 125px;
+        width: 140px;
+        overflow: hidden;
+    }
+    .bannerRightDiv1 {
+        position: absolute;
+        left: 710px;
+        top: 0px;
+    }
+    #SubHeaderRightInco1 {
+        background-image: url("./images/LiveDealers_280x100_v2.gif");
+        position: relative;
+        display: block;
+        height: 100px;
+        width: 280px;
+        overflow: hidden;
+    }
+    .bannerRightDiv2 {
+        position: absolute;
+        left: 850px;
+        top: 100px;
+    }
+    #SubHeaderRightInco2 {
+        background-image: url("./images/Blackjack_140x250.jpg");
+        position: relative;
+        display: block;
+        height: 125px;
+        width: 140px;
+        overflow: hidden;
+    }
+    #playBox .oUlplay a span {
+        display: block;
+        height: 225px;
+        width: 280px;
+    }
+ 
+ #CustomContentPodContentWrapper {
+        position: relative;
+        width: 710px;
+    }
+    #playBox {
+        width: 100%;
+        height: 225px;
+        position: relative;
+        overflow: hidden;
+    }
+    #playBox .pre {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 190px;
+        left: 10px;
+        z-index: 10;
+    }
+    #playBox .next {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 190px;
+        right: 10px;
+        z-index: 10;
+    }
+    #playBox .smalltitle {
+        width: 120px;
+        height: 10px;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        z-index: 10;
+    }
+    #playBox .smalltitle ul {
+        width: 120px;
+        margin: 0 auto;
+    }
+    #playBox .smalltitle ul {
+        width: 120px;
+        margin: 0 auto;
+    }
+    #playBox .smalltitle ul li {
+        margin: 0 5px;
+        float: left;
+        overflow: hidden;
+        *display: inline;
+        *zoom: 1;
+        width: 9px;
+        height: 9px;
+        display: block;
+        background: #363636;
+        cursor: pointer;
+        text-indent: -9999px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px;
+        box-shadow: inset 0px -6px 10px -10px white;
+        -webkit-box-shadow: inset 0px -6px 10px -10px white;
+        -moz-box-shadow: inset 0px -6px 10px -10px white;
+    }
+    
+    #playBox .oUlplay a {
+        display: block;
+        height: 225px;
+        width: 100%;
+    }
+    #playBox .oUlplay li{
+        width: 710px;
+        height: 223px;
+        .aspan1,.aspan2,.aspan3{
+            height: 225px;
+            width: 280px;
+        }
+    }
+    .an1{
+        background: url("./images/TheRichesOfDonQuixote_710x225.jpg")top center no-repeat;
+        .aspan1{
+            background: url("./images/TheRichesOfDonQuixote_280x225.gif")top left no-repeat;
+        }
+    }
+    .an2{
+        background: url("./images/SlotsClub_710x225.jpg")top center no-repeat;
+        .aspan2{
+            background: url("./images/SlotsClub_TC_280x450.gif")top left no-repeat;
+        }
+    }
+    .an3{
+        background: url("./images/WhiteKing_710x225.jpg")top center no-repeat;
+        .aspan3{
+            background: url("./images/WhiteKing_280x225.gif")top left no-repeat;
+        }
+    }
+    
+    #playBox .oUlplay a span {
+        display: block;
+        height: 225px;
+        width: 280px;
+    }
+    .owl-dots{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        button{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #363636;
+            margin-right:5px;
+        }
+        button.active{
+            background: #999;
+        }
+    }
+}

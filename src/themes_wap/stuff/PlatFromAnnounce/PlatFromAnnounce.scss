@@ -1,0 +1,94 @@
+ .PlatFromAnnounce {
+
+     div,
+     a,
+     p,
+     span {
+         -moz-user-select: none;
+         -webkit-user-select: none;
+         -ms-user-select: none;
+         -khtml-user-select: none;
+         -o-user-select: none;
+         user-select: none;
+     }
+
+     .myListView {
+
+         .am-list-body {
+
+             .list-view-section-body {
+                 padding-top: .15rem;
+             }
+
+             .messageAnnounce {
+                 min-height: 0;
+                 border-bottom: .02rem solid #ddd;
+                 padding: .02rem 0;
+
+                 .am-list-line {
+                     padding: 0;
+                 }
+             }
+
+             .am-list-content {
+                 padding: 0;
+
+                 .my-accordion::before {
+                     height: 0;
+                 }
+             }
+         }
+
+         .am-accordion .am-accordion-item .am-accordion-header::after {
+             height: 0;
+         }
+
+         .am-accordion .am-accordion-item .am-accordion-header {
+             padding-right: .7rem;
+             padding-left: .25rem;
+             height: .9rem;
+             line-height: .9rem;
+         }
+
+         .am-accordion .am-accordion-item .am-accordion-header i {
+             right: .25rem;
+             top: .3rem;
+             width: .3rem;
+             height: .3rem;
+         }
+
+         .am-accordion-content-box {
+             margin: 8px .25rem;
+         }
+
+
+         .AnnounceHeader {
+             display: flex;
+             align-items: center;
+
+             .am-badge-text {
+                 height: .36rem;
+                 line-height: .36rem;
+                 min-width: .18rem;
+                 border-radius: .24rem;
+                 padding: 0 .1rem;
+                 font-size: .24rem;
+             }
+
+             .title {
+                 flex: 1;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 font-size: .3rem;
+             }
+         }
+
+         .am-list-view-scrollview-content.am-list {
+             width: 100%;
+             padding: 0;
+         }
+
+     }
+
+ }

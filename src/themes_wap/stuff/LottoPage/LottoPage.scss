@@ -1,0 +1,240 @@
+.LottoPage .scrollContent {
+    margin-bottom: 0;
+    z-index: 1;
+    background: url("./images/bg.jpg") 0 0 no-repeat #fff;
+    background-size: 100%;
+    overflow: scroll;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .title-icon {
+        margin: auto;
+        width: 4rem;
+        height: 1.5rem;
+        background: url("./images/title.png") 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .top-content {
+        margin: .5rem auto 0;
+        width: 6.5rem;
+        height: 5rem;
+        position: relative;
+        background: url("./images/zs.png") 0 0 no-repeat;
+        background-size: 100%;
+
+        .top-content-lotto {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: .3rem;
+            margin: auto;
+            width: 4.5rem;
+            height: 4.5rem;
+            // background: url("./images/dazhuanpan.png") 0 0 no-repeat;
+            background-size: 100%;
+            -webkit-transform: rotate(-38deg);
+            transform: rotate(-38deg);
+            z-index: 2;
+
+            &.top-content-lotto-gif {
+                // background: url("./images/dazhuanpan.gif") 0 0 no-repeat;
+                background-size: 100%;
+                z-index: 1;
+            }
+        }
+
+        .top-content-lotto-zz {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 1.95rem;
+            margin: auto;
+            width: 1.3rem;
+            height: 1.3rem;
+            // background: url("./images/zb.png") 0 0 no-repeat;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            z-index: 3;
+        }
+        .top-content-lotto-zz2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 1.9rem;
+            margin: auto;
+            width: 1.3rem;
+            height: 1.3rem;
+            z-index: 3;
+
+            img {
+                display: block;
+                width:100%;
+                height: 100%;
+                margin-top: -0.18rem;
+            }
+        }
+    }
+
+    .bottom-content-zjbox {
+        margin: .5rem auto 0;
+        width: 6.5rem;
+        position: relative;
+        height: 4.5rem;   
+        background: url("./images/kuang.png") 0 0 no-repeat;
+        background-size: 100%;
+
+        .zj-box-title {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: .1rem;
+            margin: auto;
+            width: 3rem;
+            height: 0.8rem;
+            background: url("./images/k_tit.png") 0 0 no-repeat;
+            background-size: 100%;
+            text-align: center;
+            color: #7e4000;
+            font-weight: 900;
+            font-size: .2rem;
+            line-height: .4rem;
+        }
+
+        .ulbox {
+            position: absolute;
+            top: 0.9rem;
+            width: 6rem;
+            height: 2.3rem;
+            margin: auto;
+            left: 0;
+            right: 0;
+            overflow: auto;
+
+            .prizelist {
+                list-style: none;
+                padding: 0 20px;
+
+                li {
+                    text-align: left;
+                    height: 26px;
+                    margin-top: 8px;
+
+                    span:nth-of-type(1) {
+                        color: white;
+                    }
+
+                    span:nth-of-type(2) {
+                        color: #ffe000;
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .zj-botton-left {
+            position: absolute;
+            left: 0.5rem;
+            right: 0;
+            bottom: 0px;
+            width: 2.5rem;
+            height: .8rem;
+            background: url("./images/aa_03.png") 0 0 no-repeat;
+            background-size: 100%;
+            z-index: 1;
+        }
+
+        .zj-botton-right {
+            position: absolute;
+            left: 3.5rem;
+            right: 0;
+            bottom: 0px;
+            margin: auto;
+            width: 2.5rem;
+            height: .8rem;
+            background: url("./images/aa_05.png") 0 0 no-repeat;
+            background-size: 100%;
+            z-index: 1;
+        }
+    }
+
+    .outbox {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #af0000;
+        width: 80%;
+        height: 60%;
+        z-index: 19;
+        padding: 13px;
+        color: #fff;
+
+        .pop-xx {
+            background: url("./images/c_05.png") 0 0 no-repeat;
+            background-size: 100%;
+            width: .4rem;
+            height: .4rem;
+            position: absolute;
+            right: -11px;
+            top: -11px;
+            z-index: 20;
+        }
+
+        p {
+            line-height: 24px;
+        }
+    }
+
+    .pop-box {
+        background: #af0000;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .pop-box .pop-title {
+        color: yellow;
+        text-align: center;
+        font-weight: bold;
+        font-size: .3rem;
+        margin-top: 0;
+    }
+
+    .pop-box .pop-cjtj {
+        color: #fdfd01;
+        font-size: .25rem;
+        margin-left: 10px;
+    }
+
+    .text table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #bb0101;
+        color: #eebd0e;
+        margin: auto;
+        border-spacing: 0;
+    }
+
+    .text table tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    .text table tr.tit {
+        height: 40px;
+        background-color: #f2ca0f;
+        color: #2e200c;
+        line-height: 40px;
+    }
+
+    .text table td {
+        border: 1px #810101 solid;
+        text-align: center;
+        padding: 8px 0;
+    }
+}

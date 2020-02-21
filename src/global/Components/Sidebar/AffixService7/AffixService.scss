@@ -1,0 +1,122 @@
+.customer-care-arrow{
+    position: absolute;
+    right: 25px;
+    top: -48px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 25px;
+    border-style: solid;
+}
+.floatWindow{
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 0;
+    >a.item{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border: 1px solid #c8a675;
+        background: #fff;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        padding: 7px;    
+        display: block;
+        position: relative;
+        span{
+            display: block;
+            i{
+                font-size: 30px;
+            }            
+        }
+        &:hover .hoverContent{
+            display: block;
+        }
+        &:hover .hoverQrcode{
+            display: block;
+        }
+        &:hover>span{
+            display: none;
+        }
+        div.hoverQrcode,div.hoverContent{
+            display: none;
+            padding: 2px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute; 
+            .hoverFont{
+                color: #fff;
+                font-size: 14px;
+                line-height: 22px;
+            }         
+        }
+        div.hoverQrcode{
+            .customerQrcode{
+                position: relative;
+                .customer-content-qrcode{
+                    position: absolute;
+                    top: -80px;
+                    right: 50px;      
+                    background: #fff;
+                    padding: 5px;
+                }
+            }
+        }
+        div.hoverContent{
+            .customer{
+                position: relative;
+                .customer-content{
+                    color: #fff;
+                    position: absolute;
+                    // animation: slideInUp 0.5s linear forwards;
+                    min-width: 200px;
+                    padding: 0 10px;
+                    cursor: default;
+                    top: -48px;
+                    height: 50px;
+                    right: 65px;
+                    padding-bottom: 40px;
+                    display: block;
+                    border-radius: 3px;
+                    span{
+                        line-height: 50px;
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+// themes
+div[data-theme="Green"] .floatWindow >a.item{
+    border: 1px solid #14805e;
+    span i{
+        color: #14805e;
+    }
+    .customer-care-arrow{
+        border-color: transparent transparent transparent #14805e;
+    }  
+    .hoverContent,.customer-content,.hoverQrcode{
+        background-color:#14805e; 
+    }
+}
+
+div[data-theme="Red"] .floatWindow >a.item{
+    border: 1px solid #c83434;
+    span i{
+        color: #c83434;
+    }
+    .customer-care-arrow{
+        border-color: transparent transparent transparent #c83434;
+    }  
+    .hoverContent,.customer-content,.hoverQrcode{
+        background-color:#c83434; 
+    }
+}

@@ -1,0 +1,25 @@
+    // 导航
+
+    .Navigation{
+        text-align: center;
+        width: auto;
+        ul{
+            display: inline-block;
+            li{
+                float: left;
+                text-align: center;
+                font-size: 14px;
+                padding: 0px 10px;
+                line-height: 24px;
+                font-family: "SimHei";
+                a{
+                    color: #fff;
+                    &.active,&:hover{
+                        color: #ffea00;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    

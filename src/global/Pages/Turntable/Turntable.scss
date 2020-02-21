@@ -1,0 +1,318 @@
+.ulbox::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+}
+th{text-align: center}
+.lucky_wheel {
+    position: fixed;
+    width: 190px;
+    height: 190px;
+    left: 10px;
+    bottom: 10px;
+    background: url(./images/lucky_wheel.gif) no-repeat 0 0/100%;
+    display: block;
+    z-index: 888;
+}
+.ulbox::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+.ulbox::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: #EDEDED;
+}
+.looto-background {
+    width: 1900px;
+    height: 846px;
+    position: relative;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    .ulbox2.ulbox{
+        top: 530px;
+        height: 170px;
+    }
+    .ulbox {
+        position: absolute;
+        top: 280px;
+        left: 540px;
+        width: 290px;
+        overflow: hidden;    
+        .prizelist {
+            li {
+                height: 26px;
+                line-height: 26px;  
+                font-size: 16px;        
+                text-align: left;
+                span{
+                    display: inline-block;
+                    color: #fff;
+                    font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap
+                }
+                span:nth-last-of-type(2) {
+                    width: 60%;
+                }
+                span:nth-last-of-type(1) {
+                    width: 40%;
+                    float: right;
+                }
+            }
+        }
+    }
+    
+    .lotto-right {
+        position: absolute;
+        left: 907px;
+        top: 108px;
+        width: 694px;
+        height: 694px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
+        -webkit-transform: rotate(-38deg);
+        transform: rotate(-38deg);
+        z-index: 2;
+    }
+    
+    .lotto-right-gif {
+        position: absolute;
+        left: 907px;
+        top: 108px;
+        width: 694px;
+        height: 694px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
+        -webkit-transform: rotate(-38deg);
+        transform: rotate(-38deg);
+        z-index: 1;
+    }
+    
+    .lotto-right-zz,
+    .lotto-right-zz-green {
+        position: absolute;
+        top: 338px;
+        width: 238px;
+        height: 238px;
+        left: 1135px;
+        background: url("./images/www.png") 0 0/100% 100% no-repeat;
+        z-index: 4;
+        cursor: pointer;
+        
+        .lotto-right-zz-img {
+            background: url("./images/zhizhenzi.png") 0 0/100% 100% no-repeat;
+            width: 66px;
+            height: 66px;
+            position: absolute;
+            top: 86px;
+            left: 90px;
+            cursor: pointer;
+        }
+    }
+
+    .lotto-right-zz-green {
+        background: url("./images/bbt_zp_1.png") 100% 100% no-repeat;
+        background-position: 50% -35%;
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+    .zj-botton-left {
+        position: absolute;
+        left: 360px;
+        top: 740px;
+        width: 300px;
+        height: 93px;
+        background: url("./images/dzp_left.png") 0 0/100% 100% no-repeat;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .zj-botton-right {
+        position: absolute;
+        left: 690px;
+        top: 740px;
+        width: 300px;
+        height: 93px;
+        background: url("./images/dzp_right.png") 0 0/100% 100% no-repeat;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+.img-xx {
+    width: 27px;
+    height: 27px;
+    background: url(./images/c_05.png) 0 0/100% 100% no-repeat;
+    vertical-align: middle;
+}
+.wz {
+    display: block;
+    height: auto;
+    overflow: visible;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 26px;
+    color: #eebd0e;
+    text-align: left;
+}  
+.huodong_detail {
+    width: 1100px;
+    height: 620px;
+    background: #2c1810;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    // display: none;
+    margin: auto;
+    
+    .hd_img {
+        float: left;
+        margin: 20px 0 2px -15px;
+        
+        .img1 {
+            width: 234px;
+            height: 60px;
+            background: url(./images/tit3.png) 0 0/100% 100% no-repeat;
+            vertical-align: middle;
+        }
+        
+        img {
+            vertical-align: middle;
+            border: 0;
+        }
+    }
+    .close_img {
+        float: right;
+        margin: -8px -8px 0 0;
+        cursor: pointer;
+    }
+    
+    .text {
+        clear: both;
+        
+        .wrap_box {
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            border-width: 0;                  
+            .newtitle {
+                color: rgb(255, 255, 0) !important;
+                font-size: 20px !important;
+                padding: 0 10px 15px 10px;
+            }
+            .wz{
+                color:#fff
+            }
+            table {
+                border-collapse: collapse;
+                width: 90%;
+                background-color: #2c1810;
+                color: #eebd0e;
+                margin:10px auto 0;
+                border-spacing: 0;
+                float: left;
+                
+                tbody {
+                    display: table-row-group;
+                    vertical-align: middle;
+                    border-color: inherit;
+                    
+                    tr.tit {
+                        height: 40px;
+                        background-color: #f2ca0f;
+                        color: #2e200c;
+                        line-height: 40px;
+                    }
+                    
+                    tr {
+                        height: 32px;
+                    }
+                }
+            }
+            
+            .clear {
+                clear: both;
+            }         
+            .newkongxi {
+                margin-top: 20px;
+            }
+            
+            p {
+                margin: 0 0 10px;
+            }
+            
+            .ye4 {
+                text-indent: 24px;
+            }
+        }
+    }
+}
+
+.newwz span {
+    color: #f2ca0f;
+}
+
+.text table td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+.huodong_detail2 {
+    width: 1000px;
+    height: 481px;
+    background: #2c1810;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -215px;
+    z-index: 9999;
+    
+    .hd_img {
+        float: left;
+        margin: 20px 0 2px -15px;
+        
+        .img1 {
+            width: 234px;
+            height: 60px;
+            background: url(./images/tit4.png) 0 0/100% 100% no-repeat;
+            vertical-align: middle;
+        }
+    }
+    
+    .close_img {
+        float: right;
+        margin: -8px -8px 0 0;
+        cursor: pointer;
+    }
+    
+    .wrap_box {
+        width: 980px;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 0;
+    }
+    p {
+        margin: 0 0 10px;
+    }
+    
+    .ye4 {
+        text-indent: 24px;
+    }
+}

@@ -1,0 +1,21 @@
+div[data-theme="DarkBrown"]{
+    article.promotions{
+        background: #2B1212;
+    }
+}
+div[data-theme="Yellow"]{
+    .promotions{
+        background: #f2e4b1;
+        .promoTypesContainer{
+            background: linear-gradient(270deg,#9c6703,#b99349);
+        }
+    }
+}
+div[data-theme="Orange"]{
+    .promotions{
+        background: url(../images/pro/promo_bg2.jpg) no-repeat top fixed;
+        .promoTypesContainer{
+            background: linear-gradient(270deg,#9c6703,#b99349);
+        }
+    }
+}

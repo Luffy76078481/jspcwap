@@ -1,0 +1,395 @@
+.game-list-content2{
+  height: 1099px;
+
+  .game-list-left-nav li {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+  .game-list-right-content{
+    float: left;
+    //width: 780px;
+    position: relative;
+    min-height: 560px;
+  }
+  #GamesGridPopupMask {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+  }
+
+  .game-list-right-content ul{
+    padding: 10px 20px;
+  }
+  .game-list-right-content li {
+    float: left;
+    text-align: center;
+    margin: 20px 11px 5px 11px;
+    position: relative;
+  }
+  .game-list-right-content li a {
+    color: #fff;
+    line-height: 24px;
+    display: block;
+    text-decoration: none;
+  }
+  .game-list-right-content li a img {
+    border-radius: 4px 4px 0px 0px;
+  }
+  .game-list-right-content li a span {
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    border-radius: 0px 0px 6px 6px;
+  }
+  .game-list-right-content li .game-fuceng {
+    background: rgba(0,0,0,.58);
+    z-index: 100;
+    height: 100%;
+    width:100%;
+    display: none;
+  }
+  .game-list-right-content li:hover .game-fuceng{
+    display: block;
+  } 
+  .game-list-right-content li .game-fuceng img {
+    width: 80%;
+    margin-top: 20%;
+  }
+
+  #GamesGridPopupMask .GamePopupMask {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0px 0px -18px;
+    background: url("images/loaderSpinner.gif");
+  }
+
+  .game-list-right-box{
+    .bonus_box_content{
+
+      .bonus1{
+        .bonus1_img{
+          background: url("images/bonus1.png") no-repeat center;
+          background-size: contain;
+        }
+      }
+      .bonus2{
+        .bonus2_img{
+          background: url("images/bonus2.png") ;
+          background-size: contain;
+        }
+      }
+      .bonus3{
+        .bonus3_img{
+          background: url("images/bonus3.jpg") ;
+          background-size: contain;
+        }
+      }
+      .bonus4{
+        .bonus4_img{
+          background: url("images/bonus4.jpg") ;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  .game-list-left-nav li a {
+    //color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+  }
+
+  a, input{
+    outline: none !important;
+  }
+
+  .gameItem {
+    display:block;
+  }
+
+  .game-list-fname2{
+    width: 100% ;
+  }
+
+  .game-list-mid-box{
+    float: left;
+  }
+
+  .game-list-right-box{
+    width: 210px;
+    float: left;
+    height: 830px;
+    margin-left: 8px;
+  }
+
+  .game-list-left-nav{
+    margin-right: 8px;
+    height: 838px;
+    float: left;
+    width: 155px;
+    padding-top: 20px;
+  }
+
+  .game-jackpot-num2{
+    font-size: 21px;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+
+  .pager_box{
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px #888 dashed;
+  }
+
+  .pager_box div{
+    display: inline-block;
+    margin: 15px 5px;
+    font-size: 12px;
+  }
+
+  .pager_box div.number_icon{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #888;
+    vertical-align: middle;
+  }
+
+  .nexprepage_icon{
+    color: #fff;
+    background-color: #888;
+    width: 52px;
+    height: 28px;
+    vertical-align: middle;
+    line-height: 28px;
+  }
+
+  .nexprepage_icon a{
+    color: #fff;
+  }
+
+
+  .pager_box div.active{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #c2c2c2 !important;
+  }
+
+  .pager_box div.number_icon a{
+    color: #fff;
+  }
+
+  .pager_box div.active a{
+    color: #000;
+    background-color: transparent !important;
+  }
+
+  .bonus_box{
+    width: 100%;
+    height: 838px;
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  .game-jackpot-num2 span{
+    background-color: #0b815f;
+    padding: 3px 8px;
+  }
+
+  .bonus_box_title{
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px #777 dashed;
+    margin-bottom: 8px;
+  }
+
+  .bonus_box_title_text{
+    font-size: 24px;
+  }
+
+
+  .bonusgame{
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  .bonus_img{
+    width: 65px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .bonus_text{
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+  }
+
+
+  .winning_box{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    color: #000;
+    margin-top: 8px;
+  }
+
+  .gameItem b {
+    top: 44px !important;
+  }
+  .gameItem img.gameImg {
+    width: 100% !important;
+    height: 68px;
+  }
+
+
+  .game-list-box2{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .game_list_top_img{
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+    height: 170px;
+  }
+
+  .platform_list2{
+    display: inline-block;
+    width: 13%;
+    height: 44px;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 3px 25px;
+  }
+
+  .list2_onchoose{
+    border-bottom: 5px solid #0b815f;
+  }
+
+  .games_box{
+    width: 100%;
+    height: 838px;
+    background-color: #fff;
+  }
+
+  .game-text{
+    float: right;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+  }
+
+  .searchbartext:focus{
+    border:none;
+    outline:none;
+  }
+
+  .searchbar{
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .searchbartext{
+    display: inline-block;
+    width: 85%;
+    height: 30px;
+    border-radius: 30px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,.9);
+    border:none;
+    padding-left: 15px;
+
+  }
+
+  .hand{
+    vertical-align: middle;
+    position: relative;
+    right: 0;
+    display: inline-block;
+    width: 7%;
+    text-align: center;
+    color:#fdfa6f;
+    /*height: 100%;*/
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .searchBtn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 15px;
+  }
+
+  .onchoosing{
+    display: block;
+  }
+
+  .gamesPic{
+    width: 222px ;
+    height: auto ;
+  }
+  .gameItem img.gameImg {
+    height: 92.58px !important;
+  }
+
+  .jackPot{
+    width: 100%;
+    height: 25px;
+    background: url("images/imgbg_07.png");
+    color:rgb(255, 255, 146);;
+    position: absolute;
+    background-size: cover;
+    top: -16px;
+    left: 0;
+    z-index: 55561;
+    text-align: center;
+  }
+  .checkJackpot{
+    width: 128px;
+    height: 28px;
+    margin-left: 13px;
+    /*border: 1px solid rgb(135, 81, 70);*/
+    border-radius: 26px;
+    margin-top: 4%;
+  }
+  .checkJackpot input[type=checkbox]{
+    background-color: rgba(0,0,0,.9);
+  }
+  .checkJackpot input {
+    margin-left: 5px;
+  }
+  .checkJackpot:hover label{
+    color: #ffea00;
+  }
+}
+
+#Gamebg .games_box{
+  width: 100%;
+  height: 780px;
+  background-color: #fff;
+}

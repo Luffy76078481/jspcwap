@@ -1,0 +1,143 @@
+
+body {
+    font-family: "Arial", "sans-serif", "Microsoft YaHei";
+    /*background: #2B1212;*/
+    color: #fff;
+    min-width: 1359px;
+}
+
+
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a , input{
+    outline:none !important;
+}
+
+
+
+
+
+
+
+
+.game-jackpot-num {
+    margin: 81px auto 65px auto;
+    font-size: 32px;
+    letter-spacing: 8px;
+    width: 245px;
+    text-align: right;
+}
+
+.game-header-focus {
+    /*background: url("../images/game/fous-bg_03.png") no-repeat;*/
+    // height: 170px;
+}
+
+.broadcast {
+    height: 45px;
+    width: 100%;
+}
+
+.broadcast-content {
+    line-height: 45px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+
+
+
+.broadcast-content a {
+    color: #f7aa9d;
+    text-decoration: none;
+}
+
+.game-header-focus-right p {
+    margin: 0px;
+    float: left;
+    line-height: 26px;
+    width: 90px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.game-header-focus-right {
+    width: 280px;
+    float: left;
+    padding-top: 70px;
+}
+
+.game-header-focus-right ul li {
+    margin-bottom: 5px;
+}
+
+.game-header-focus-right .game-header-focus-right-jackpot {
+    background: #000;
+    color: #ffe700;
+    padding: 3px 5px;
+    float: left;
+    border-radius: 4px;
+}
+
+.game-header-focus-right .game-header-focus-right-jackpot i {
+    background: url("images/jackpot-inco.png") no-repeat;
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-position: -6px -3px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.game-header-focus-left {
+    padding-left: 91px;
+    padding-top: 5px;
+    width: 740px;
+    float: left;
+}
+.game-promotions {
+    width: 605px;
+    height: 195px;
+}
+.game-promotions .owl-controls .owl-dots {
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+    right: 10px;
+}
+.game-promotions .owl-controls .owl-dots .owl-dot.active span, .game-promotions .owl-controls .owl-dots .owl-dot:hover span {
+    background: #d5be4d;
+}
+.game-promotions .owl-controls .owl-dots .owl-dot span {
+    border-radius: inherit;
+}
+.game-jackpot-item {
+    padding: 0px 10px;
+    color: #fff;
+}
+.mgJpg{
+    display: block;
+    width: 605px;
+    height: 197px;
+    background: url("./images/pt.jpg")
+}
+.game-jackpot-item a {
+    color: #fff;
+}
+
+.game-jackpot-item a b {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.game-jackpot h2 {
+    text-align: center;
+    color: #cda654;
+}
+

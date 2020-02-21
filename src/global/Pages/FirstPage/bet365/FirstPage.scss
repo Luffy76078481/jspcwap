@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/*
+
+        bet365 ____________________________________________ 首页
+*/
+
+$CatchingFontColor:#FFDF1B;
+
+.FirstPage{
+    height: 100%;  
+    background: #007B5B url(./images/body_bg.png) repeat-x;
+    min-height: 880px;
+    span,a,p{
+        color: #fff;
+        font-size: 12px;
+        &.CatchingColor{
+            color:$CatchingFontColor     
+        }
+    }
+    img{
+        display: block
+    }
+    .FirstPanel{
+        width: 960px;
+        display: flex;
+        margin: 0 auto;
+        // 首页左
+        .indexLeft{
+            float: left;
+            height: auto;
+            width: 120px;
+            background: url('./images/sec-nav-bg-grad.png') repeat-x;    
+            ul{
+                li{
+                    a{
+                        padding: 5px 0 5px 10px;
+                        display: block;
+                        &:hover,&.hoverSelect{
+                            color: #FFDF1B;
+                            background-color: #333333;                              
+                        }
+                    }
+                }
+            } 
+        }
+        // 首页右
+        .indexRight{
+            flex: 1;
+            // 右上部分
+            .indexRightContent{
+                border: solid 9px #333333;
+                background-color: #333333;
+                box-sizing: border-box;         
+                // 头部         
+                .sportsContent{
+                    cursor: pointer;
+                    height: 215px;
+                    display: flex;
+                    border: solid 3px #636363;
+                    background: url(./images/LandingPage_Afobe.jpg) no-repeat;
+                    &:hover {
+                        border: solid 3px #FFDF1B;
+                    }
+                    .sportsContentHead{
+                        width: 426px;
+                    }
+                    .sportsContentRight{
+                        padding-top: 2px;
+                        margin-right: 2px;
+                        display: flex;
+                        .sportsContentHref {
+                            background: url(./images/bg-sports-right.gif) repeat-x;                                 
+                            a{
+                                display: block;
+                                height: 100px;
+                                span{
+                                    display: block;
+                                    padding: 0 16px 1px;
+                                }                           
+                            }                 
+                        }
+                    }
+                }    
+                // 中间      
+                .contentList{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .contentListOl {
+                        width: 33.3%;
+                        .game {
+                            border: solid 3px #636363;                
+                            &:hover {
+                                border: solid 3px #FFDF1B;
+                            }
+                            .casino-title{
+                                img {
+                                    width: 100%;
+                                    height: 95px;
+                                }
+                            }                           
+                            .casino-content {
+                                height: 152px;
+                                background-image: url(./images/bg-Products.gif);
+                                background-position: top left;
+                                cursor: pointer;
+                                &:hover {
+                                    background-position: top left;
+                                    text-decoration: none;
+                                }
+                                h4 {
+                                    color: $CatchingFontColor;
+                                    border-top: solid 1px #358469;
+                                    margin: 0 6px;
+                                    padding: 4px 0;
+                                    font-size: 14px;
+                                }
+                                p {
+                                    border-top: solid 1px #358469;
+                                    margin: 0 7px;
+                                    padding: 5px 0;
+                                }
+                            }
+                        }                         
+                    }
+                }         
+            }
+            // 首页底部
+            .FirstPageFooter{
+                background-color: #004531;
+                border-top: solid 1px #350c11;
+                padding: 10px;
+                .footer-desion{
+                    color: #417667;
+                    padding: 8px 0;
+                    line-height: 1;
+                    border-bottom: solid 1px #275a4b;
+                    font-family: verdana, arial, helvetica, sans-serif;
+                    .footerLinks {
+                        text-align: center;
+                        border-top: solid 1px #275a4b;
+                        border-bottom: solid 1px #275a4b;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        span.ban{
+                            display: block;
+                            margin-top: 15px;
+                            margin-bottom: 3px;
+                            color: #80a298;
+                        }
+                        a{
+                            color: #80a298;
+                            &:hover{
+                                text-decoration: underline;  
+                            }                   
+                        }
+                    }    
+                    .FooterContent{
+                        span{
+                            display: block;
+                            text-align: left;
+                            color: #417667;
+                            padding-top: 10px;
+                            line-height: 1.25;                  
+                        }
+                    }                  
+                }
+            }            
+        }
+    }
+
+}

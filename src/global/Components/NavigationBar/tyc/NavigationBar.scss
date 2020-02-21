@@ -1,0 +1,134 @@
+
+.MainNavigation{
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    .navContainer{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    // 一级导航
+    .mainNav{
+        >li{
+            text-align: center;
+            float: left;
+            flex: 1;
+            position: relative;
+            height:60px;
+            line-height:60px;
+            &.hot::after{
+                content: "";
+                width: 23px;
+                height: 20px;
+                background: url("./images/hot.gif") 50% no-repeat;
+                position: absolute;
+                right: 3px;
+                top: 5px;
+            }
+            a{
+                display: inline-block;
+                height: 100%;
+                width: 86px;
+                color:#ffffff;
+                font-size: 16px;
+                &:hover {
+                    background: #b02e2e;
+                }
+                &.active{
+                    // background: #b02e2e;
+                    color: #ffea00
+                }
+            }
+        }
+    }
+}
+
+// 二级导航
+.SecondNav{
+    width: 100%;
+    position: fixed;
+    top: 105px;
+    left: 0;
+    z-index: 99;
+    transition: all .3s;
+    background: #b02e2e;
+    text-align: center;
+    overflow: hidden;
+    ul{
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 1210px;
+        li{
+            display: inline-block;
+            cursor: pointer;
+            // animation: toggle .5s ease both;
+            transition: all 0.3s;
+            width: 120px;
+            height: 135px;
+            margin:15px 10px;
+            border-radius: 15px;
+            padding: 10px;
+            float: left;
+            background: #ffffff;
+            position: relative;
+            &:hover{
+                transform: translateY(-10px);
+                .itemBtn>div{               
+                    background: #ffb43e;
+                }
+            }
+
+            &.hot::after{
+                content: "";
+                width: 23px;
+                height: 20px;
+                background: url("./images/hot.gif") 50% no-repeat;
+                position: absolute;
+                right: -15px;
+                top: 20px;
+            }
+            .itemName{
+                padding-top: 10px;
+                padding-bottom: 8px;
+                color: #333;
+            }
+            .itemImg{
+                width: 150px;
+                height: 55px;
+                display: table-cell;
+                vertical-align: middle;
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+            }
+            .itemBtn{
+                margin-top: 5px;
+                width: 86%;
+                margin-left: 10px;
+                overflow: hidden;
+                border-radius: 20px;
+                div{
+                    background-color: #c83434;
+                    color: #fff!important;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 100%;
+                    transform: perspective(1px) translateZ(0);
+                    position: relative;
+                    outline: none;
+                    transition-property: color;
+                    transition-duration: .3s;
+                    font-size: 13px;
+                    padding: 3px 0;
+                    // &:hover{
+                    //     background: #ffb43e;
+                    // }  
+                }
+            }
+        }
+    }
+}
+

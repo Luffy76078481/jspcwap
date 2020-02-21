@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body, html {
+  font-family: Microsoft YaHei;
+  background-color: #FFF;
+}
+// 私有样式
+a{
+  color: #000;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+
+#helpPage{
+  background: #007B5B;
+  .header_left{
+    background: url(resources/logo2.png) 0 0 no-repeat;
+  }
+  .header_right{
+    background: url(resources/help.png)  no-repeat right;
+  }
+  .title_img{
+    background: #FFF;
+    color: #000;
+  }
+  .menu{
+    border-bottom: 1px solid #007b5b;
+    background: #007b5b;
+    ul.navigation{
+      li{
+        a{
+          color: #FFF;
+        }  
+        ul{
+          color: #000;
+          li{
+            border-bottom: 1px solid #07664d;
+            &:last-child {
+              border-bottom: none;
+            }
+            a{
+              background: #007b5b;
+              &:hover{
+                background: #155343;
+                color: #ffea00;   
+              }
+            }
+          }
+        } 
+        &.active{
+          text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+          background-color: #0c6e51;
+          a{
+            color: #ffdf1b;
+          }
+        }   
+      }       
+    }
+  }
+}
+
+#about,
+#commonQ,
+#deposit,
+#withdrawal,
+#myAccount,
+#sport,
+#liveCasino,
+#phoneBetting,
+#yibanrule,
+#rule,
+#PtRule,
+#responsibility,
+#terms,
+#contact,
+#payout,
+#howPlay,
+#payInfo
+{
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+// ___________________________________ 内容
+.contents{
+  h3{
+    color: #06855f;
+  }
+  .helpContent{
+    color: #585d5b;
+    a:hover{
+      color: #823832;
+    }
+  }  
+  .title2 {
+    color: #06855f;
+    .ReturnTop {
+      color: #cf918c;
+    }    
+  } 
+  .ReturnTopBtn{
+    color: #cf918c;
+  } 
+}
+
+// ___________________________________ 娱乐城
+.tab-TFinfo {
+  color: #000;
+  border: 1px solid #06855f;
+  tr{
+    border-top: 1px solid #06855f;
+    td{
+      border-left: 1px solid #06855f;
+    }
+  }
+  .tab-tr-red {
+    background: transparent;
+  }
+}
+
+// ___________________________________ 底部
+.foot{
+  background: #f6f6f6;
+}
+.footer-bg{
+  background: url(resources/footer.jpg) no-repeat center;
+  height: 127px;
+}
+
+
+

@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+/*
+
+        ———————————————————————————————— 主题 ————————————————————————————————
+*/
+a {
+    color: $theme-color;
+}
+#root{
+    .homePromotion .title, 
+    .passwordChange button,
+    .downAPP,
+    .user_info_top,
+    .HomeGameBox .gallery-top,
+    .loginPage .content .login-logo,
+    .loginBtn,
+    .PrivateInfo i.verified,
+    .PrivateInfo .icon,
+    .PrivateInfo .modal-header,
+    .PrivateInfo .get_code_btn,
+    .PrivateInfo .confirm_btn .button,
+    .transfer_page .wrap button,
+    .allM,
+    .WithdrawPage .wrap button,
+    .transfer_page .scroll-content .autoTransfer .am-switch input[type="checkbox"]:checked+.checkbox,
+    .MoneyManage .am-switch input[type="checkbox"]:checked+.checkbox,
+    .CardManage .scroll-content .modal-body .get_code_btn,
+    .ServicePage .my-am-list-item span,
+    span.balance.has,
+    a.bolt,
+    .icon-refresh,
+    // .am-button-warning,
+    .am-segment-item-selected,
+    .timeBtn,
+    .item-inner
+    {
+        background-color: $theme-color;
+    }
+
+    .downAPP-btn,
+    .swiper-slide .listGame i.icon-star,
+    .swiper-slide .listGame i.icon-star-empty,
+    .helpPage h5,
+    .PrivateInfo .edit,
+    .transfer_page .flush,
+    .am-tabs-default-bar-tab-active,
+    .MyMessage .am-tabs-default-bar-tab-active
+    {
+        color: $theme-color;
+    }    
+    .HomeGameBox .swiper-slide-thumb-active .swiper-tabBox 
+    {
+        background: $theme-myPage;
+    }
+    .loginBtn
+    {   
+        border: 2px solid $theme-color;
+    }
+}
+.timeZone .am-list-item.am-list-item-middle,
+.am-tabs-default-bar-underline
+{
+    border: 1px solid $theme-color;
+}
+
+.am-modal-button-group-h .am-modal-button, 
+.am-modal-button-group-v .am-modal-button {
+    color: $theme-color !important;
+}
+
+.am-segment-item 
+{
+    color: $theme-color;
+    border-color: $theme-color;
+}

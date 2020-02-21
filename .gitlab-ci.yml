@@ -1,0 +1,1029 @@
+stages:
+  - build
+  # - cleanup_build
+  - deploy
+  - production
+  - superWap
+  - superPc
+  # - cleanup
+cache:
+  key: ${CI_COMMIT_REF_NAME}
+  paths:
+  - node_modules/
+  - dist2/
+  - distWap/
+
+# before_script:    161.202.52.141
+  #备份目录，每套皮一个文件夹，最多备份5个版本
+  # - proTag="vueDemo"
+  #创建同步到生产目录，和生产目录同样的名字
+  # - devFileName="dist"
+  # - if [[ "$CI_COMMIT_MESSAGE" =~ "@T-test" ]]; then
+  #   echo '11111111111111';
+  #   proTag="vueDemo";
+  #   devFileName="dist";
+  #   elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-bee-pc" ]]; then
+  #   echo "2222222";
+  #   proTag="bee-pc";
+  #   devFileName="beepc-cgtest06";
+  #   else
+  #   echo "配置错误";
+  #   return;
+  #   fi;
+
+# build:
+#   stage: build
+#   script:
+#     - node -v
+#     - npm -v
+#     - npm install
+#     - echo "build完成！"
+#   only:
+#     variables:
+#     - $CI_COMMIT_MESSAGE =~ /@T/
+#     # variables:
+#     # - $CI_COMMIT_MESSAGE != "commPush"
+
+# cleanup_build:
+#   stage: cleanup_build
+#   script:
+#     - echo "失败了，清理文件！"
+#   when: on_failure
+ 
+deploy:
+  stage: deploy
+  script:
+    - npm install
+    - echo "build完成！"
+    - echo "发布中！（手动执行）"
+
+    - if [[ "$CI_COMMIT_MESSAGE" =~ "@T-bbt-pc" ]]; then
+      echo 'bbt-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bbt-pc";
+      sendPath="bbt-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-bbt-wap" ]]; then
+      echo 'bbt-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bbt-pc/m";
+      sendPath="bbt-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-bbt-app" ]]; then
+      echo 'bbt-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bbt-app";
+      sendPath="bbt-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-988-pc" ]]; then
+      echo '988-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="988-pc";
+      sendPath="988-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-bee-pc" ]]; then
+      echo 'bee-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bee-pc";
+      sendPath="bee-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-bee-wap" ]]; then
+      echo 'bee-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bee-pc/m";
+      sendPath="bee-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-bee-app" ]]; then
+      echo 'bee-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bee-app";
+      sendPath="bee-app";
+
+      
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-j98-pc" ]]; then
+      echo 'j98-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="j98-pc";
+      sendPath="j98-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-j98-wap" ]]; then
+      echo 'j98-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="j98-pc/m";
+      sendPath="j98-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-j98-app" ]]; then
+      echo 'j98-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="j98-app";
+      sendPath="j98-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-rmb-pc" ]]; then
+      echo 'rmb-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="rmb-pc";
+      sendPath="rmb-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-rmb-wap" ]]; then
+      echo 'rmb-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="rmb-pc/m";
+      sendPath="rmb-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-rmb-app" ]]; then
+      echo 'rmb-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="rmb-app";
+      sendPath="rmb-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-cbd-pc" ]]; then
+      echo 'cbd-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="cbd-pc";
+      sendPath="cbd-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-cbd-wap" ]]; then
+      echo 'cbd-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="cbd-pc/m";
+      sendPath="cbd-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-cbd-app" ]]; then
+      echo 'cbd-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="cbd-app";
+      sendPath="cbd-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-jjh-pc" ]]; then
+      echo 'jjh-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="jjh-pc";
+      sendPath="jjh-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-jjh-wap" ]]; then
+      echo 'jjh-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="jjh-pc/m";
+      sendPath="jjh-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-jjh-app" ]]; then
+      echo 'jjh-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="jjh-app";
+      sendPath="jjh-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-kyy-pc" ]]; then
+      echo 'kyy-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="kyy-pc";
+      sendPath="kyy-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-kyy-wap" ]]; then
+      echo 'kyy-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="kyy-pc/m";
+      sendPath="kyy-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-kyy-app" ]]; then
+      echo 'kyy-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="kyy-app";
+      sendPath="kyy-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-aaa-pc" ]]; then
+      echo 'aaa-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="aaa-pc";
+      sendPath="aaa-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-aaa-wap" ]]; then
+      echo 'aaa-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="aaa-pc/m";
+      sendPath="aaa-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-aaa-app" ]]; then
+      echo 'aaa-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="aaa-app";
+      sendPath="aaa-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-asa-pc" ]]; then
+      echo 'asa-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="asa-pc";
+      sendPath="asa-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-asa-wap" ]]; then
+      echo 'asa-wap';
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="asa-pc/m";
+      sendPath="asa-pc";
+
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@T-asa-app" ]]; then
+      echo 'asa-app';
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="asa-app";
+      sendPath="asa-app";
+
+      else
+      echo "警告，警告：您的Config文件Spec字段配置错误，请及时修改！！！！！";
+      return;
+      fi;
+
+    - rm -rf $localFileName
+    - npm run $runOrder
+    # 拷贝打包好的文件到同步目录  $devFileName对应皮的名字
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - echo "同步目录创建完成！"
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.170::helloRsync 
+
+    - echo "发布成功。自己检查一下，然后域名发群里，通知客服测试！";
+
+  allow_failure: false
+  only:
+    variables:
+    - $CI_COMMIT_MESSAGE =~ /@T/
+    # variables:
+    # - $CI_COMMIT_MESSAGE != "commPush"
+  # # when: manual
+
+
+
+
+
+production:
+  stage: production
+  script:
+    - npm install
+    - echo "build完成！"
+    - echo "发布中！（手动执行）"
+
+
+    - if [[ "$CI_COMMIT_MESSAGE" =~ "@P-bbt-pc" ]]; then
+      echo 'bbt-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bet365-bbt-pc";
+      sendPath="bet365-bbt-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-bbt-wap" ]]; then
+      echo "bbt-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bet365-bbt-pc/m";
+      sendPath="bet365-bbt-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-bbt-app" ]]; then
+      echo "bbt-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bet365-bbt-app";
+      sendPath="bet365-bbt-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-bee-pc" ]]; then
+      echo 'bee-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bet365-bee-pc.com";
+      sendPath="bet365-bee-pc.com";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-bee-wap" ]]; then
+      echo "bee-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bet365-bee-pc.com/m";
+      sendPath="bet365-bee-pc.com";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-bee-app" ]]; then
+      echo "bee-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bet365-bee-app.com";
+      sendPath="bet365-bee-app.com";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-rmb-pc" ]]; then
+      echo 'rmb-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bet365-rmb-pc";
+      sendPath="bet365-rmb-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-rmb-wap" ]]; then
+      echo "rmb-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bet365-rmb-pc/m";
+      sendPath="bet365-rmb-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-rmb-app" ]]; then
+      echo "rmb-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bet365-rmb-app.com";
+      sendPath="bet365-rmb-app.com";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-cbd-pc" ]]; then
+      echo 'cbd-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bet365-cbd-pc.com";
+      sendPath="bet365-cbd-pc.com";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-cbd-wap" ]]; then
+      echo "cbd-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bet365-cbd-pc.com/m";
+      sendPath="bet365-cbd-pc.com";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-cbd-app" ]]; then
+      echo "cbd-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bet365-cbd-app.com";
+      sendPath="bet365-cbd-app.com";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-xpj-pc" ]]; then
+      echo 'xpj-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="xpj-pc";
+      sendPath="xpj-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-xpj-wap" ]]; then
+      echo "xpj-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="xpj-pc/m";
+      sendPath="xpj-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-xpj-app" ]]; then
+      echo "xpj-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="xpj-app";
+      sendPath="xpj-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-asa-pc" ]]; then
+      echo 'asa-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="asa-pc";
+      sendPath="asa-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-asa-wap" ]]; then
+      echo "asa-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="asa-pc/m";
+      sendPath="asa-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-asa-app" ]]; then
+      echo "asa-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="asa-app";
+      sendPath="asa-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-kyy-pc" ]]; then
+      echo 'kyy-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="kyy-pc";
+      sendPath="kyy-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-kyy-wap" ]]; then
+      echo "kyy-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="kyy-pc/m";
+      sendPath="kyy-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-kyy-app" ]]; then
+      echo "kyy-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="kyy-app";
+      sendPath="kyy-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-vv8-pc" ]]; then
+      echo 'vv8-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="vv8-pc";
+      sendPath="vv8-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-vv8-wap" ]]; then
+      echo "vv8-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="vv8-pc/m";
+      sendPath="vv8-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-vv8-app" ]]; then
+      echo "vv8-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="vv8-app";
+      sendPath="vv8-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-jjh-pc" ]]; then
+      echo 'jjh-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="jjh-pc";
+      sendPath="jjh-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-jjh-wap" ]]; then
+      echo "jjh-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="jjh-pc/m";
+      sendPath="jjh-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-jjh-app" ]]; then
+      echo "jjh-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="jjh-app";
+      sendPath="jjh-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-aaa-pc" ]]; then
+      echo 'bet365-aaa-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="bet365-aaa-pc";
+      sendPath="bet365-aaa-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-aaa-wap" ]]; then
+      echo "bet365-aaa-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="bet365-aaa-pc/m";
+      sendPath="bet365-aaa-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-aaa-app" ]]; then
+      echo "bet365-aaa-wap";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="bet365-aaa-app";
+      sendPath="bet365-aaa-app";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-988-pc" ]]; then
+      echo '988-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="988-pc";
+      sendPath="988-pc";
+
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-j98-pc" ]]; then
+      echo 'j98-pc';
+      runOrder="build";
+      localFileName="dist2/*"
+      devFileName="j98-pc";
+      sendPath="j98-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-j98-wap" ]]; then
+      echo "j98-wap";
+      runOrder="build_wap";
+      localFileName="distWap/*"
+      devFileName="j98-pc/m";
+      sendPath="j98-pc";
+      elif [[ "$CI_COMMIT_MESSAGE" =~ "@P-j98-app" ]]; then
+      echo "j98-app";
+      runOrder="build_app";
+      localFileName="distWap/*"
+      devFileName="j98-app";
+      sendPath="j98-app";
+      
+      else
+      echo "配置错误";
+      return;
+      fi;
+
+    - rm -rf $localFileName
+    - npm run $runOrder
+    # 拷贝打包好的文件到同步目录  $devFileName对应皮的名字
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - echo "同步目录创建完成！"
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    
+    - echo "发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  allow_failure: false
+  only:
+    variables:
+    - $CI_COMMIT_MESSAGE =~ /@P/
+    # variables:
+    # - $CI_COMMIT_MESSAGE != "commPush"
+  when: manual
+
+superWap:
+  stage: superWap
+  script:
+    - npm install
+    - echo "全站更新！！！！！慎用！！！！！！"
+    - localFileName="distWap/*"
+
+    # aaa的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="bet365-aaa-pc/m";
+    - sendPath="bet365-aaa-pc";
+    - sed -i "s/Super/bet365-aaa/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    # aaa的app
+    - runOrder="build_app";
+    - devFileName="bet365-aaa-app";
+    - sendPath="bet365-aaa-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    # bbt的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="bet365-bbt-pc/m";
+    - sendPath="bet365-bbt-pc";
+    - sed -i "s/bet365-aaa/bet365-bbt/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    # bbt的app
+    - runOrder="build_app";
+    - devFileName="bet365-bbt-app";
+    - sendPath="bet365-bbt-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # bee的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="bet365-bee-pc.com/m";
+    - sendPath="bet365-bee-pc.com";
+    - sed -i "s/bet365-bbt/bet365-bee/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  
+    # bee的app
+    - runOrder="build_app";
+    - devFileName="bet365-bee-app.com";
+    - sendPath="bet365-bee-app.com";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # asa的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="asa-pc/m";
+    - sendPath="asa-pc";
+    - sed -i "s/bet365-bee/xpj-asa/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    # app
+    - runOrder="build_app";
+    - devFileName="asa-app";
+    - sendPath="asa-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # vv8的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="vv8-pc/m";
+    - sendPath="vv8-pc";
+    - sed -i "s/xpj-asa/mgm-vv8/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    # app
+    - runOrder="build_app";
+    - devFileName="vv8-app";
+    - sendPath="vv8-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    
+    # jjh的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="jjh-pc/m";
+    - sendPath="jjh-pc";
+    - sed -i "s/mgm-vv8/jh-jjh/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    # jjh app
+    - runOrder="build_app";
+    - devFileName="jjh-app";
+    - sendPath="jjh-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # cbd的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="bet365-cbd-pc.com/m";
+    - sendPath="bet365-cbd-pc.com";
+    - sed -i "s/jh-jjh/bet365-cbd/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";  
+
+    # cbd app
+    - runOrder="build_app";
+    - devFileName="cbd-app";
+    - sendPath="cbd-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！"
+    
+    # rmb的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="bet365-rmb-pc/m";
+    - sendPath="bet365-rmb-pc";
+    - sed -i "s/bet365-cbd/bet365-rmb/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  
+    # rmb的app
+    - runOrder="build_app";
+    - devFileName="bet365-rmb-app";
+    - sendPath="bet365-rmb-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # kyy的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="kyy-pc/m";
+    - sendPath="kyy-pc";
+    - sed -i "s/bet365-rmb/ld-kyy/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  
+    # kyy的app
+    - runOrder="build_app";
+    - devFileName="kyy-app";
+    - sendPath="kyy-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # j98的wap   ★★★★★★★★
+    - runOrder="build_wap";
+    - devFileName="j98-pc/m";
+    - sendPath="j98-pc";
+    - sed -i "s/ld-kyy/js-j98/g" ./config/config_Wap.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  
+    # j98的app
+    - runOrder="build_app";
+    - devFileName="j98-app";
+    - sendPath="j98-app";
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+  allow_failure: false
+  only:
+    variables:
+    - $CI_COMMIT_MESSAGE =~ /@Super/
+    # variables:
+    # - $CI_COMMIT_MESSAGE != "commPush"
+  when: manual
+
+superPc:
+  stage: superWap
+  script:
+    - npm install
+    - echo "全站更新！！！！！慎用！！！！！！"
+    - localFileName="dist2/*"
+
+    # aaa的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="bet365-aaa-pc";
+    - sendPath="bet365-aaa-pc";
+    - sed -i "s/Super/bet365-aaa/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  
+    # bbt的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="bet365-bbt-pc";
+    - sendPath="bet365-bbt-pc";
+    - sed -i "s/bet365-aaa/bet365-bbt/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    
+    # bee的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="bet365-bee-pc.com";
+    - sendPath="bet365-bee-pc.com";
+    - sed -i "s/bet365-bbt/bet365-bee/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+ 
+    # asa的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="asa-pc";
+    - sendPath="asa-pc";
+    - sed -i "s/bet365-bee/xpj-asa/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+  
+    # vv8的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="vv8-pc";
+    - sendPath="vv8-pc";
+    - sed -i "s/xpj-asa/mgm-vv8/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+        
+    # jjh的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="jjh-pc";
+    - sendPath="jjh-pc";
+    - sed -i "s/mgm-vv8/jhgj-jjh/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+   
+    # cbd的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="bet365-cbd-pc.com";
+    - sendPath="bet365-cbd-pc.com";
+    - sed -i "s/jhgj-jjh/bet365-cbd/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # rmb的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="bet365-rmb-pc";
+    - sendPath="bet365-rmb-pc";
+    - sed -i "s/bet365-cbd/bet365-rmb/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # kyy的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="kyy-pc";
+    - sendPath="kyy-pc";
+    - sed -i "s/bet365-rmb/ldgj-kyy/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+    # 988的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="988-pc";
+    - sendPath="988-pc";
+    - sed -i "s/ldgj-kyy/tyc-988/g" ./config/config.js
+
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+
+ 
+    
+    # j98的PC   ★★★★★★★★
+    - runOrder="build";
+    - devFileName="j98-pc";
+    - sendPath="j98-pc";
+    - sed -i "s/tyc-988/js-j98/g" ./config/config.js
+    
+    - rm -rf $localFileName
+    - npm run $runOrder
+    - rm -rf /sync/$devFileName
+    - mkdir -p /sync/$devFileName
+    - cp -r $localFileName /sync/$devFileName
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.111.108.164::helloRsync 
+    - rsync -auv --password-file=/etc/rsyncd.passwd  /sync/$sendPath   rsyncuser@10.110.139.116::helloRsync  
+    - echo $devFileName"发布到线上成功。自己检查一下，通知客服测试没问题通知业主！";
+    
+  allow_failure: false
+  only:
+    variables:
+    - $CI_COMMIT_MESSAGE =~ /@Super/
+  when: manual
+
+# cleanup:
+#   stage: cleanup
+#   script:
+#     - echo "全部执行成功，多余备份文件！!"
+#     - cd /data/www/helloRsync/$proTag
+#     #保留5个，删除多余的最后时间的
+#     - rm -rf `ls -t|awk 'NR>5'`
+
+#   when: on_success

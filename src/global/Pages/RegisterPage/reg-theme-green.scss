@@ -1,0 +1,33 @@
+// 绿色主题
+
+div[data-theme="Green"]{
+    .RegisterNewPage{
+        background: #fdfdfd url(../images/reg/registerbg.jpg) no-repeat center top;
+        .RegisterTitle{
+            border-bottom: 1px solid #999;
+        }
+        form{
+            color: rgba(0,0,0,.65);
+            >div{
+                input,select.PayPassWord{
+                    background: #fff;
+                    color: #222;
+                    border:solid 1px #ccc;
+                }
+                >span{
+                    color: #ff0000;
+                }
+            } 
+            >.checkboxWrap{  
+                .RegNotice{
+                    color: #000;
+                }             
+            }
+            >.ButtonWrap{
+                button{
+                    background: #027b5b;
+                }
+            }        
+        }
+    }
+}

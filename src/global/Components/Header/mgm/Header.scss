@@ -1,0 +1,249 @@
+
+#topHead{ 
+    .headBg {
+        text-align: center;
+        height: 197px;
+        background: url(./images/headBg.jpg) no-repeat;
+        background-color: #11100e;
+        border-bottom: 1px solid #23221f;
+        .headFname {
+            height: 123px;
+            width: 1180px;
+            position: relative; 
+            .logo {
+                float: left;
+                .innerLogo {
+                    display: block;
+                    background: url(./images/logo.png) left center no-repeat;
+                    background-size: 85%;
+                    margin-top: 10px;
+                    width: 377px;
+                    margin-left: 28px;
+                    height: 100px;            
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 469px;
+                    width: 434px;
+                    height: 123px;
+                    background: url("./images/headright.png");
+                }
+            }   
+            .credit{
+                display: block;
+                height: 68px;
+                float: left;
+                position: absolute;
+                right: 0px;
+                top: 50px;
+                width: 174px;
+                background: url(./images/credit1.png) center center no-repeat;
+                background-size: 95%;
+                opacity: .9;
+                &::before{
+                    content: "4661.COM";
+                    background: #381f05;
+                    padding: 5px;
+                    height: 23px;
+                    line-height: 18px;
+                    width: 160px;
+                    display: block;
+                    margin-top: 35px;
+                    margin-left: 8px;
+                    color: #FEFE74;
+                    font-size: 18px;                    
+                }
+            }  
+            .loginForm {
+                float: right;
+                color: #fff;
+                .timeNumber {
+                    padding-top: 10px;
+                    width: 580px;
+                    span,a {
+                        color: #ffea99;
+                        float: left;
+                        font-size: 12px;
+                        padding-right: 10px;
+                    }
+                    i{
+                        margin-right: 5px;
+                    }
+                    .personal{
+                        display: block;
+                        cursor: pointer;
+                        padding: 0;
+                    }
+                    .personalHide{
+                        display: none;
+                    }
+                    .personal:hover{
+                        text-decoration: underline;
+                        color: #ffea00;
+                    }
+                } 
+                #login-form {
+                    position: absolute;
+                    top: 202px;
+                    width: 1070px;
+                    left: 80px;
+                    padding-top: 5px;
+                    .form-login-reg {
+                        float: left;
+                        width: 90px ;
+                    }
+                    .form-login-input {
+                        width: 470px;
+                        text-align: left;
+                        input {
+                            border: 1px solid #5e380f;
+                            height: 38px;
+                            font-size: 14px ;
+                            color: #000;
+                            width: 220px;
+                        }      
+                        .pwd-input {
+                            margin-left: 10px;
+                        }
+                    }
+                    .form-login-button {
+                        width: 117px;
+                        text-align: center;
+            
+                        .form-login-btn:before {
+                            content: '登入';
+                            color: #381f05;
+                            line-height: 38px;
+                        }
+            
+                        .form-login-btn {
+                            float: left;
+                            background-color: #ecdd76;
+                            border-radius: 5px;
+                            width: 87px;
+                            height: 38px;
+                            border: 0;
+                        }
+            
+                        .form-login-btn:hover {
+                            background-position: 0px -25px;
+                        }
+            
+                        a {
+                            float: left;
+                            color: #FEFE74;
+                            position: absolute;
+                            top: 10px;
+                            left: 690px;
+                        }
+                    }
+                    .form-login-reg {
+                        .form-reg-btn:before {
+                            content: '注册';
+                            color: #ecdd76;
+                            line-height: 38px;
+                        }
+            
+                        .form-reg-btn {
+                            width: 87px;
+                            height: 38px;
+                            border-radius: 5px;
+                            border: 1px #ecdd76 solid;
+                            background: #381f05;
+                        }
+            
+                        .form-reg-btn:hover {
+                            background-position: -102px -46px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .afterLogin{
+                    border: 0 solid #64563f;
+                    padding-top: 45px;
+                    font-size: 16px;
+                    float: right;
+                    width: 1000px;
+                    position: absolute;
+                    text-align:left;
+                    left: 75px;
+                    top: 175px;
+                    >span{
+                        color: #d48f60;
+                        font-size: 14px;
+                        border-right: 1px solid #d48f60;
+                        padding: 0 8px;
+                        a{
+                            color: #d48f60;
+                        }
+                    }
+                    div a{
+                        color: #d48f60;
+                    }
+                    a.item{
+                        padding: 0 2px;
+                    }
+                }
+            }  
+        }
+    }
+    .notice {
+        color: #825a55;
+        border-top: 1px #a87a27 solid;
+        margin-top: 68px;
+        .noticeLeft {
+            position: absolute;
+            right: 100px;
+            top: -45px;
+            text-align: right;
+            color:#ffea99;
+            a{
+                color: #ffea99;
+                margin: 0px 5px;
+                text-decoration: none;
+                &:hover{
+                    color: #FEFE74
+                }
+            }
+        }       
+    }
+    .NoticeStyle{
+        width: 1160px;
+        margin: 0 auto;
+        .noticeCenter{
+            overflow: hidden;
+            .notice-bar {
+                padding-left: 110px;
+                
+                &:before {
+                    content: "";
+                    width: 100px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: url("./images/note.png") left center no-repeat;
+                    background-size: 100%;
+                    z-index: 10;
+                }
+                .popout {
+                    z-index: 999;
+                }
+            }            
+        }
+        .noticeRight {
+            float:right;
+            .top_livechat {
+                float: right;
+                width: 119px;
+                height: 25px;
+                margin-top: 3px;
+                background: url('./images/inco_a.png');
+                background-position: -184px -2px;
+            }            
+        } 
+    }
+}
+

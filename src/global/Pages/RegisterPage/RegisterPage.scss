@@ -1,0 +1,122 @@
+
+
+/*
+    注册页公共样式 ————————————————————————————————————————————————————————————
+
+    切忌改动，
+*/
+@import "./reg-theme-green.scss";
+@import "./reg-theme-black.scss";
+@import "./reg-theme-darkbrown.scss";
+@import "./reg-theme-lightbrown.scss";
+@import "./reg-theme-yellow.scss";
+@import "./reg-theme-brown.scss";
+@import "./reg-theme-orange.scss";
+@import "./reg-theme-red.scss";
+
+.RegisterNewPage{
+    min-height: 800px;
+    padding: 40px 0;
+    .fucktime-box{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .RegisterContent{
+        width: 900px;
+        padding: 0 0 20px 0;
+        border-radius: 5px;
+        // 星星
+        .fa-star{
+            color: #ff0000
+        }
+        .RegisterTitle{
+            padding: 30px 30px 10px;
+            text-align: center;
+            h1{
+                font-weight: 600;
+                font-size: 30px;
+            }
+        }  
+        // 表单
+        form{
+            margin-top: 30px;
+            font-size: 14px;
+            margin: 0;
+            padding: 40px 0 0 0;
+            position: relative;
+            font-family: "Monospaced Number",Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+            .InputWrap{
+                margin-bottom: 22px;
+                height: 40px;
+                line-height: 40px;
+                >p{
+                    float: left;
+                    padding-right: 1.5rem;
+                    width: 37%;
+                    text-align: right;
+                    font-size: 16px;
+                }
+                >div{
+                    float: right;
+                    width: 63%;
+                    height: 100%;
+                    input{
+                        width: 280px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        min-height: 100%;
+                        padding-left: 15px;
+                        vertical-align: bottom;
+                        &.codeIpt{
+                            width: 190px;
+                        }
+                    }
+                    // 提示语
+                    >span{
+                        font-weight: 600;
+                    }
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            // 单选
+            >.checkboxWrap{
+                line-height: 26px;
+                margin-bottom: 5px;
+                input[type="checkbox"]{
+                    width: 15px;
+                    height: 15px;
+                    vertical-align: sub;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }       
+                .RegNotice{
+                    font-weight: 600;
+                }             
+            }
+            // 提交按钮
+            >.ButtonWrap{
+                position: relative;
+                margin-top: 20px;
+                button{
+                    opacity: .9;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 800;
+                    transition: all .5s;
+                    width: 285px;
+                    height: 40px;
+                    letter-spacing: 5px;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    &:hover{
+                        transition: all .5s;
+                        opacity: 1;
+                    }
+                }
+            }
+        }      
+    }
+}

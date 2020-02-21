@@ -1,0 +1,234 @@
+.MyPage {
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .scroll-content {
+        .user_info_top {
+            padding: .3rem 0;
+            text-align: center;
+
+            .user_avatar {
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 8px;
+            }
+
+            .user_level {
+                padding: 5px 0 0;
+                display: block;
+                font-size: .3rem;
+                color: #fff;
+            }
+
+            .user_name {
+                display: block;
+                padding: 4px 0 10px;
+                font-size: .3rem;
+                color: #fff;
+            }
+        }
+
+        .user_info_mid {
+            .money_info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #fff;
+                margin: 0 .3rem;
+                padding: .2rem .4rem;
+                border-radius: 10px;
+                box-shadow: 0 0 9px 0 rgba(145, 145, 145, .62);
+                transform: translateY(-.2rem);
+
+                .money_num {
+                    width: calc(74vw);
+
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        text-align: left;
+                        color: #000;
+                        font-size: .3rem;
+                        height: .8rem;
+                        line-height: .8rem;
+                    }
+
+                    i {
+                        font-style: normal;
+                        font-size: .34rem;
+                        color: #027f5f;
+                        font-weight: 700;
+                        height: 8vw;
+                        line-height: 8vw;
+                    }
+                }
+
+                .btns {
+                    width: 40%;
+                    text-align: center;
+
+                    a {
+                        width: 100%;
+                        border-radius: 5px;
+                        padding: .1rem .03rem;
+                        display: block;
+                        font-size: .24rem;
+                        color: #fff;
+
+                        &.check_all {
+                            background-color: #ff4a3d;
+                            margin-bottom: .3rem;
+                        }
+
+                        &.refresh {
+                            background-color: #ff6e07;
+                        }
+                    }
+                }
+            }
+
+            .deposit_func {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding: 2% 0 8% 0;
+
+                .zm {
+                    font-size: .75rem;
+                    color: #fff;
+                }
+
+                .iconbg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin: auto;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding-top: .3rem;
+                    box-sizing: border-box;
+                }
+
+                .iconbg1 {
+                    background-color: #01b0e9;
+                }
+
+                .iconbg2 {
+                    background-color: #07c0c3;
+                }
+
+                .iconbg3 {
+                    background-color: #01ac80;
+                }
+
+                .func_item {
+                    width: 22%;
+                    text-align: center;
+
+                    .icon {
+                        min-width: 67px;
+                        min-height: 67px;
+                        max-width: 100%;
+                        max-height: 100%;
+                        border-radius: 10px;
+
+                        &.charge {
+                            background-color: #01b0e9;
+                        }
+
+                        &.withdraw {
+                            background-color: #07c0c3;
+                        }
+
+                        &.transfer {
+                            background-color: #01ac80;
+                        }
+                    }
+
+                    .text {
+                        display: block;
+                        font-size: .3rem;
+                        margin-top: 12%;
+                    }
+                }
+            }
+        }
+
+        .user_info_btm {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            background-color: #fff;
+
+            .box {
+                display: block;
+                width: calc(100vw/4);
+                height: calc(100vw/4);
+                text-align: center;
+                border: 1px solid #f1eeee;
+                box-sizing: border-box;
+
+                .icon {
+                    display: inline-block;
+                    width: 100%;
+                    height: 1rem;
+                    line-height: 1rem;
+                    margin-bottom: .1rem;
+
+                    &.icon-credit-card {
+                        color: #70db2a;
+                    }
+
+                    &.icon-file-text {
+                        color: #f10547;
+                    }
+
+                    &.icon-gift {
+                        color: #ff6837;
+                    }
+
+                    &.icon-shield {
+                        color: #0ba2d4;
+                    }
+
+                    &.icon-group {
+                        color: #2c368d;
+                    }
+
+                    &.icon-user {
+                        color: #01b0e8;
+                    }
+
+                    &.icon-comment {
+                        color: #00649e;
+                    }
+
+                    &.fa-envelope-o {
+                        color: rgba(255, 0, 0, .6);
+                    }
+
+                    &.fa-bullhorn {
+                        color: #D36BC2;
+                    }
+                }
+
+                .txt_style {
+                    font-size: .3rem;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

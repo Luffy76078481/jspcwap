@@ -1,0 +1,251 @@
+/* 定义keyframe动画，命名为blink */
+@keyframes blink{
+    0%{color: #28f50a}
+    100%{color: #f2db1c} 
+}
+@keyframes blink2{
+    0%{color: #f12}
+    100%{color: #fff} 
+}
+/* 定义blink类*/
+.blink{
+    animation: blink 1s linear infinite;  
+    /* 其它浏览器兼容性前缀 */
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    -ms-animation: blink 1s linear infinite;
+    -o-animation: blink 1s linear infinite;
+}
+header{
+    background: #2e2e2e;
+    .header-inner-top{
+        height: 40px;
+        line-height: 40px;
+        .top-link-wrap{
+            height: 40px;
+            span{
+                color: #fff;
+                margin-right: 10px;
+            }
+            a{
+                font-size: 12px;
+                color: #fff;
+                line-height: 40px;
+                margin-right: 13.5px;
+            }
+        }
+        .timer-header{
+            float: right;
+            color: #fff;
+            height: 40px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    .nav-top{
+        z-index: 2;
+        background: #000;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        border-bottom: 2px solid rgb(84, 84, 84);
+        .logo{
+            float: left;
+            width: 214px;
+            margin-top: 6px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .pagcor{
+            float: right;
+            width: 155px;
+            margin-top: 6px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .links-nav{
+            float: left;
+            margin-top: 26px;
+            ul>li.mainMenu {
+                text-align: center;
+                font: 14px/38px "Microsoft YaHei";
+                position: relative;
+                float: left;
+                width: 90px;
+                &.hot::after{
+                    position: absolute;
+                    right: -12px;
+                    top: -2px;
+                    content: "";
+                    width: 21px;
+                    height: 12px;
+                    background: url(./images/hot.gif);
+                }
+                &.blink>a{
+                    animation: blink2 1s linear infinite;  
+                    /* 其它浏览器兼容性前缀 */
+                    -webkit-animation: blink2 1s linear infinite;
+                    -moz-animation: blink2 1s linear infinite;
+                    -ms-animation: blink2 1s linear infinite;
+                    -o-animation: blink2 1s linear infinite;
+                }
+                &:hover>a::after{
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    display: block;
+                    content: "";
+                    height: 2px;
+                    width: 100%;
+                    background: #F1EDA9;
+                }
+                >a{
+                    position: relative;
+                    color: #fff;
+                    display: block;
+                    height: 62px;
+                    font: 15px/38px "Microsoft YaHei";
+                    &.active::after{
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        display: block;
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        background: #F1EDA9;
+                    }
+                    &:hover{
+                        color: #ff0;
+                    }
+                    span{
+                        display: inline-block;
+                        position: relative;
+                    }
+                    p{
+                        line-height: 10px;
+                        color: #949494;
+                        margin: 0;
+                        font-size: 11px;    
+                    }
+                }
+                &:hover ul.secondNav{
+                    display: block;
+                }
+                .animation{
+                    animation: j98Head .8s infinite;
+                }
+                ul.secondNav{
+                    position: absolute;
+                    top: 64px;
+                    z-index: 2;
+                    width: 100%;
+                    background-color: rgb(68, 68, 68);
+                    display: none;
+                    >li{
+                        width: 100%;
+                        height: 32px;
+                        font-size: 12px;
+                        line-height: 32px;
+                        color: #fff;
+                        text-align: center;
+                        border-bottom: 1px solid #5d5d5d;
+                        position: relative;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        padding-right: 5px;
+                        i.navIcon{
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            width: 26px;
+                            height: 100%;
+                            float: left;
+                            margin: 0 5px;
+                            display: block;                      
+                            vertical-align: top;
+                            text-align: left;
+                        }
+                        &.hot::after{
+                            position: absolute;
+                            right: -10px;
+                            top: -1px;
+                            content: "";
+                            width: 21px;
+                            height: 12px;
+                            background: url(./images/hot.gif);     
+                        }
+                        &:hover{
+                            color: #ff0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .signin-success-nav{
+        right: 0px;
+        width: 100%;
+        clear: both;
+        position: relative;
+        top: 0px;
+        border-top: 2px solid #fcb200;
+        .inner{
+            margin: auto;
+            width: 995px;
+        }
+        .prefix {
+            float: left;
+            color: #dac085;
+            height: 35px;
+            line-height: 35px;
+            margin: 0;
+        }
+        ul{
+            float: right;
+            margin-top: 3px;
+            margin-right: 10px;
+            height: 35px;
+            line-height: 30px;
+            li{
+                float: left;
+                margin-right: 10px;
+                text-align: right;
+                a{
+                    color: #fff;
+                    font-size: 12px;
+                    span{
+                        color: #938102;
+                        font-weight: bold;
+                        font-size: 13px;
+                    }
+                }
+                .logout {
+                    position: relative;
+                    padding: 4px 10px;
+                    background: #938102;
+                    border-radius: 5px;
+                    top: -0px;
+                    &:hover{
+                        color: #fff000;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@keyframes j98Head
+{
+from {color: red;}
+to {color: yellow;}
+}

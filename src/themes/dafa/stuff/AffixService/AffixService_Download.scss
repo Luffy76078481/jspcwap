@@ -1,0 +1,94 @@
+.download_fix{
+  position: fixed;
+  left: -289px;
+  top:25%;
+  z-index: 999;
+  width: 344px;
+  height: 270px;
+  background-color: #373737;
+  border-radius: 0 0 5px 0;
+  transition: 1s;
+
+
+  .download_fix_title{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 200px;
+    color: #ffe001;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 70px;
+  }
+
+  .fix_text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 284px;
+    padding: 7px 30px;
+    text-align: center;
+
+    .download_li{
+      position: relative;
+      font-size: 16px;
+      font-weight: bolder;
+      display: inline-block;
+      padding: 15px 15px 15px 65px;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      width: 226px;
+      overflow: hidden;
+      border: 1px solid #ffe000;
+      border-radius: 5px;
+      color:#ffe000;
+
+      a{
+        color:#ffe000;
+        text-decoration: none;
+      }
+
+      a:before{
+        content: "";
+        position: absolute;
+        z-index: 111;
+        left: 56px;
+        top: 9px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .download_li:hover{
+      background-color: #ffe001;
+      color: #373737;
+    }
+
+    .download_li:hover a{  color: #373737;  }
+
+    .download_game   a:before{  background: url("resource/icon.png") no-repeat -240px -120px;  }
+    .download_poker  a:before{  background: url("resource/icon.png") no-repeat -240px -200px;  }
+    .download_send   a:before{  background: url("resource/icon.png") no-repeat -240px -360px;  }
+    .download_khd   a:before{  background: url("resource/khd1.png") 0 0/100% 100% no-repeat ;  }
+
+    .download_game:hover   .download_game_a:before{  background: url("resource/icon.png") no-repeat -280px -120px;  }
+    .download_poker:hover  .download_poker_a:before {  background: url("resource/icon.png") no-repeat -280px -200px;  }
+    .download_send:hover   .download_send_a:before {  background: url("resource/icon.png") no-repeat -280px -360px;  }
+    .download_khd:hover   .download_khd_a:before {  background: url("resource/khd.png")  0 0/100% 100%  no-repeat  }
+  }
+}
+
+.download_fix:hover{  left: 0;  }
+
+.download_fix:before{
+  content: "";
+  width: 60px;
+  height: 61px;
+  background: url("resource/icon.png") no-repeat 0 -180px;
+  position: absolute;
+  top: -37px;
+  right: 0;
+}
+
+
+

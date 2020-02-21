@@ -1,0 +1,88 @@
+.FootPage{
+  color: #5e5e5e;
+  font-size:16px;
+  padding:50px 0 0px;
+  background:#e6e7e8;
+  #footer{
+    min-width: 1300px;
+    min-width: 1100px\9;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .mb-40 {
+    margin-bottom: 40px!important;
+  }
+  .quicklinks ul {
+    list-style-type: none;
+    a {
+      color: #5e5e5e;
+      font-size: 16px;
+      line-height: 36px;
+      cursor:pointer;
+    }
+    a:hover{
+      color:#444;
+      text-decoration: none;
+    }
+  }
+  .col-6 {
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    .specpeop{
+      color: red;
+      &:hover{
+        color: #bb9860!important;
+      }
+    }
+  }
+  .grid {
+    margin-right: -10px;
+    margin-bottom: 15px;
+    margin-left: -10px;
+    margin-top:50px;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .col-4{
+    width: 33.33333%;
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+    p{
+      line-height:30px;
+    }
+    .col-6{
+      margin-top:-15px;
+    }
+  }
+  #foot-Cagayan{
+    width:100%;
+    max-height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    background: #c6c6c7;
+    p{
+      text-align: center;
+      margin:0;
+    }
+  }
+}
+
+.footer-help-share{
+  margin-left: 0;
+  height: 81px;
+  background: url(./images/dafafooter2.png) no-repeat 50%;
+}

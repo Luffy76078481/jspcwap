@@ -1,0 +1,57 @@
+// button函数
+@mixin PuiButton($width,$height,$padding,$margin,$fontSize,$lineHei,$borderRadius) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+    font-size: $fontSize;
+    line-height: $lineHei;
+    border-radius: $borderRadius;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    border: solid 1px #dadada;
+    box-shadow: 0 4px 0 #cacaca, 0 3px 3px rgba(0,0,0,0.3);
+    color: #868686;
+    &:active{
+        box-shadow: 0 1px 0 #cacaca,0 3px 3px rgba(0,0,0,0.3);
+        position: relative;
+        top: 2px;
+    }   
+}
+// selec函数
+@mixin PuiSelect($width,$height,$padding,$margin) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+    outline: none;
+}
+
+// 支付密码
+.Pui-PassWord{
+    display: inline-block;
+    &>select.PayPassWord{
+        @include PuiSelect(auto,auto,10px,0 10px 0 0);   
+        border-color:#ccc;
+        background: #fcfcfc;
+    }
+}
+// 复制按钮
+.Pui-CopyButton{
+    @include PuiButton(60px,24px,0,0,14px,24px,3px);
+}
+
+// 支付密码
+.Pui-TimeZone{
+    display: inline-block;
+    &>select{
+        border: 1px solid #ccc;
+        outline: none;
+        padding-left: 4px;
+        height: 36px;
+        color: #555;
+        background: #fcfcfc;
+    }
+    
+}

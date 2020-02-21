@@ -1,0 +1,862 @@
+@charset "utf-8";
+
+/*
+    警告！
+    前方注意：
+    ___________公共样式：不予修改
+    _______________________________ 个别改动于各自站点私有样式___sKin.scss进行修改...
+
+*/
+
+/*  _______常规变量  */ 
+$white:#fff;
+$account-page-color:#888; // 页面默认色
+$account-normal-color:#555; // 常规颜色
+$account-notice-Font-color:#ff0000;
+
+// 主题
+$brown-theme : (
+    MainColor:#381f05,
+    SubmitButtonShadow:#29221b,
+    TableTh:#381f05,
+    TbodyTrOdd:rgba(169, 169, 169, 0.2),
+    TbodyTrEven:#f7ece0,
+    PurseIcon: url(../images/themes-brown/purse.png),
+    verifyIcon:url(../images/themes-brown/verify.png),
+    SelBank:url(../images/themes-brown/selected_card.png),
+    HeadPhone:url(../images/themes-brown/phoneDown.png)
+);
+// 按钮混合
+@mixin buttonStyle($width,$padding) {
+    background-color: map-get($brown-theme,MainColor);         
+    box-shadow: 0 4px 0 map-get($brown-theme,SubmitButtonShadow), 0 3px 10px rgba(0,0,0,0.3);
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    color: $white;
+    padding:$padding;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    width: $width;
+    &:active{
+        box-shadow: 0 1px 0 map-get($brown-theme,SubmitButtonShadow),0 3px 8px rgba(0,0,0,0.3);
+        position: relative;
+        top: 3px;
+    }   
+}
+
+/*
+    _____________________________________警告：以下为承重墙！！  (* = *)  (^ = ^)                  
+*/
+
+.accountCenter{
+    background: #1a1915;
+    padding: 20px 0;
+    .bgColor{ // 背景色
+        background-color: map-get($brown-theme,MainColor);
+    }
+    .FontColor{ // 字体色
+        color: map-get($brown-theme,MainColor)
+    } 
+    .noticeFont{
+        color:$account-notice-Font-color;
+        &:hover{
+            text-decoration: underline
+        }
+    }
+    input{
+        color: #222;
+    }
+    // 所有弹窗头部
+    .modal-header{
+        background-color: map-get($brown-theme,MainColor);
+        text-align:center;
+        color: $white;
+    }  
+    // 容器
+    .account_container{
+        background:$white;
+        color:$account-page-color;
+        margin:0 auto;
+        font-size: 16px;
+        line-height: 28px;
+        // 头部
+        .accountTop{
+            height: 210px;
+            box-shadow: 0px 0px 10px 5px #999;
+            background: url("../images/bg_top.jpg") 0 0 repeat;
+            .myPurse{// 余额，刷新余额图标
+                background: map-get($brown-theme, PurseIcon) no-repeat 20px center;
+                line-height: 28px;
+                padding: 10px 5px 0px 140px;
+                width: 350px;
+                height: 80px;
+                i{
+                    background: $white;
+                    border-radius: 100%;
+                    border: 1px solid #b3b3b3;
+                    padding: 3px;
+                    color: $account-page-color;
+                    &:hover{
+                        color: map-get($brown-theme,MainColor)
+                    }
+                }
+                .transferAllOut{
+                    float: right;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 28px;
+                    color: #555;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            // 竖线
+            .colsline{
+                display: inline;
+                height: 65px;
+                border-left: 1px solid #cfcfcf;
+                border-right: 1px solid $white;
+            }
+            // 验证图标
+            .iconsVerify{
+                height: 70px;
+                line-height: 30px;
+                width: 340px;
+                .verifyItems{
+                    padding: 15px 0;
+                    a{
+                        width: 43px;
+                        height: 40px;
+                        display: inline-block;
+                        margin: 0 20px;  
+                    }
+                    // 账户信息验证
+                    a.realNameIcon{
+                        background: map-get($brown-theme,verifyIcon) 0 0;
+                        &.isAuth,&:hover{
+                            background: map-get($brown-theme,verifyIcon) 0 40px; 
+                        }
+                    }
+                    a.mobileIcon{
+                        background: map-get($brown-theme,verifyIcon) -43px 0;
+                        &.isAuth,&:hover{
+                            background: map-get($brown-theme,verifyIcon) -43px 40px; 
+                        }
+                    }
+                    a.emailIcon{
+                        background: map-get($brown-theme,verifyIcon) 87px 0;
+                        &.isAuth,&:hover{
+                            background: map-get($brown-theme,verifyIcon) 87px 40px; 
+                        }
+                    }
+                    a.cardIcon{
+                        background: map-get($brown-theme,verifyIcon) 43px 0;
+                        &.isAuth,&:hover{
+                            background: map-get($brown-theme,verifyIcon) 43px 40px; 
+                        }
+                    }
+                }
+            }
+            .QRCode{
+                position: absolute;
+                right: 195px;
+                top: 55px;
+                background: #fff;
+                padding: 3px;           
+            }
+            // 载图，做成配置项
+            .toDownApp{
+                position: absolute;
+                right: 50px;
+                top: 20px;
+                height: 165px;
+                width: 290px;
+                display: block;
+                background: map-get($brown-theme,HeadPhone) 0 0 / cover no-repeat
+            }
+            //导航
+            .accountTabs{
+                height: 35px;
+                ul{
+                    li{
+                        display: inline-block;
+                        background-color: #ececec;
+                        border: 1px solid #cfcfcf;                 
+                        width: 85px;
+                        font-size: 14px;
+                        line-height: 30px;
+                        margin: 4px 7px;
+                        text-align: center;
+                        position: relative;
+                        a{
+                            color: $account-normal-color
+                        }
+                        &.selected_bac_tabs{
+                            background-color: map-get($brown-theme,MainColor);
+                            a{
+                                color:$white
+                            }
+                        }
+                    }
+                }
+            } 
+            // 手机验证弹窗
+            .PhoneVerifyModal , .EmailVerifyModal{
+                .modal-dialog{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    height: 200px;
+                    width: 400px;
+                    .modal-content{       
+                        .modal-body{
+                            span{
+                                color: map-get($brown-theme,MainColor)
+                            }
+                            .modalbox{
+                                height: 30px;
+                                position: relative;
+                                margin: 10px 0;
+                                input{
+                                    line-height: 26px;
+                                    width: 165px;
+                                    padding-left: 10px;
+                                }
+                                label{
+                                    width: 80px;
+                                }       
+                                a{
+                                    display: inline-block;
+                                    margin-left: 10px;
+                                    font-size: 13px;
+                                    &:hover{
+                                        text-decoration: underline
+                                    }
+                                }                                           
+                            }
+                            button{         
+                                @include buttonStyle(
+                                    80px,
+                                    0
+                                );   
+                                display: block;     
+                                text-shadow: 0 -1px 0 rgba(0,0,0,.3);                               
+                                margin: 0 auto;                
+                            }  
+                        }              
+                    }
+                }   
+            }
+        }    
+    }    
+    // 个人中心内容部分
+    .accountCon{
+        padding: 20px;
+        // 使用页面： ————绑定银行卡页面，记录...
+        table{
+            thead{
+                tr{
+                    width: 100%;
+                    background: map-get($brown-theme,TableTh);
+                    th{
+                        height: 35px;
+                        line-height: 35px;
+                        font-weight: 700;
+                        color: $white;
+                        text-align: center;
+                        font-size: 13px;                        
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    &:nth-child(odd){
+                        background: map-get($brown-theme,TbodyTrOdd);
+                    }
+                    &:nth-child(even){
+                        background: map-get($brown-theme,TbodyTrEven);
+                    }
+                    td{
+                        line-height: 24px;
+                        padding: 10px;
+                        color: $account-normal-color;
+                        font-size: 13px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        // 使用页面：———— 绑定银行卡，基本信息，取款...
+        label{
+            font-weight: 700;
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        select.normalInput{
+            width: 250px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding-left: 4px;
+            height: 36px;
+            color: $account-normal-color;
+            background: #fcfcfc;
+        }
+        input{
+            background: #fcfcfc;
+            padding: 6px;
+            height: 36px;
+            width: 250px;
+            border: 1px solid #ccc;
+        }
+        .SubBut{
+            @include buttonStyle(
+                120px,
+                5px 0
+            );
+        }
+    }    
+}
+// 私有化结构
+.accountCenter{   
+    // 内容
+    .accountCon{
+        // 基本信息页
+        .userInfos_wrap{
+            padding: 30px 50px;
+            .userInfos_top{
+                border-bottom: solid 1px map-get($map:$brown-theme , $key: MainColor);
+                height: 45px;
+                margin-bottom: 20px;
+                // 个人资料
+                h4{
+                    font-size: 20px;
+                    display: inline-block;
+                    line-height: 45px;
+                    position: relative;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        width: 23px;
+                        height: 16px;
+                        background: url('../images/crown.jpg') no-repeat 0 0;
+                        right: -23px;
+                        top: 0;
+                        transform: rotate(45deg);
+                    }
+                }
+                // 新手指南
+                a{
+                    display: inline-block;
+                    color: $white
+                }
+            }      
+            ul{
+                li{
+                    font-size: 15px;
+                    line-height: 32px;               
+                }
+            }              
+        }      
+        // __取款页面
+        .WithdrawPage{
+            font-size: 14px;
+            .WithdrawButton{
+                margin-left: 120px;
+            }
+            .accountBanks{
+                width: 800px;
+                display: inline-block;
+                vertical-align: top;
+                div.bankOptions{
+                    margin: 0 10px 10px 0;
+                    padding: 5px 10px;
+                    color: $account-normal-color;
+                    position: relative;
+                    float: left;       
+                    cursor: pointer;
+                    .selCard{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #ccc;
+                        right: 0;
+                        top: 0;
+                    }
+                    &.isSel .selCard{
+                        border: 2px solid map-get($brown-theme,MainColor);
+                        background: map-get($brown-theme,SelBank) 101% 105% no-repeat
+                    }
+                }
+                .addBanks,.addPay{
+                    display: block;
+                    padding: 5px 15px;
+                    border: 1px dotted #ccc;
+                    cursor: pointer;
+                    float: left;
+                    margin-right: 20px;
+                    color: map-get($brown-theme,MainColor);
+                }
+                .addBanks{
+                    width: 130px
+                }
+                .addPay{
+                    width: 210px;
+                }
+            }
+        }
+        // __绑定银行卡，支付宝，微信，
+        .bindCardPage{     
+            .title{
+                background: map-get($brown-theme,TableTh); 
+                font-size: 14px;
+                text-align: center;
+                color: $white;
+                font-weight: 700;
+                line-height: 28px;          
+            }
+            // 上传文件
+            .upFileWrap{
+                display: inline-block;
+                span{
+                    line-height: 36px;
+                    z-index: 10;
+                    color: #fff;
+                    pointer-events: none;    
+                    display: block;
+                    position: absolute;
+                    width: 60px;
+                    height: 36px;
+                    top: 0;      
+                    right: 0;
+                    &:active{
+                        transform: scale(0.95)
+                    }
+                }         
+                input[type="file"]{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 36px;
+                    width: 60px;
+                }                          
+            }
+        }
+        //转入转出页
+        .transferWrap{
+            padding: 80px 0 10px 0;
+            // 自动转账
+            .alloutBox,.allfrenshBox{
+                position: absolute;
+                top: 0;      
+                .AllOutButton{
+                    @include buttonStyle(
+                        80px,
+                        5px
+                    );    
+                    font-size: 15px;
+                }          
+            }
+            .alloutBox{
+                right: 0
+            }
+            .allfrenshBox{
+                right: 100px;               
+            }
+            .autoTransfer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;              
+                width: 100%;
+                padding-left: 40px;
+                .transferOnOff{
+                    width: 40px;
+                    height: 20px;
+                    border-radius: 12px;
+                    position: relative;
+                    margin-left: 10px;
+                    transition: all .5s ease;
+                    &.unChecked{
+                        background-color: #808080;
+                    }
+                    &.checked{
+                        background-color: map-get($brown-theme,MainColor);
+                    }
+                    &.unChecked i{
+                        right: 20px;
+                    }
+                    &.checked i{
+                        right: 0;
+                    }
+                    & i.transferCircle{
+                        position: absolute;
+                        top: 0;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 10px;
+                        background-color: #ccc;
+                        transition: all .5s ease;
+                    }
+                }
+            }
+            // 转账平台导航
+            ul.platformsTabs{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                li{
+                    display: flex;
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 26px;
+                    margin-top: -1px;
+                    cursor: pointer;
+                    &.active,&:hover{
+                        color: map-get($brown-theme,MainColor);
+                        font-weight: bold;
+                    }
+                }
+            }
+            // 转账余额
+            .platformsContents{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                .platbox{
+                    width: 32%;
+                    margin-right: 1%;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    overflow: hidden;
+                    float: left;
+                    border: 1px solid #ccc;
+                    position: relative;
+                    .platName{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40px;
+                        width: 100%;
+                        overflow: hidden;
+                        border-bottom: 1px solid #ccc;
+                        color: $white;
+                        background: map-get($brown-theme,MainColor);
+                        i{
+                            right: 15px;
+                            position: absolute;
+                            top: 10px;
+                        }
+                    }
+                    .platBalance{
+                        font-size: 18px;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+        // 查询记录
+        .recordsHistorys{
+            padding: 20px;
+            input,select.recordSelect{
+                width: 160px;
+            }
+            label{
+                width: auto;
+                padding-left: 10px;
+            }
+            // 各种查询记录导航
+            ul.nav{
+                margin-bottom: 20px;
+                border-bottom: 1px solid #d0cece;
+                li{
+                    margin-right: 10px;
+                    float: left;
+                    &.active a,&:hover a{
+                        cursor: default;
+                        border-bottom: 3px solid map-get($brown-theme,MainColor);
+                    }
+                    a{
+                        font-size: 14px;
+                        line-height: 0.5;
+                        color: #717171;
+                        border-bottom: 1px solid transparent;
+                        background-color: transparent;
+                    }
+                }
+            }
+            // 分页
+            .paging{
+                ul.pagination{
+                    float:right;
+                    margin: 0;
+                    li{
+                        padding: 0 3px;
+                        margin: 0;
+                        float: left;
+                        cursor: pointer;
+                        a{
+                            padding: 2px 6px;
+                            border-radius: 3px;
+                            border: none;
+                            margin: 2px 0;
+                            color: $account-page-color;
+                            &.active{
+                                color: $white;
+                                background: map-get($brown-theme,MainColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 修改密码
+        .reportWrapper{
+            padding: 30px 0;
+            h2.title{
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: map-get($brown-theme,MainColor);
+            }
+            label{
+                text-align: left;
+            }
+            input{
+                font-size: 13px;
+            }
+            button.SubBut{
+                width: 375px;
+            }
+        }
+        // 存款页面新
+        .depositNew{
+            min-height: 300px;
+            padding: 0 80px;
+            ul.payMents{
+                padding: 20px 0px 0 0;
+                margin: 0 auto 30px;
+                >li{
+                    float: left;
+                    padding: 10px 0 5px;
+                    font-size: 14px;
+                    width: 90px;
+                    color: #717171;
+                    display: block;
+                    position: relative;
+                    margin: 5px;
+                    background: #fff;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    span{
+                        display: block;
+                        text-align: center;                        
+                    }
+                    span.payicon{
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        width: 100%;
+                        height: 33px;
+                    }
+                    span.otherpay{
+                        background-image: url(../images/otherPay.png)
+                    }
+                    &.hasRecommend::after{
+                        content: " ";
+                        position: absolute;
+                        width: 35px;
+                        height: 35px;
+                        pointer-events: painted;
+                        right: 1px;
+                        top: 0px;
+                        background: url(../images/recommend.png) no-repeat;
+                        background-size: contain;
+                        z-index: 2;
+                    }
+                    &.hasDiscounted::after{
+                        content: " ";
+                        position: absolute;
+                        width: 35px;
+                        height: 35px;
+                        pointer-events: painted;
+                        right: 1px;
+                        top: 0px;
+                        background: url(../images/promos.png) no-repeat;
+                        background-size: contain;
+                        z-index: 2;                        
+                    }
+                    &.active{
+                        font-weight: 700;
+                        border-color: map-get($brown-theme,MainColor);
+                        &::before{
+                            content: " ";
+                            position: absolute;
+                            width: 16px;
+                            height: 16px;
+                            pointer-events: painted;
+                            right: 0px;
+                            top: 0px;
+                            background: map-get($brown-theme,MainColor) url(../images/checkIcon.png) no-repeat;
+                            background-size: contain;    
+                            z-index: 1;       
+                        }
+                    }
+                }
+            }
+            .qucikPay{
+                margin-bottom: 10px;
+                .kuaijie{
+                    float: right;
+                    width: 680px;
+                    margin-bottom: 5px;
+                }
+                span{
+                    display: inline-block;
+                    border:solid 1px #ccc;
+                    padding: 2px 0;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    width: 60px;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    &.invalid{
+                        background-color: #ccc;
+                        color: $white;
+                    }
+                    &.active{
+                        color: $white;
+                        background-color: map-get($brown-theme,MainColor);
+                    }
+                }
+            }
+            .hint{
+                padding: 0 0 0 110px;
+                font-size: 14px;
+                color: map-get($brown-theme,MainColor);
+            }
+            ins.remindTexts{
+                padding: 0 0 0 110px;
+                width: 600px;
+                line-height: 24px;
+                display: block;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            button.SubBut{
+                margin-left: 110px;
+                margin-top: 10px;
+                display: block;
+            }
+            .qrcodePay{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            .thirdFrom{
+                button{
+                    @include buttonStyle(
+                        80px,
+                        0
+                    );   
+                    text-shadow: 0 -1px 0 rgba(0,0,0,.3);                               
+                    margin-right:5px;  
+                    font-size: 14px;
+                }
+            }
+        }        
+        // 存款页面
+        .deposit{
+            padding: 0 60px;
+            // 转账类型
+            .tabsUl{
+                border-bottom: 1px solid #d0cece;
+                margin: auto;
+                padding: 50px 30px 0 0;
+                li{
+                    float: left;
+                    display: inline;
+                    margin: 0 35px;
+                    padding: 0;
+                    font-size: 13px;
+                    &.selected_red  a{
+                        font-weight: 700;
+                        border-bottom: 4px solid map-get($brown-theme,MainColor);
+                    }
+                    a{
+                        color: #717171;
+                        display: block;
+                        position: relative;
+                        top: 1px;         
+                        .tooltiptextuc{
+                            width: 110px;
+                            text-align: center;
+                            border-radius: 6px;
+                            padding: 0;
+                            position: absolute;
+                            top: -35px;
+                            left: 50%;
+                            margin-left: -50px;
+                            font-weight: 400; 
+                            color: map-get($brown-theme,MainColor);
+                            border: 1px solid map-get($brown-theme,MainColor);
+                            background-color: $white;
+                            &::after{
+                                background-color: $white;
+                                border-color: map-get($brown-theme,MainColor);
+                            }
+                        }
+                    }
+                }
+            }
+            p{
+                margin-bottom: 10px;
+                line-height: 36px;
+            }
+            // 提示語
+            ins.remindTexts{
+                display: block;
+                padding-left: 120px;
+                width: 650px;
+                line-height: 24px;
+                text-decoration: none;
+            }
+            // 渠道选择
+            .dpt_credit{
+                padding: 30px 20px 0 20px;
+                font-size: 13px;
+                .Yhtext{
+                    font-size: 14px;
+                    color: map-get($brown-theme,MainColor);
+                }
+            }
+            // 存款金额
+            .money{
+                padding: 0px 20px;
+                font-size: 13px;
+                .SubBut{
+                    margin-left: 120px;
+                    margin-top: 20px;
+                }
+                // 银行转账二维码支付
+                .qrcodePay{
+                    position: absolute;
+                    right: -50px;
+                    top: -40px;
+                }
+            }
+        }
+    }
+}

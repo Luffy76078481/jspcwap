@@ -1,0 +1,102 @@
+
+// 对联右
+.floatBar{
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    overflow: hidden;
+    width: 50px;
+    margin-top:-186px; 
+    height: 372px;
+    transition: all .5s linear .05s;
+    &.rightSb{
+        right: 0px;
+    }
+    &.leftSb{
+        left: 0;
+    }
+    &:hover{
+        width: 211px;
+    }
+    .float_bg{
+        position: absolute;
+        z-index: 1099;
+        top: 0;
+        width: 163px;
+        height: 372px;
+        &.float_right_bg{
+            left: 50px;
+        }
+        &.float_left_bg{
+            right: 50px;
+        }
+        a{
+            width: 163px;
+            display: block;
+        }
+        a.float-service{
+            cursor: pointer;
+            height: 97px;
+            background: url(./images/AffixService4/float_top.png) 0 0 no-repeat;
+        }
+        a.float-font{
+            padding: 10px 0px 0 65px;
+            height: 65px;
+            background: url(./images/AffixService4/float_line.png) 0 0 no-repeat;
+            span{
+                color: #ffde1b;
+                font-weight: 500;
+                font-size: 14px;
+                &.linkSpan{
+                    line-height: 45px;
+                }
+            }
+            &:hover{
+                background-position-y:bottom; 
+            }
+            &:hover span{
+                color: #007b5b
+            }
+        }
+        a.float-code{
+            height: 145px;
+            background: url(./images/AffixService4/server.png) 0 0 no-repeat;
+            text-align: center;
+            color: #ffde1b;
+            p{
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 115px;
+            }
+            .codeSide{
+                margin:0 auto;
+                display: block;
+            }
+        }
+    }
+    a.float_log{
+        position: absolute;
+        z-index: 1100;
+        top: 80px;
+        width: 48px;
+        display: block;
+        height: 250px;
+        cursor: pointer;
+        &.float_left_log{
+            background: url(./images/AffixService4/floatLeft.png) 0 0 no-repeat;    
+            left:163px;
+        }
+        &.float_right_log{
+            background: url(./images/AffixService4/floatRight.png) 0 0 no-repeat;    
+            right: 163px;        
+        }
+        &:hover{
+            color: transparent;    
+        }       
+    }
+}
+

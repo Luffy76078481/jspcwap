@@ -1,0 +1,47 @@
+
+/*
+    首页优惠活动弹窗 update-by 19/7/6
+*/
+
+.promotionAlert.popBox{
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  margin-left: -300px;
+  top: 25%;
+  display: none;
+  width: 600px;
+  box-shadow: 0 0 5px 2px rgba(2,2,2,.8);
+  &.popout{
+    display: block;
+  } 
+  // 头部
+  .popBox_title{
+    padding: 0 10px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    .popBox_close{
+      color: #ffe887;
+      position: absolute;
+      right: 16px;
+      top: 12px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+  // 内容
+  a.mainBody{
+    display: block;
+    P{
+      margin: 0;
+    }
+    .popBox_body{
+      min-height: 400px;
+      color: #222;
+      background: #fcfcfc;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+
+$font-size:              14px;
+$font-family:            #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"};
+
+$text-color-normal:      #000000;
+$text-color:             #D9BB61;
+$text-color-dark:        #654203;
+$text-color-deep:        #654203;
+$text-color-hightline:   #3B2D1B;
+
+$bg-color:               #e7c853;
+$bg-color-deep:          #654203;
+$bg-color-dark:          #11100e;
+$bg-color-dark2:          #342c1f;
+$bg-color_member:        rgba(0, 0, 0, 0.7);
+$bg-color-input:          #967409;
+
+
+$title-color:            #ecb934;
+$title-color-warm:       #333333;
+
+$border-color:           #64563f;
+$border-color-deep:      #654203;
+$border-color-input:     #D8B848;
+
+
+
+
+// base
+$base: (
+        input-placeholder:#fff,
+    
+  //_____header
+        header-third-color: $text-color,
+        header-notice-bordercolor: $border-color,
+        header-input-placeholder: #fff,
+
+  //___________________sweet彈出窗_____________________
+        sweet_title_bgcolor:$bg-color-dark,
+        sweet_title_color:$text-color-normal,
+        sweet_color:$text-color-normal,
+
+  //______________________系統訊息彈出窗_______________
+        SystemMessage_box_shadow: rgba(0, 0, 0, 0.3),
+
+  //_____popbox
+        popbox-bgColor: $bg-color-dark,
+        popbox-borderColor: $border-color-deep,
+        popbox-title-iconcolor: $title-color-warm,
+        popbox-title-bgcolor: $bg-color,
+        popbox-title-fontsize: 22px,
+        popbox-title-lineheight: 50px,
+        popbox-title-leftIcon: 18px,
+        popbox-title-closeBg: $bg-color-dark,
+        popbox-title-closeBorder: $border-color-deep,
+        popbox-body-shadow: rgba(0, 0, 0, 0.8),
+        popbox-body-color: $text-color-normal,
+        popbox-body-titlecolor: $title-color-warm,
+        popbox-body-bordercolor: #000,
+  //__________________footer__________________
+        footer-bgcolor1: $bg-color,
+        footer-bgcolor2: $bg-color-dark,
+        footer-border-color1: #aa635c,
+        footer-color1: $text-color,
+        footer-color2: $text-color-dark,
+        footer-color3: $text-color-dark,
+  //__________________first_Page__________________
+  //	casinoSlider:,
+        firstPage_casinolist_Slider_bg: #252525,
+        firstPage_game_btn_bgcolor: #e37b00,
+        firstPage_bingo_text_bgcolor: #301b18,
+        firstPage_bingo_btn_bgcolor: #e37b00,
+  //__________________sport__________________
+        sport_nav_bgcolor: $bg-color,
+  //__________________casino__________________
+
+        casino_nav_bgcolor1: $bg-color,
+        casino_nav_bgcolor2: $bg-color-deep,
+  //________________gamesPage________________
+        game_upbg: url(images/game/imgbg_02.jpg),
+        //game_upboxbg: url(images/game/fous-bg_03.png),
+        //game_money_icon:url(images/game/jackpot-inco.png),
+        slider_img: url(images/game/gd_02.png),
+  //__________gamelistpanel___遊戲版塊_____________
+
+  //平台選單__platform_list__nav
+
+  //左側遊戲分類
+        gamelistpanel_searchbar_bgcolor:$bg-color-dark,
+        gamelistpanel_Loading_hoverMask:#000,
+        gamelistpanel_game_hoverMask:rgba(0, 0, 0, 0.58),
+        gamelistpanel_game_pageIcon_bg_color:$bg-color-dark,
+        gamelistpanel_game_pageIcon_border_color:$border-color,
+        gamelistpanel_game_pageIcon_onchoosing:$border-color,
+
+  //__________agGame________________
+  
+        agGame_gamebox_bgcolor: rgba(255, 255, 255, 0.35),
+        agGame_gamebox_bordercolor: rgba(255, 255, 255, 0.5),
+        agGame_gamebox_btn_color: #005284,
+        agGame_gamebox_btn_bgcolor: -webkit-linear-gradient(#ffed00, #f7a400),
+        agGame_gamebox_btn_bordertopcolor: #fff9a4,
+        agGame_gamebox_btn_borderbottomcolor:#f7a400,
+        agGame_gamebox_qrcode_bgcolor: rgba(255, 255, 255, 0.5),
+        agGame_gamebox_qrcode_color: #005284,
+        agGame_gamebox_onlinepeople_bgcolor:rgba(40, 26, 255, 0.35),
+        agGame_gamebox_onlinepeople_color: rgba(255, 255, 255, 0.8),
+
+        promotions_list_title:rgba(0, 0, 0, 0.8),
+  //__________memberPage________________
+  
+  //__________________other________________
+        white-color: #fff,
+        blue-color: #2996bd,
+        blues-color: #84cfe9,
+        hl-color: #ff6602,
+  // 默认链接色
+        link-color: #1ba9ba,
+  // 链接经过色
+        link-hover-color: #f60,
+        //vip2_image: url(images/index/vip2.jpg)
+);

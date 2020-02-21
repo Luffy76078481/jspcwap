@@ -1,0 +1,86 @@
+
+ 
+  // 侧栏公用样式
+  
+  
+  .Sidebar{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    // margin-top: -175px;
+     transform: translate(0, -50%);
+    z-index: 9;
+    background-color: #44423d;
+    border-radius: 10px 0 0 10px;
+    color: #FFF;
+    height: auto;
+    .SidebarLeft{
+      min-height: 380px;
+      width: 30px;
+      padding: 80px 0px;
+      text-align: center;
+      line-height: 44px;
+      border-right: 1px solid #676565;
+      font-size: 17px;
+      font-weight: bold;
+      color: #F8E800;
+    }
+    &:hover .SidebarRight{
+      max-width: 350px;
+      transition: max-width .5s;
+      -moz-transition: max-width .5s; /* Firefox 4 */
+      -webkit-transition: max-width .5s; /* Safari 和 Chrome */
+      -o-transition: max-width .5s; /* Opera */
+    }
+    .SidebarRight{
+      padding: 10px 0;
+      box-sizing: border-box;
+      max-width: 0;
+      overflow: hidden;
+      color: #F8E800;
+
+      div{
+        width: 350px;
+        height: 30px;
+        padding: 0 10px;
+        line-height: 30px;
+        white-space: nowrap;
+        i {
+          font-size: 15px;
+        } 
+        .label-warning{
+          background-color: #019393;
+          border-radius: 5px;
+          font-size: 13px;
+          color: #F8E800;
+          padding: 2px 4px;
+          cursor: pointer;
+          a{
+            color: #F8E800;
+          }
+        }
+      }
+
+      .picture {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        img {
+          display: inline-block;
+          // margin-left: 104px;
+          width: 35%;
+          height: 100%;
+        }
+      }
+      .SidebarCode{
+        height: 120px ;
+        margin: 10px auto 0 ;
+        display: block ;
+        width: 120px ;
+        canvas{
+          margin: auto;
+          display: block;
+        }
+      }
+    }
+  }

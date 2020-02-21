@@ -1,0 +1,172 @@
+
+
+/*
+
+    前方高能：VNS公共样式 _____________________________
+*/ 
+
+#root {
+    background: #362013 url("./images/main_bg1\ .jpg") top center no-repeat;
+}
+#topHead{
+    height: 190px;
+    .headBg {
+        background: url(./images/headBg.png) bottom;
+        height: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        .headFname {
+            height: 115px;
+            min-width: 1190px;
+            // 头部左
+            .topLeft{
+                float: left;
+                margin-top: 20px;
+                font-size: 14px;
+                position: relative;
+                // 上
+                .noticeLeft{
+                    a{
+                        margin: 0px 5px;
+                        color: #D9BB61; 
+                        font-size: 18px;
+                        &:hover {
+                            color: #fff;
+                        }
+                        &.agent {
+                            border-right: none;
+                            animation: navanimat2 1s linear alternate infinite;
+                        }     
+                    }
+                    span{
+                        color: #D9BB61; 
+                        font-size: 18px;
+                    }
+                }     
+                // 下           
+                .timeNumber {
+                    float: left;
+                    margin-top: 20px;
+                    & span, & a {
+                        float: left;
+                        font-size: 12px;
+                        padding-right: 10px;
+                        color: #D9BB61;
+                        font-size: 15px;
+                    }
+                    .personal{
+                        cursor: pointer;
+                        padding: 0;
+                    }   
+                }        
+            }
+            // 登录表单
+            .loginForm {
+                float: right;
+                color: #fff;
+                position: relative;
+                #login-form {
+                    padding-top: 20px;
+                    float: right;
+                    input{
+                        border:0;
+                    }
+                    .form-login-button {
+                        padding-left: 8px;
+                        padding-top: 4px;
+                        
+                        .form-login-btn {
+                            background: url(./images/loginbg.png) no-repeat;
+                            border: 0;
+                            padding-right: 22px;
+                            
+                        }          
+                        .form-login-btn:hover {
+                            color: #fff000;
+                        }       
+                        a {
+                            color: #654203;
+                        }
+                        .demotest {
+                            background: url(./images/pwdbg.png) no-repeat;
+                            padding-left: 12px;
+                            margin-top: 5px;
+                            line-height: 13px;
+                        }
+                    }           
+                    .form-login-reg {  
+                        float: left;      
+                        width: 115px;
+                        height: 46px;
+                        background-position: -100px 0px;
+                        float: right;  
+                        width: 100px;
+                        .form-reg-btn {
+                            background: url(./images/btn_join.png) no-repeat;
+                            width: 100px;
+                            height: 64px;
+                        }
+                        
+                        .form-reg-btn:hover {
+                            background-position: 0 -64px;
+                        }
+                    }
+                    .form-login-input {
+                        width: 173px;  
+                        .account-input {
+                            padding-left: 20px;
+                            height: 32px;
+                            background: url("./images/loginInput_bg01.png") left top no-repeat;
+                        }
+                        
+                        .pwd-input {
+                            padding-left: 20px;
+                            height: 32px;
+                            background: url("./images/loginInput_bg02.png") left top no-repeat;
+                            
+                        }
+                    }
+                }
+                // 登录后
+                .userInfo {
+                    border: 0 solid #64563f;
+                    padding-top: 55px;
+                    font-size: 16px;
+                    float: right;
+                    text-align: left;
+                    .memberItem a.agent{
+                        border-right: none;
+                        animation: navanimat2 1s linear alternate infinite;                   
+                    }    
+                    span,a {
+                        color: #D9BB61;
+                        padding: 0 2px;
+                    }           
+                    a:hover {
+                        color: #fff;
+                    }
+                }         
+            }
+        }
+        // 导航
+        .menu-nav {
+            height: 70px;
+            padding: 15px 0 0;
+            min-width: 1220px;
+            position: relative;
+            .innerLogo {
+                background: url(./images/logo.gif) center center no-repeat;
+                background-size: 90%;
+                width: 155px;
+                height: 170px;
+                left: 530px;
+                bottom: 0;
+                position: absolute;
+                z-index: 9;
+            }
+        }
+    }
+}

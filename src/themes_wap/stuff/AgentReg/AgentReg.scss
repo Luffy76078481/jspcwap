@@ -1,0 +1,24 @@
+.agentRegister{
+    padding: .3rem .2rem;
+    margin-bottom: 0 !important;
+    .am-list-item .am-list-line .am-list-content{
+        font-size: .26rem;
+        color: #bbb;
+    }
+    .icon.icon-credit-card{
+        width: .5rem;
+        font-size: .26rem;
+        display: inline-block;
+        color: #000;
+        margin-right: 5px;
+    }
+    .am-list-item.am-list-content-Bank.am-list-item-middle {
+        padding-left: .2rem;
+    }
+    .am-list-item .am-input-label.am-input-label-5{
+        width: .5rem !important;
+    }
+    .am-list-item .am-input-control input{
+        border-bottom: solid 1px #efefef;
+    }
+}

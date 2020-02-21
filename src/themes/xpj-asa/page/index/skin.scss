@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import "variables";
+
+
+input ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: map-get($base, header-input-placeholder) ;  }
+input ::-moz-placeholder { /* Firefox 19+ */
+  color: map-get($base, header-input-placeholder) ;  }
+input :-ms-input-placeholder { /* IE 10+ */
+  color: map-get($base, header-input-placeholder) ;  }
+input :-moz-placeholder { /* Firefox 18- */
+  color: map-get($base, header-input-placeholder) ;  }
+
+
+body {
+  background: $bg-color;
+  font-size: $font-size;
+}
+
+//__________header________________
+
+
+
+
+
+
+
+
+//___________________系統訊息彈出窗_____________________
+
+
+
+
+
+//___________________會員登入彈出窗_____________________
+
+
+
+
+
+
+//__________footer________________
+
+
+
+
+
+
+//__________firstPage________________
+
+
+
+
+
+
+//__________casino________________
+
+
+
+//__________gamesPage________________
+  .broadcast{
+    .container{
+      padding: 0 145px;
+    }
+  }
+  #game{
+      .game-jackpot-num{
+        span{  color:$text-color-normal;  }
+      }
+      .game-header-focus{  background: map-get($base, game_upboxbg) no-repeat;  }
+      .game-header-focus-right{
+        li{
+          p{  color:$text-color-normal;  }
+          div{
+            color:$text-color-hightline;
+            i{
+              background: map-get($base, game_money_icon) no-repeat;
+              background-position: -6px -3px;
+            }
+          }
+        }
+      }
+    }
+
+    .broadcast-bg{  
+      background: map-get($base, slider_img) top center no-repeat;
+       width: 100%;
+       height: 45px;
+       height: 45px;
+       position: absolute;
+       line-height: 45px;
+     }
+     .z_in {
+      z-index: 10;
+      margin-left: 115px;
+  }
+
+//__________gamelistpanel___遊戲版塊_____________
+.Games-content .notice-bar .marquee {
+  width: 900px;
+  margin: 0 auto;
+  line-height: 45px;
+}
+    .game-list-content{
+      background: map-get($base, gamelistpanel_bg_img) top center no-repeat  ;
+      .game-list-bgbox{
+        padding-top: 25px;
+      }
+      .game-list-outbox {
+        .listboxhid {
+          height: 80px;
+          width: 100%;
+          .platform_list {
+            width: 120px !important;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .game-start-btn {
+      content:url("resources/game/vgeahv.png")
+    }
+
+    //   遊戲平台分類    platform_list__nav
+    .game-list-bgbox{
+      .platform_list_AG{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -6px;  }
+      .platform_list_BBIN{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -170px;  }
+      .platform_list_QT{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -328px;  }
+      .platform_list_PT{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -488px;  }
+      .platform_list_MG2{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -648px;  }
+      .platform_list_HB{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -809px;  }
+      .platform_list_OPUS2{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -968px;  }
+      .platform_list_YOPLAY{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1130px;  }
+      .platform_list_CQ{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1277px;  }
+      .platform_list_PPG{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -1900px;  }
+      .platform_list_JDB{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -1587px;  }
+      .platform_list_MJ{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -1750px;  }
+      .platform_list_VT{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -2048px;  }
+      .platform_list_BG{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -2226px;  }
+  
+
+      .platform_list_AG:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -88px;  }
+      .platform_list_BBIN:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -249px;  }
+      .platform_list_QT:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -408px;  }
+      .platform_list_PT:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -568px;  }
+      .platform_list_MG2:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -728px;  }
+      .platform_list_HB:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -888px;  }
+      .platform_list_OPUS2:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1048px;  }
+      .platform_list_YOPLAY:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1210px;  }
+      .platform_list_CQ:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1348px;  }
+      .platform_list_PPG:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1965px;  }
+      .platform_list_JDB:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1658px;  }
+      .platform_list_MJ:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -1825px;  }
+      .platform_list_VT:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -2126px;  }
+      .platform_list_BG:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -2304px;  }
+
+      .platform_list_AG_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -88px;  }
+      .platform_list_BBIN_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -249px;  }
+      .platform_list_QT_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -408px;  }
+      .platform_list_PT_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -568px;  }
+      .platform_list_MG2_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -728px;  }
+      .platform_list_HB_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -888px;  }
+      .platform_list_OPUS2_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1048px;  }
+      .platform_list_YOPLAY_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1210px;  }
+      .platform_list_CQ_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1348px;  }
+      .platform_list_PPG_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1965px;  }
+      .platform_list_JDB_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1658px;  }
+      .platform_list_MJ_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1825px;  }
+      .platform_list_VT_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -2126px;  }
+      .platform_list_BG_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -2304px;  }
+
+
+    }
+    //   左側遊戲分類   game-list-left-nav
+    .game-list-left-nav{
+      .checkJackpot{    color:$text-color-normal;  }
+      ul{
+        li{
+          a{  color:$text-color-normal;  }
+          span{  color:$text-color-normal;  }
+        }
+        .active{
+          a{  color:$text-color-hightline !important;  }
+          span{  color:$text-color-hightline;  }
+        }
+        li:hover a{  color:$text-color-hightline;  }
+      }
+
+      .searchbar{
+        input{
+          color:$text-color-normal;
+          background-color: map-get($base, gamelistpanel_searchbar_bgcolor);
+        }
+        i{  color:$text-color-normal;  }
+      }
+
+    }
+
+    //   右側遊戲顯示   game-list-right-content
+    .game-list-right-content{
+      #GamesGridPopupMask {
+        opacity: 0.6;
+        background: map-get($base, gamelistpanel_Loading_hoverMask);
+      }
+      ul{
+          a{
+            span{
+              background: $bg-color-deep;
+              color:$text-color-normal;
+            }
+          }
+          .game-fuceng{  background:map-get($base, gamelistpanel_games_hoverMask) !important;  }
+      }
+
+    }
+    .gamesPic{
+      background: url("resources/mgbox.png") no-repeat;
+      width: 259px !important;
+      height: 145px !important;
+    }
+    .game-list-fname {
+      width: 990px;
+      margin: 0px auto;
+    }
+
+
+    .game-list-right-content {
+      width: 883px;
+      li{
+        a{
+          margin: 9px 0 0 19px;
+          width: 222px;
+          span{
+            line-height: 42px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .game-list-content li .game-fuceng {
+      position: absolute;
+      top: -10px;
+      left: -19px;
+    }
+
+
+    //    遊戲頁數按鈕  game-page-btn
+    #game-page{
+        li{
+          a{
+            background: map-get($base, gamelistpanel_game_pageIcon_bg_color) !important;
+            color: $text-color-normal !important;
+            border: 1px solid map-get($base, gamelistpanel_game_pageIcon_border_color) !important;
+          }
+        }
+
+    }
+
+
+//__________bingo________________
+
+
+//--------------------------------------
+

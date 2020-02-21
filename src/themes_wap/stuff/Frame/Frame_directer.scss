@@ -1,0 +1,156 @@
+@import "../../style/variables.scss";
+
+
+.overLay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1106;
+    overflow: hidden;
+}
+
+// 公告弹窗遮挡层
+.FrameMask {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+// 系统公告弹窗
+.homePromotion {
+
+    div,
+    a,
+    p,
+    span {
+        -moz-user-select: none;
+        /* Firefox私有属性 */
+        -webkit-user-select: none;
+        /* WebKit内核私有属性 */
+        -ms-user-select: none;
+        /* IE私有属性(IE10及以后) */
+        -khtml-user-select: none;
+        /* KHTML内核私有属性 */
+        -o-user-select: none;
+        /* Opera私有属性 */
+        user-select: none;
+    }
+
+    position: fixed;
+    z-index: 1120;
+    width: 6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #646464;
+
+    .title {
+        padding: .2rem 0;
+        text-align: center;
+        color: #fff;
+        font-size: .35rem;
+
+        // 关闭按钮
+        .close {
+            background: url("./images/closeIcon.png") 0 0 no-repeat;
+            background-size: contain;
+            left: 50%;
+            top: 105%;
+            position: absolute;
+            transform: translate(-50%);
+        }
+    }
+
+    .slider-list {
+        // height: 22vh;
+        height: 5.5rem !important;
+
+        // margin-bottom: .4rem;
+        .promotionCon {
+            display: block;
+            width: 100%;
+            min-height: 30vh;
+            line-height: .45rem;
+            color: #000000;
+            font-size: .25rem;
+            word-break: break-all;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// 展示的GIF图，添加快捷桌面
+.shortCutGif {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: url("./images/Android2.gif") 0 0 no-repeat;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center bottom;
+
+    &.ios {
+        background: url("./images/IOS2.gif") 0 0 no-repeat;
+        background-size: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-position: center bottom;
+    }
+}
+
+// 两侧悬浮，手机添加到桌面，微信悬浮。
+.sideFloat {
+    position: fixed;
+    bottom: 70px;
+    z-index: 2;
+
+    .item {
+        display: block;
+        position: relative;
+        background: url("./images/shortCutImg.png") 0 0 no-repeat;
+        background-size: 100%;
+        width: 3rem;
+        height: 2rem;
+        bottom: 0;
+
+        span {
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: .5rem;
+            height: .5rem;
+        }
+    }
+
+    &.left {
+        left: 0;
+
+        // 添加快捷桌面关闭按钮
+        span {
+            position: absolute;
+            right: -0.025rem;
+            top: -0.05rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+        }
+    }
+
+    &.right {
+        right: 0;
+    }
+}

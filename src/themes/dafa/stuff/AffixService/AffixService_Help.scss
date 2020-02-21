@@ -1,0 +1,103 @@
+.help_fix{
+  position: fixed;
+  right: -285px;
+  top:25%;
+  z-index: 999;
+  width: 344px;
+  height:270px;
+  background-color: #373737;
+  border-radius: 0 0 0 5px;
+  transition: 1s;
+
+  .help_fix_title{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    color: #ffe001;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top:0px;
+  }
+
+  .fix_text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 284px;
+    padding: 7px 30px;
+    text-align: center;
+
+    .help_li{
+      height: 51px;
+      position: relative;
+      font-size: 16px;
+      font-weight: bolder;
+      display: inline-block;
+      padding: 15px 15px 12px 65px;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      width: 226px;
+      overflow: hidden;
+      border: 1px solid #ffe000;
+      border-radius: 5px;
+      color: #ffe000;
+      a{
+        color:#ffe000;
+        text-decoration: none;
+      }
+
+      a:before{
+        content: "";
+        position: absolute;
+        z-index: 111;
+        left: 20px;
+        top:12px;
+        width: 30px;
+        height: 26px;
+      }
+    }
+
+    .help_qq{
+      text-align: left;
+      padding-left: 25px;
+      i{
+        margin-right: 10px;
+        font-size:20px;
+      }
+      a{
+        text-align: center;
+        display: inline-block;
+        width: 85%;
+      }
+    }
+
+    .help_li:hover{
+      background-color: #ffe001;
+      color: #373737;
+    }
+    .help_li:hover a{  color: #373737;  }
+
+    .help_onlineHelp a:before{  background: url("resource/icon.png") no-repeat -160px -120px;  }
+    .help_email      a:before{  background: url("resource/icon.png") no-repeat -160px -160px;  }
+    .help_phone      a:before{  background: url("resource/icon.png") no-repeat -160px -200px;  }
+    .help_wechat     a:before{  background: url("resource/icon.png") no-repeat -160px -360px;  }
+
+    .help_onlineHelp:hover .help_onlineHelp_a:before {  background: url("resource/icon.png") no-repeat -200px -120px;  }
+    .help_email:hover      .help_email_a:before {  background: url("resource/icon.png") no-repeat -200px -160px;  }
+    .help_phone:hover      .help_phone_a:before {  background: url("resource/icon.png") no-repeat -200px -200px;  }
+    .help_wechat:hover     .help_wechat_a:before {  background: url("resource/icon.png") no-repeat -200px -360px;  }
+
+  }
+}
+
+.help_fix:hover{  right: 0;  }
+
+.help_fix:before{
+  content: "";
+  width: 60px;
+  height: 61px;
+  background: url("resource/icon.png") no-repeat -80px -180px;
+  position: absolute;
+  top: -37px;
+  left: 0;
+}

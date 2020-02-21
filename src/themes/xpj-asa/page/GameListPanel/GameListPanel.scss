@@ -1,0 +1,313 @@
+
+
+    li .game-fuceng img {
+      width: 80%;
+      margin-top: 20%;
+      border-radius: 4px 4px 0px 0px;
+      background: url("images/pt_ljstart.png");
+      width: 161px;
+      height: 37px;
+    }
+  
+    .game-list-left-nav{
+      float: left;
+      width: 155px;
+      padding-top: 20px;
+    }
+    .game-list-left-nav li{
+      padding-left: 20px;
+      padding-right: 15px;
+    }
+    .game-list-left-nav li a {
+      text-decoration: none;
+      line-height: 40px;
+      display: block;
+    }
+    .game-list-left-nav li a span{
+      float: right;
+    }
+  
+    .game-list-right-content {
+      float: left;
+      position: relative;
+      min-height: 560px;
+    }
+    #GamesGridPopupMask {
+      opacity: 0.6;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: #000;
+      position: absolute;
+    }
+    #GamesGridPopupMask .GamePopupMask {
+      /* background: url("images/loaderSpinner.gif"); */
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -18px 0px 0px -18px;
+    }
+  
+    .gameItem {
+      display:block;
+    }
+    .gameItem b {
+      top: 44px !important;
+    }
+
+    .game-list-right-content li a {
+      display: block;
+      width: 100%;
+      color: #fff;
+      line-height: 24px;
+      text-decoration: none;
+  }
+    .game-text{
+      overflow : hidden;
+      text-overflow : ellipsis;
+      white-space : nowrap;
+    }
+  
+    .game-list-bgbox{
+      width: 100%;
+      background-size: cover;
+    }
+  
+    .game-list-outbox{
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    .searchbartext:focus{
+      border:none;
+      outline:none;
+    }
+  
+    .searchbar{
+      position: relative;
+      line-height: 40px;
+      text-align: center;
+    }
+  
+    .searchbartext{
+      display: inline-block;
+      width: 85%;
+      height: 30px;
+      border-radius: 30px;
+      color: rgba(255,255,255,1);
+      background-color: rgba(0,0,0,.9);
+      border:none;
+      padding-left: 15px;
+  
+    }
+  
+    .hand{
+      vertical-align: middle;
+      position: relative;
+      right: 0;
+      display: inline-block;
+      width: 7%;
+      text-align: center;
+      color:#fdfa6f;
+      /*height: 100%;*/
+      height: 50px;
+      cursor: pointer;
+    }
+  
+    .searchBtn{
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      font-size: 15px;
+    }
+  
+    .game-list-inbox {
+      padding: 0px 0px 0px 0px;
+      width: 100%;
+      /*width: 700px;*/
+      margin: 0 auto;
+      position: relative;
+      height: 100px;
+      text-align: center;
+    }
+    .game-list-right-content li {
+
+      float: left;
+      text-align: center;
+      margin: 20px 11px 5px 11px;
+      position: relative;
+    }
+    .game-list-right-content li a {
+
+      color: #fff;
+      line-height: 24px;
+      text-decoration: none;
+    }
+    .game-list-right-content li a span {
+      display: block;
+      width: 100%;
+     
+     
+      border-radius: 0px 0px 6px 6px;
+    
+    }
+    .game-list-content li .game-fuceng img {
+      width: 161px;
+      margin-top: 20%;
+    }
+    .game-list-right-content li a img {
+      border-radius: 4px 4px 0px 0px;
+      width: 100%;
+    }
+    #game-page {
+      margin: 0px 30px;
+      clear: both;
+      .pager  {
+      li {
+        display: inline;
+      }
+      div{
+        display: inline;
+        a{
+          padding: 5px 14px;
+          border-radius: 42px;
+          color: #fff;
+          border: 1px solid #64563f!important;
+        }
+      }
+      }
+    }
+ 
+  
+    .listboxhid{
+      display: inline-block;
+      padding: 0px 0px 0px 0px;
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      height: 130px;
+      vertical-align: middle;
+      overflow: hidden;
+    }
+  
+    .listboxshow{
+      display: inline-block;
+      padding: 0px 0px 0px 0px;
+      width: 200%;
+      margin: 0 auto;
+      position: relative;
+      height: 130px;
+      vertical-align: middle;
+      animation: .5s;
+      left: 0;
+    }
+  
+  
+  
+    .platform_list{
+      display: inline-block;
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      font-size: 30px;
+      cursor: pointer;
+      vertical-align: middle;
+      margin: 0 25px;
+  
+    }
+  
+    .platform_list:hover .platform_list_onchoose{
+      display: block;
+    }
+  
+    .platform_list_onchoose_bg{
+      width: 100%;
+      height: 100%;
+  
+      display: none;
+    }
+    .onchoosing{
+      display: block;
+    }
+  
+    .gamesPic{
+      width: 222px;
+      height: auto !important;
+    }
+    .gameItem img.gameImg {
+      height: 92.58px;
+    }
+  
+    .jackPot{
+      width: 100%;
+      height: 25px;
+      background: url("images/imgbg_07.png");
+      color:rgb(255, 255, 146);;
+      position: absolute;
+      background-size: cover;
+      top: -16px;
+      left: 0;
+      z-index: 55561;
+      text-align: center;
+    }
+ 
+        .checkJackpot{
+      width: 128px;
+      height: 28px;
+    }
+    
+
+  
+    .checkJackpot input[type=checkbox]{
+      background-color: rgba(0,0,0,.9);
+    }
+    .checkJackpot input {
+      margin-left: 5px;
+    }
+    .checkJackpot:hover label{
+      color: #ffea00;
+    }
+  
+  
+    .game-list-content li .game-fuceng {
+      background: linear-gradient(186deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.2)100%);
+      background: -ms-linear-gradient(186deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.2)100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      display: none;
+  }
+  .game-list-content li:hover .game-fuceng {
+    display: block;
+}
+.game-list-right-content li a span {
+  display: block;
+  width: 100%;
+  background: #603732;
+  line-height: 35px;
+  border-radius: 0px 0px 6px 6px;
+}
+.game-list-mid-box{
+  width: 835px;
+  float: right;
+}
+.pager_box {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager_box div {
+  display: inline;
+}
+#game-page .pager_box div > a, #game-page .pager_box div > span {
+  color: #fff;
+  border: 1px solid #64563f;
+  padding: 5px 14px;
+  border-radius: 15px;
+}

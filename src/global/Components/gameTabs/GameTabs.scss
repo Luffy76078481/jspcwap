@@ -1,0 +1,76 @@
+.GameTabs{
+    width: 100%;
+    padding: 30px;
+    .tabsBox{
+        width: 1000px;
+        height: 58px;
+        margin: auto;
+        display:flex;
+        flex-wrap:nowrap;
+        &>div{
+            cursor: pointer;
+            flex-grow:1;
+            background: #404040;
+            height: 100%;
+            border-top: 1px solid rgba(0,0,0,0);
+            border-bottom: 1px solid rgba(0,0,0,0);
+            border-left: 1px solid rgba(0,0,0,0);
+            border-right: 1px solid #000;
+            text-align: center;
+            line-height: 58px;
+            color: #fff;
+            font-size: 16px;
+            &>img{
+                height: 55px;
+            }
+        }
+        .tabActive{
+            border: 1px solid #ffe49b;
+        }
+
+
+        // tabs样式
+        .ant-tabs{
+            .ant-tabs-bar{border-bottom: none;margin: 0;
+                .ant-tabs-nav-container{margin-bottom: 0}
+            }
+            .ant-tabs-tab-arrow-show{
+                color: #fff;
+                .anticon {
+                    font-size: 30px;
+                }
+            }
+            .ant-tabs-nav-wrap{
+                margin-bottom: 0;
+                .ant-tabs-ink-bar{
+                    width: 0 !important;
+                    display: none !important;
+                }
+                .ant-tabs-tab{
+                    width: 233px;
+                    padding: 0;
+                    margin-right: 0;
+                    .custom-tab-item{
+                        border: 1px solid transparent;
+                        border-right: 1px solid #303030;
+                        img{
+                            height: 54px;vertical-align: middle;
+                        }
+                    }
+                    &:first-child{
+                        .custom-tab-item{
+                            border-left: 1px solid #303030;
+                        }
+                    }
+                }
+                // 激活样式
+                .ant-tabs-tab-active{
+                    .custom-tab-item{
+                        border: 1px solid #ffe49b !important;
+                    }
+                }
+            }
+        }
+
+    }
+}

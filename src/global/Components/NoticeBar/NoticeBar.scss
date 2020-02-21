@@ -1,0 +1,96 @@
+/*
+        走马灯公用CSS update-19.7.5
+*/
+
+// 走馬燈動畫
+@keyframes marquee {
+  0%{ 
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%); 
+    transform: translateX(0%);
+  }
+  100%{
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); 
+  }
+}
+.notice-bar{
+  display: inline-block;
+  width: auto;
+  position: relative;
+  line-height: 30px;
+  vertical-align: bottom;
+  font-size: 12px;
+  padding-left: 10px;
+
+  /*
+      基本
+  */
+  // 關閉按鈕
+  .popBox_close{
+    color: #ffe887;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  // 走馬燈滾動部分
+  .marquee{
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    a{
+      display: inline-block;
+      padding-left: 10px;
+      color: #fff;
+    }
+  }
+  // 彈窗部分
+  .popBox{
+    top: 0;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    margin: auto;
+    z-index: 999999;
+    box-shadow: 0 0 5px 1px #fcfcfc;
+    position: fixed;
+    transition: .5s;
+    display: none;
+    width: 600px ;
+    height: 350px;
+    border: solid 1px #6a6a6a;
+    border-radius: 5px;
+    &.popout{
+      display: block;
+    }
+    .popBox_title{
+      height: 15%;
+      width: 100%;
+      font-size: 22px;
+      line-height:50px;
+      padding-left: 10px;
+      color: #fff;
+      .popBox_pic{
+        font-size: 18px;
+        margin-right: 5px;
+      }
+    }
+    .popBox_body{
+      height: 85%;
+      overflow: auto;
+      padding: 0px 20px;
+      color: #000;
+      background: #fff;
+      .popBox_body_title{
+        font-weight: bold;
+      }
+      .popBox_body_date{
+        margin: 15px 0 0 0;
+        font-weight: bolder;
+      }
+    }
+  }
+}

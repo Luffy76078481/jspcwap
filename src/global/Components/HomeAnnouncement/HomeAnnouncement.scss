@@ -1,0 +1,66 @@
+.homeAnnouncement{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    background-color: rgba($color: #000000, $alpha: .5);
+    p{
+        margin: 0;
+    }
+    .announceWrap{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20%;
+        // bottom: 0;
+        margin: 0 auto;
+        width: 600px;
+        height: 400px;
+        box-shadow: 0 0 5px 2px rgba(2,2,2,.8);
+        .ant-tabs-tab-prev-icon-target,.ant-tabs-tab-next-icon-target{
+            font-size: 16px;
+            color: #000;
+        }
+        .ant-tabs-nav .ant-tabs-tab{
+            width: auto;
+            padding: 10px;
+            margin: 0 10px 0 0;
+            p.TabTitle{
+                color: #000;
+                font-weight: bold;
+                font-size: 14px;
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .ant-tabs-bar{
+            margin: 0;
+            background: #fff;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .closebs{
+            color: #d2cb4e;
+            position: absolute;
+            right: 5px;
+            top: 45px;
+            font-size: 25px;
+            cursor: pointer;     
+        }
+        .tabCot{
+            width: 600px;
+            height: 400px;
+            display: block;
+            p{
+                color: #555;
+            }
+            img{
+                width: 100%!important;
+            }
+        }
+    }
+}

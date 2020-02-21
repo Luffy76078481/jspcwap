@@ -1,0 +1,95 @@
+.affix-online-server-2{
+  position: fixed;
+  right: 10px;
+  top: 20%;
+  z-index: 999;
+  .hd{
+    //background: url("./resource/service-logo2.png") bottom center no-repeat;
+    background-size: 80%;
+    height: 120px;
+    width: 120px;
+  }
+  .bd{
+    border: 1px solid #b36f28;
+    border-radius: 5px;
+
+    .block{
+      height: 60px;
+      width: 120px;
+      text-align: center;
+      background-image:-webkit-linear-gradient(0deg, rgba(206, 206, 206, .5), rgba(56, 31, 5, .8), rgba(116, 94, 96, 0.5));
+      background-image: linear-gradient(0deg, rgba(206, 206, 206, .5), rgba(56, 31, 5, .8), rgba(116, 94, 96, 0.5));
+      .title{
+        color: #FFFFFF;
+        font-size: 18px;
+        height: 35px;
+        line-height: 35px;
+      }
+      .content{
+        color: #f2d670;
+        font-size: 14px;
+        background: none;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+    .qrcode{
+      padding: 10px;
+      text-align: center;
+      background: rgba(116, 94, 96, 0.5);
+      img{
+        opacity: .9;
+      }
+      div{
+        color: #f2d670;
+        margin-top: 10px;
+      }
+    }
+    .online-service{cursor: pointer}
+    .net{
+      a{
+        display: block;
+        height: 105px;
+      }
+    }
+  }
+  .ft{
+    height: 20px;
+    line-height: 20px;
+    background: none;
+    text-align: center;
+
+    span{
+      display:inline-block;
+      height: 20px;
+      margin: 0;
+      padding: 0;
+      line-height: 20px;
+      width: 36px;
+      text-align: center;
+      vertical-align: top;
+      &.center{
+        background: rgba(116, 94, 96, 0.5);
+        font-size: 12px;
+        cursor: pointer;
+      }
+      &.left-span{
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        border-top-color: rgba(116, 94, 96, 0.5);
+        border-right-color: rgba(116, 94, 96, 0.5);
+        font-size: 0;
+      }
+      &.right-span{
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        border-left-color: rgba(116, 94, 96, 0.5);
+        border-top-color: rgba(116, 94, 96, 0.5);
+        font-size: 0;
+      }
+    }
+  }
+}

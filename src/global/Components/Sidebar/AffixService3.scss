@@ -1,0 +1,231 @@
+
+.affix-online-server-right{
+    top: 30%;
+    position: fixed;
+    right: 10px;
+    z-index: 999;
+    .bd {
+        border: 1px solid #b36f28;
+        border-radius: 5px;
+        .block {
+            background: url("./images/left_k.png") bottom no-repeat #2c1810;
+            height: 85px;
+            padding-top: 8px;
+            width: 120px;
+            text-align: center;
+            .title {
+                color: #fff;
+                font-size: 18px;
+                height: 35px;
+                line-height: 35px;
+            }
+            .content {
+                color: #f2d670;
+                font-size: 14px;
+                background: none;
+            }
+        }
+        .online-qq i {
+            width: 30px;
+            height: 30px;
+            vertical-align: 7px;
+            color: transparent;
+            background: url("./images/qq.png") 50% no-repeat;
+            background-size: 100%;
+        }
+        .online-phone i {
+            width: 25px;
+            height: 25px;
+            vertical-align: 4px;
+            color: transparent;
+            background: url(./images/phone.png) 50% no-repeat;
+            background-size: 100%;
+        }
+        .online-qq .content {
+            margin-top: 3px;
+            animation: affixText2 .8s linear alternate infinite;
+        }
+        .qrcode {
+            position: relative;
+            padding: 10px;
+            text-align: center;
+            background: #2c1810;
+            div {
+                color: #f2d670;
+                margin-top: 10px;
+            }
+        }
+        .qrcode:before {
+            content: "";
+            width: 120px;
+            height: 10px;
+            position: absolute;
+            background: url("./images/pic_ke.png") 0 no-repeat;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    .online-service {
+        border-radius: 5px 5px 0 0;
+        position: relative;
+        &::before{
+            content: "";
+            width: 120px;
+            height: 10px;
+            background: url("./images/pic_ke2.png") 0 no-repeat;
+            position: absolute;
+            top: -1px;
+            left: 0;
+        }
+        .content {
+            padding-left: 24px;
+            span {
+                position: relative;
+            }
+            span:before {
+                content: "";
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                background: url("./images/peplo.png") 50% no-repeat;
+                background-size: 100%;
+                left: -33px;
+                top: -12px;
+            }
+        }
+    }
+}
+
+.affix-online-server-left{
+    top: 30%;
+    position: fixed;
+    left: 10px;
+    z-index: 999;
+    .bd {
+        border-radius: 5px;
+        span {
+            animation: txtScale .8s linear alternate infinite!important;
+        }
+        .promotion-btn:before {
+            content: "\591A\91CD\4F18\60E0\597D\793C";
+            position: absolute;
+            bottom: 8px;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 400;
+            width: 100%;
+            left: 0;
+        }  
+        .agent-btn .title_agent {
+            color: transparent;
+            background: url("./images/agent.gif") 50% no-repeat;
+            background-size: 100%;
+            margin-top: 10px;
+        }
+        .register-btn:after {
+            content: "";
+            width: 120px;
+            height: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url("./images/pic_ke.png") 0 no-repeat;
+        }
+        .register-btn:before {
+            content: "\7ACB\5373\52A0\5165";
+            position: absolute;
+            bottom: 8px;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 400;
+            width: 100%;
+            left: 0;
+        }
+        .block {
+            background: url("./images/left_k.png") bottom no-repeat #2c1810;
+            position: relative;
+            padding-top: 8px;
+            width: 120px;
+            height: 60px;
+            text-align: center;
+            .content1 img {
+                content: url("./images/zfb_k.png");
+            }
+            .title {
+                color: #000;
+                font-size: 16px;
+                height: 28px;
+                line-height: 28px;
+                width: 114px;
+                border-radius: 28px;
+                background: #ffe469;
+                margin: 0 auto;
+                font-weight: 700;
+                margin-top: 8px;
+            } 
+            .titlr_font{
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        .pay-box{
+            height: 120px;
+            .titlr_font {
+                background: none;
+                color: #fff;
+                font-weight: 400;
+                font-size: 18px;
+                animation: affixText .8s linear alternate infinite!important;
+            }
+            &::before {
+                content: "";
+                width: 120px;
+                height: 10px;
+                background: url("./images/pic_ke2.png") 0 no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }     
+        }   
+    }
+}
+.ft {
+    height: 20px;
+    line-height: 20px;
+    background: none;
+    text-align: center;
+    color: #aaa;
+    span.left-span {
+        border-top-color: #2c1810;
+        border-right-color: #2c1810;
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        font-size: 0;
+    }       
+    span.center {
+        background: #2c1810;
+        color: #f2d670;
+        font-size: 12px;
+        cursor: pointer;
+    }  
+    span.right-span {
+        border-top-color: #2c1810;
+        border-left-color: #2c1810;
+        height: 0; 
+        width: 0;
+        border: 10px solid transparent;
+        font-size: 0;
+    }
+    span {
+        display: inline-block;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        line-height: 20px;
+        width: 36px;
+        text-align: center;
+        vertical-align: top;
+    }       
+}
+

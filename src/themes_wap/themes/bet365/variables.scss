@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+$font-family:"microsoft yahei";
+$bg-color:#fff;
+
+//色系
+$theme-color:#0f7556;                                          
+$theme-color-disabled:#dcdcdc;                                     
+$theme-myPage:linear-gradient(to right, #60805f 0%, #255836 100%);    //我的页面会员信息部分背景色
+
+//图片
+$image:(
+        logo:url('../images/logo.png'),
+        nav-bg:url('../images/nav-bg.png'),
+        login_logo:url('../images/login_logo.png'),
+        bg-login:url('../images/bg-login.png'),
+        promo_bg:url('../images/promo_bg.png'),
+);
+
+
+

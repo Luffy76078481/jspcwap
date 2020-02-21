@@ -1,0 +1,42 @@
+
+div[data-theme="Orange"]{
+    .RegisterNewPage{
+        background:url(../images/reg/regtisterbg-amyh.jpg) top no-repeat;
+        .RegisterContent{
+            background: #fff;
+            .RegisterTitle{
+                border-bottom: 1px solid #cf9519;
+                h1,p{
+                    color: #cf9519;
+                }
+            }
+            // 注冊表單
+            form{
+                // 輸入框
+                .InputWrap{
+                    >div{
+                        input,select.PayPassWord{
+                            border: 1px solid #cecdcd;
+                            color: #222;                     
+                        }
+                        // 提示语
+                        >span{
+                            color: #cf9519;
+                        }
+                    }
+                    p{
+                        color: #555;
+                    }
+                }
+                // 提示語
+                .checkboxWrap .RegNotice{       
+                    color: #555                  
+                }
+                // 提交
+                .ButtonWrap button{
+                    background: #cf9519;
+                }
+            }            
+        }
+    } 
+}

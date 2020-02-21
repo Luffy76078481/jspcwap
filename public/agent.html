@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta charset="UTF-8">
+    <title>合作共赢</title>
+</head>
+<script>
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    window.channel = getUrlParam("channel") || "";
+    window.version = getUrlParam("version") || "";
+    if(/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)){
+        var link = "../?channel=" + window.channel;
+        if (window.version) {
+            link += "&version=" + window.version;
+        }
+        window.location = link;
+    }
+</script>
+<body>
+<div id="agent"></div>
+
+</body>
+</html>

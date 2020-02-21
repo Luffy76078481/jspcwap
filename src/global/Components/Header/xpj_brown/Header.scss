@@ -1,0 +1,141 @@
+
+// XPJ 棕色版本
+
+.header_xpj{
+    background: url(./images/headBgyy.png) repeat-x;
+    height: 171px;
+    // top头部
+    .headFname{
+        .logo{
+            a{
+                display: block;
+                height: 104px;
+                width: 270px;
+                background-size: contain;
+                background-repeat:no-repeat; 
+                background-position: center;
+            }
+        }
+        .loginForm{
+            // 通用
+            a,span{
+                color: #fff;
+                font-size: 14px;
+            }
+            a.yellowFont,span.yellowFont{
+                color: #ffea00;
+            }
+            span.redFont{
+                color: #ff0000;
+            }
+            .headTop{
+                padding-top: 10px;
+                a,span{
+                    padding-right: 10px;
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+            .loginWrap{
+                padding-top: 8px;
+                position: relative; 
+                form{
+                    div.login-input{
+                        width: 200px;
+                        float: left;
+                        input{
+                            border: solid 1px #5f3b34;
+                            background-color: #2B1212; 
+                            width: 100%;
+                            height: 28px;
+                            color: #fff;
+                            padding: 3px 5px;  
+                            margin-bottom: 2px;
+                        }
+                    }
+                    div.login-button{
+                        width: 100px;
+                        float: left;
+                        margin: 0 10px;
+                        button[type="submit"]{
+                            background: url(./images/inco_login.png) no-repeat;
+                            width: 100%;
+                            height: 25px;
+                            border: 0;
+                            margin-bottom: 10px;
+                        }
+                        a.forget{
+                            color: #ff9c00;
+                        }
+                    }
+                    div.login-reg{
+                        width: 115px;
+                        height: 46px;
+                        background-position: -100px 0;
+                        float: left;  
+                        a{
+                            display: block;
+                            background: url(./images/inco_login.png) no-repeat;
+                            background-position: -100px 0;
+                            height: 100%;
+                            &:hover{
+                                background-position: -100px -46px;
+                            }
+                        }
+                    }
+                }  
+                // 登录后
+                .afterLogin{
+                    border: 1px solid #5f3b34;
+                    padding: 2px 0 2px 10px;
+                    span{
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                } 
+            }            
+        }
+
+    }
+    // Nav
+    .navWarp{
+        width: 100%;
+        height: 36px;
+        position: relative;
+    }
+    // Notice
+    .noticeItem{
+        border-top: 1px solid #5a3834;
+        border-bottom: 1px solid #5a3834;
+        height: 30px;
+        .pages{
+            a,span{
+                color: #fff;
+                margin: 0 5px;
+            }            
+        }
+        a.vip{
+            color: #ffea00;
+        }
+        >div>div{
+            float: left;
+            line-height: 30px;
+        }
+        .pages{
+            width: 200px;
+        }
+        .notice_container{
+            width: 800px;
+        }
+        a.getServer{
+            width: 120px;
+            height: 25px;
+            margin-top: 3px;
+            background: url(./images/inco_a.png) no-repeat;
+            background-position: -184px -2px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+}

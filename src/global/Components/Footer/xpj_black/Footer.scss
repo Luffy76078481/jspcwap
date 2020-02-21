@@ -1,0 +1,81 @@
+
+.FootPage{
+  padding: 60px 0 0 0;
+  border-top: 2px solid #5c4f3b;
+  #footer{
+    .footer-help-share{
+      margin-left:140px;
+      margin-bottom: 30px;  
+      >div{
+        float: left;
+      }
+      h3 span {
+        display: block;
+        font-size: 18px;
+        padding: 3px 0 0 30px;
+      }  
+      #foot_share{
+        margin-left: 50px;
+      }      
+      #foot_help {
+        h3,i,span,a {
+          color: #635846;
+        }
+        .guide-list a {
+          margin-right: 20px;
+          margin-top: 5px;
+          float: left;
+        }
+      }
+      #foot_share {
+        h3,i,span{
+          color: #635846;
+        }
+        .share-list {
+          a{  
+            background-image: url(./images/share-inco.png);            
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            -ms-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            height: 35px;
+            width: 42px;
+            margin-right: 30px;
+            float: left;
+          }
+          a.share-weibo {  background-position: 0px -38px;  }
+          a.share-qzone {  background-position: -80px -37px;  }
+          a.share-fackbook {  background-position: -165px -38px;  }
+          a.share-twitter {  background-position: 45px -39px;  }
+          a.share-fackbook:hover {  background-position: -165px 0px;  }
+          a.share-twitter:hover {  background-position: 45px 0px;  }
+          a.share-qzone:hover {  background-position: -80px 0px;  }
+          a.share-weibo:hover {  background-position: 0px 0px;  }
+        }
+      }
+      #foot-mobile-img{
+        background: url(./images/mobile.png) top no-repeat;
+        background-size: 100% 100%;
+        height: 103px;
+        width: 318px;
+        margin-top: 15px;
+      }
+    }
+    #foot-Cagayan{
+      div,a,p{
+        color: #635846;
+      }
+    } 
+  }
+  #platform-inco{
+    background-color: #11100e;
+    img {
+      display: block;
+      margin: 0 auto;
+    }  
+  }  
+  .footer_bottom_img{
+    content: url("./images/footer.png");
+  }
+}

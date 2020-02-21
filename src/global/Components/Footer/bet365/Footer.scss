@@ -1,0 +1,42 @@
+
+/*
+  bet365-Footer
+*/
+
+footer{
+  background: #151515;
+  border-top: 1px solid #2d2d2d;
+  a,p,span{
+    font-size: 12px;
+    color: #727272;
+  }
+  div.FooterContainer{
+    margin: 0 auto;
+    width: 990px;
+    font-family: verdana;
+    overflow: hidden;
+    text-align: center;
+    .LogoContainer{
+      padding: 20px 0;
+    }
+    // 链接
+    .FooterLinks{
+      margin-bottom: 20px;
+      a{
+        margin: 0 12px 0 0;
+        padding: 0 6px;
+      }
+    }
+    // 图片
+    .FooterIcons{
+      margin-bottom: 15px;
+      img{
+        margin: 0 5px;
+      }
+    }
+    // 文字
+    .FooterContent{
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+
+.SideBar {
+    .item-inner {
+        padding: 0 0 0 .1rem;
+        min-height: 3rem;
+        // 侧栏头部
+        .rightCon{
+            display: flex;
+            margin-bottom: .3rem;
+            color: #fff;
+            width: 100%;
+            .avatar {
+                width: 1.1rem;
+                height: 1.1rem;
+                margin: .4rem 0 .2rem;
+                border-radius: 4px;
+            }
+            // 账户信息
+            .userName {
+                margin: .2rem 0 0 .1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .account_label {
+                    margin-top: .3rem;
+                    font-size: .2rem;
+                    .refresh_btn {
+                        border: 1px solid #fff;
+                        border-radius: 6px;
+                        letter-spacing: 1px;
+                        box-sizing: border-box;
+                        color: #fff;
+                        display: block;
+                        padding: 0.06rem 0.08rem 0.04rem 0.1rem;
+                        position: absolute;
+                        left: 2rem;
+                        top: 2.2rem;
+
+                    }
+                }
+            }
+        }     
+    }
+    // 侧栏内容，LIST
+    .sideList {
+        width: 100%;
+        overflow: auto;
+        position: absolute;
+        top: 3rem;
+        bottom: 0;
+        .version_info {
+            padding: .2rem;
+            font-size: .3rem;
+        }
+    }
+}
+
+// 覆盖UI
+.SideBar{
+    .am-list-item .am-list-line .am-list-content{ // 侧栏
+        font-size: .25rem;
+        line-height: .5rem;
+    }
+    .am-list-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        i {
+            margin-right: .2rem;
+            font-size: .35rem;
+            width: 0.4rem;
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+    }
+}
+

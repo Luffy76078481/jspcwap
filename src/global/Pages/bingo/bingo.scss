@@ -1,0 +1,135 @@
+
+#bingo{
+    background: #3f0f35;
+    min-height: 800px;
+    .bingo-fname {
+        background: url(../images/bingo/bg.png);
+        .bing-desc-bbin {
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+        .bingo-platform-list {
+            width: 1000px;
+            margin: 30px auto 0;
+            div {
+                margin-bottom: 25px;
+                text-align: center;
+                color: #ffdf1b;
+                display: inline-block;
+                width: 165px;
+                a {
+                    height: 140px;
+                    display: block;
+                }
+            
+                &:hover > a {
+                    width: 172px;
+                    height: 140px;
+                    display: block;
+                    animation: ImgBgLarge 0.2s alternate both infinite;
+                }
+            
+                &:hover > .bottomBg {
+                    animation: YzBgLarge 0.2s alternate both infinite;
+                }
+                span {
+                    display: block;
+                    color: #ffdf1b;
+                }    
+                .bingo-platform-img {
+                    width: 134px;
+                    height: 134px;
+                    display: inline-block;
+                    background: url(../images/bingo/bingo_14.png);
+                    overflow: hidden;
+                } 
+                .bottomBg {
+                    background: url("../images/bingo/cp_59.png") center bottom no-repeat;
+                    height: 18px;
+                    display: block;
+                }                 
+            }                          
+        }
+    } 
+    .banner {
+        width: 100%;
+        background-color: #3f0f35;
+
+        .HeaderBanner {
+            margin: 0 auto;
+            max-width: 1190px;
+            min-width: 943px;
+            padding: 20px 15px 20px 25px;
+            position: relative;
+
+            overflow: hidden;
+            .tabbox{
+                position: relative;
+            }
+            #AnimationContainer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+        
+                .AnimatedImage {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 95%;
+                    display: block;
+                    height: 100%;
+        
+                    &#AnimatedImage1 {
+                        -webkit-animation: bgSmall 20s alternate both infinite;
+                        animation: bgSmall 20s alternate both infinite;
+                        background: url("../images/bingo/1900x400-bubblesofjoy-small.png");
+                        background-position: 50% 50%;
+                    }
+                    &#AnimatedImage2 {
+                        -webkit-animation: bgMedium 10s alternate both infinite;
+                        animation: bgMedium 10s alternate both infinite;
+                        background: url("../images/bingo/1900x400-bubblesofjoy-medium.png");
+                        background-position: 50% top;
+                    }
+                    &#AnimatedImage3 {
+                        width: 139%;
+                        height: 136%;
+                        -webkit-animation: bgLarge 15s alternate both infinite;
+                        animation: bgLarge 15s alternate both infinite;
+                        background: url("../images/bingo/1900x400-bubblesofjoy-large.png") no-repeat;
+                        background-position: 50% 50%;
+                    }
+                }
+            }
+            #BannerItemInnerContainer {
+                margin: 0 auto;
+                padding: 0;
+                width: 950px;
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                .BingoHeaderBannerItem {
+                    background: url("../images/bingo/chBingo.png");
+                    width: 713px;
+                    height: 292px;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
