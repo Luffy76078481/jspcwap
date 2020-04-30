@@ -59,7 +59,7 @@
         "history": "^3.0.0",
         "humps": "^2.0.0",
         "isomorphic-fetch": "^2.2.1",
-        "jquery": "^1.11.1",
+        "jquery": "^3.5.0",
         "jquery-ui": "^1.12.1",
         "less": "^2.7.2",
         "less-loader": "^4.1.0",
